@@ -72,6 +72,14 @@
                 ]
             },
             "ancestorId": "04tQs0000002Rc1IAE"
+        },
+        {
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "path": "source",
+            "default": false,
+            "package": "ddd",
+            "versionDescription": ""
         }
     ],
     "name": "Syntilio",
@@ -291,6 +299,7 @@
         "Syntilio CareHub@0.60.0.3": "04tQs0000002SoDIAU",
         "Syntilio CareHub@0.61.0-1": "04tQs0000002VfdIAE",
         "SyntilioDataHubTest@0.99.0.3": "04tQs0000002WWrIAM",
-        "SyntilioCareHubTest@0.9990107.0-1": "04tQs0000002YTpIAM"
+        "SyntilioCareHubTest@0.9990107.0-1": "04tQs0000002YTpIAM",
+        "ddd": "0HoQs0000000BY9KAM"
     }
 }
