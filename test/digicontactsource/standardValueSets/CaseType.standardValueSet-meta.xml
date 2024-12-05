@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Sample Cases</fullName>
+        <default>false</default>
+        <label>Sample Cases</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trial</fullName>
+        <default>false</default>
+        <label>Trial</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Intake</fullName>
+        <default>false</default>
+        <label>Intake</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Kennismaking</fullName>
+        <default>false</default>
+        <label>Kennismaking</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Begeleidingsmoment</fullName>
+        <default>false</default>
+        <label>Begeleidingsmoment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Evaluatie</fullName>
+        <default>false</default>
+        <label>Evaluatie</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ongepland Gesprek</fullName>
+        <default>false</default>
+        <label>Ongepland Gesprek</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Consultatie</fullName>
+        <default>false</default>
+        <label>Consultatie</label>
+    </standardValue>
+</StandardValueSet>

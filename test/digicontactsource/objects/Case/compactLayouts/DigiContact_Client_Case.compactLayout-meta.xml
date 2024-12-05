@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DigiContact_Client_Case</fullName>
+    <fields>CaseNumber</fields>
+    <fields>Subject</fields>
+    <fields>ContactId</fields>
+    <fields>AccountId</fields>
+    <fields>Priority</fields>
+    <fields>OwnerId</fields>
+    <label>DigiContact - Client Case</label>
+</CompactLayout>

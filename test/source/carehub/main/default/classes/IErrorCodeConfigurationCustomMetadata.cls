@@ -1,0 +1,4 @@
+@NamespaceAccessible
+public interface IErrorCodeConfigurationCustomMetadata {
+    Syntilio__ErrorCodeConfiguration__mdt getErrorCodeConfigurationCustomMetadata(String taskIssueReasonMappedToFlowErrorCodes);
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case$Syntilio__Event__c</field>
+    </columns>
+    <columns>
+        <field>Case$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Case.Syntilio__MedicalReports__r$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Case.Syntilio__MedicalReports__r$Name</field>
+    </columns>
+    <columns>
+        <field>Case.Syntilio__MedicalReports__r$Syntilio__Comments__c</field>
+    </columns>
+    <description>Client Report History</description>
+    <filter>
+        <criteriaItems>
+            <column>Case$Contact.Id</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case$Contact</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Client Report History</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Syntilio__Cases_with_Reports__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Case$ClosedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

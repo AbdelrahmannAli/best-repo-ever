@@ -1,0 +1,80 @@
+<template>
+  <template if:true={isUpdating}>
+    <lightning-spinner
+      alternative-text="Loading"
+      size="small"
+    ></lightning-spinner>
+  </template>
+    <section class="section">
+          <div class="title-container">
+            <div class="title-helptext-container">
+              <p class="tableTitle">
+                  {labels.searchForClient_WhoAreYouCallingFor}
+              </p>
+                <lightning-helptext
+                    class="helptext"
+                    alternative-text="When to use this?"
+                    content={labels.searchForClient_HelpText}
+                ></lightning-helptext>
+          </div>
+            <lightning-input 
+              type="checkbox" 
+              label={labels.searchForClient_CheckBox}
+              class="callerisclient"
+              name="input1"
+              disabled={disabledButton} 
+              onchange={handleCheckboxChange}
+              value={isCallerClient}
+            ></lightning-input>
+        </div>
+        <div class="slds-grid slds-gutters slds-m-bottom_small slds-align_absolute-center">
+          <lightning-icon 
+              icon-name="utility:user" 
+              alternative-text="Client" 
+              size="small" 
+              class="sideicon slds-m-right_x-small">
+          </lightning-icon>
+          <span class="slds-m-right_small">{labels.searchForClient_Client}</span>
+          <div class="slds-flex-grow">
+              <c-multi-select-combobox
+                  combobox-id="clientCombobox"
+                  options={filteredData}
+                  label="Select Contact"
+                  placeholder={labels.searchForClient_SearchForPatient}
+                  onvaluechange={handleClientChange}
+                  class="slds-m-right_x-small"
+                  initital={initialContact}
+                  onremove={removeContact}
+                  oncomboboxtoggle={handleComboboxToggle}
+                  ></c-multi-select-combobox>
+          </div>
+        </div>
+
+        
+        <div class="slds-grid slds-gutters slds-m-bottom_small slds-align_absolute-center">
+            <lightning-icon 
+                icon-name="utility:call" 
+                alternative-text="Caller" 
+                size="small" 
+                class="sideicon slds-m-right_x-small">
+            </lightning-icon>
+            <span class="slds-m-right_small">{labels.searchForClient_Caller}</span>
+            <div class="slds-flex-grow">
+                <c-multi-select-combobox
+                    combobox-id="callerCombobox"
+                    label="Select Caller"
+                    options={filteredCareCircleData}
+                    placeholder={labels.searchForClient_SearchForCaller}
+                    onvaluechange={handleCallerChange}
+                    class="slds-m-right_x-small"
+                    initital={initialCaller}
+                    onremove={removeCaller}
+                    split-contact='true'
+                    suggested-length={suggestedLength}
+                    oncomboboxtoggle={handleComboboxToggle}
+                    show-suggested-temp={suggestedTemp}
+                ></c-multi-select-combobox>
+            </div>
+        </div>
+    </section>
+</template>

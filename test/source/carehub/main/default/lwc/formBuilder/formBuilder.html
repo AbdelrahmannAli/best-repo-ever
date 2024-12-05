@@ -1,0 +1,12 @@
+<template>
+	<lightning-card>
+		<div if:true={loading}>
+			<lightning-spinner
+				alternative-text="Loading"
+				size="medium"
+				style="margin: 0 auto"
+			></lightning-spinner>
+		</div>
+		<div class="form-builder"></div>
+	</lightning-card>
+</template>

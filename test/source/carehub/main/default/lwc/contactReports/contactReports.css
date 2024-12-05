@@ -1,0 +1,79 @@
+.slds-grid {
+	margin: 1rem !important;
+}
+
+.title-output {
+	font-weight: bolder !important;
+	font-size: medium !important;
+}
+
+.label-class {
+	color: #707070;
+}
+
+.scrollable {
+	max-height: 17.5rem;
+	overflow-y: auto;
+}
+
+.external-system {
+	margin-right: 0.3rem;
+}
+
+.title-bold {
+	font-weight: 600;
+}
+
+.role-span {
+	display: flex;
+	align-items: center;
+}
+
+.helptext-span {
+	margin-bottom: 0.2rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+.comments-div {
+	white-space: pre-wrap;
+}
+
+.header-div {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-bottom: 0.5rem;
+}
+
+.search-size {
+	width: 80%;
+}
+
+.line-break {
+	display: block;
+}
+
+.icon-column {
+	display: flex;
+	align-items: flex-start;
+}
+
+.star-icon {
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+.content-column {
+	flex: 1;
+	margin-right: 1rem;
+}
+
+.icon-placeholder {
+	width: 16px;
+	margin-right: 10px;
+}
+
+.line-break {
+	display: block;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Financiering</label>
+    <name>Financing__c</name>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>Anders / Onbekend</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WLZ</masterLabel>
+        <translation>WLZ</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WMO</masterLabel>
+        <translation>WMO</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ZVV</masterLabel>
+        <translation>ZKV</translation>
+    </picklistValues>
+</CustomFieldTranslation>

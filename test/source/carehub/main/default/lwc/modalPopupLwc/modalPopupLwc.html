@@ -1,0 +1,86 @@
+<template>
+	<template if:true={showModal}>
+		<section
+			role="dialog"
+			tabindex="-1"
+			aria-labelledby="modal-heading"
+			aria-modal="true"
+			class="slds-modal slds-fade-in-open"
+		>
+			<div class="slds-modal__container">
+				<header class="slds-modal__header">
+					<h2 id="modal-heading" class="slds-text-heading_medium">{titleText}</h2>
+				</header>
+					<div class="slds-modal__content slds-p-around_medium">
+						<template if:true={showNotification}>
+							<div class="slds-scoped-notification slds-media slds-media_center slds-theme_warning" role="status">
+								<div class="slds-media__figure">
+									<span class="slds-icon_container slds-icon-utility-warning" title="warning">
+										<lightning-icon icon-name="utility:warning" alternative-text="Warning!" title="Warning"></lightning-icon>
+									</span>
+								</div>
+								<div class="slds-media__body">
+									<template for:each={notificationContent} for:item="message">
+										<p key={message}>{message}</p>
+									</template>
+								</div>
+							</div>
+						</template>
+
+						<div class = "dropdown-lists">
+							<template if:true={checkBoxShown}>
+								<lightning-combobox
+									name="checkbox"
+									label={labels.caseProgressIndicator_AssignCase}
+									placeholder="Select an Option"
+									value={value}
+									onchange={handleCheckboxChange}
+									options={assignOptions}
+									required
+								>
+								</lightning-combobox>
+							</template>
+
+							<template if:true={showEventList}>
+								<!-- <div class="field-label">
+									<div class="asterisk">*</div>
+									<div class="label-text">Event name </div>
+								</div> -->
+								<!-- <c-multi-select-combobox
+									combobox-id="eventCombobox"
+									label="Select Event"
+									options={allEvents}
+									initital={initialCaller}
+									placeholder="Search for Event"
+									class="slds-m-right_x-small"
+									onvaluechange={handleEventChange}
+									onremove={removeEvent}
+								>
+								</c-multi-select-combobox> -->
+								<lightning-combobox
+									name="eventCombobox"
+									label={labels.modal_EventName}
+									placeholder={labels.modal_SelectEvent}
+									value={selectedEvent}
+									onchange={handleEventChange}
+									options={allEvents}
+									required
+								>
+								</lightning-combobox>
+							</template>
+						</div>
+					</div>
+
+				<footer class="slds-modal__footer">
+					<button class="slds-button slds-button_neutral" onclick={closeModal}>
+						{labels.general_Cancel}
+					</button>
+					<button class="slds-button slds-button_brand" onclick={submitDetails} disabled={isEventNull}>
+						{labels.general_SaveAndClose}
+					</button>
+				</footer>
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open"></div>
+	</template>
+</template>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <choices>
+        <name>ActivateClient</name>
+        <choiceText
+    >Stop onboarding and &lt;strong style=&quot;color: rgb(100, 191, 106);&quot;&gt;Activate&lt;/strong&gt; client</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Active</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>ArchiveClient</name>
+        <choiceText
+    >Stop onboarding and &lt;strong style=&quot;color: rgb(255, 104, 97);&quot;&gt;Archive&lt;/strong&gt; client</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Archived</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>ContinueOnboarding</name>
+        <choiceText>Continue Onboarding</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Continue</stringValue>
+        </value>
+    </choices>
+    <decisions>
+        <name>StopOnboardingDecision</name>
+        <label>Stop Onboarding Decision</label>
+        <locationX>536</locationX>
+        <locationY>310</locationY>
+        <defaultConnectorLabel>Continue Onboarding</defaultConnectorLabel>
+        <rules>
+            <name>StopOnboarding</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference
+        >ClientOnboardingActionChoice</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>ActivateClient</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference
+        >ClientOnboardingActionChoice</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>ArchiveClient</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>UpdateContactStatus</targetReference>
+            </connector>
+            <label>Stop Onboarding</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel
+  >Syntilio CareHub Activate/Archive Client {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Syntilio CareHub Activate/Archive Client</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordUpdates>
+        <description
+    >Update contact status to &quot;Active&quot; or &quot;Archived&quot; depending on the choice</description>
+        <name>UpdateContactStatus</name>
+        <label>Update Contact Status</label>
+        <locationX>542</locationX>
+        <locationY>470</locationY>
+        <faultConnector>
+            <targetReference>UpdateContactException</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Syntilio__Status__c</field>
+            <value>
+                <elementReference
+        >ClientOnboardingActionChoice</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Contact</object>
+    </recordUpdates>
+    <screens>
+        <name>ClientOnboardingAction</name>
+        <label>Client Onboarding Action</label>
+        <locationX>536</locationX>
+        <locationY>182</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>StopOnboardingDecision</targetReference>
+        </connector>
+        <fields>
+            <name>ClientOnboardingActionChoice</name>
+            <choiceReferences>ContinueOnboarding</choiceReferences>
+            <choiceReferences>ArchiveClient</choiceReferences>
+            <choiceReferences>ActivateClient</choiceReferences>
+            <dataType>String</dataType>
+            <defaultSelectedChoiceReference
+      >ContinueOnboarding</defaultSelectedChoiceReference>
+            <fieldText>Client Onboarding Action</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <inputsOnNextNavToAssocScrn
+      >UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>410</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>ClientOnboardingAction</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>UpdateContactException</name>
+        <label>Update Contact Exception</label>
+        <locationX>352</locationX>
+        <locationY>474</locationY>
+        <flowName>Syntilio__Log_Exception</flowName>
+        <inputAssignments>
+            <name>logExceptionDetails</name>
+            <value>
+                <stringValue>Error updating contact status</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>logExceptionRecordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue />
+        </value>
+    </variables>
+</Flow>

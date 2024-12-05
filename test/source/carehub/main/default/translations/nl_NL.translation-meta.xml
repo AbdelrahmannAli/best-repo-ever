@@ -1,0 +1,1257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <customTabs>
+        <label><!-- Getting Started --></label>
+        <name>Getting_Started</name>
+    </customTabs>
+    <customLabels>
+        <label>Nieuw</label>
+        <name>general_New</name>
+    </customLabels>
+    <customLabels>
+        <label>Historie</label>
+        <name>general_History</name>
+    </customLabels>
+    <customLabels>
+        <label>Verzend</label>
+        <name>general_Send</name>
+    </customLabels>
+    <customLabels>
+        <label>Protocollen</label>
+        <name>general_Protocols</name>
+    </customLabels>
+    <customLabels>
+        <label>Geschatte Tijd</label>
+        <name>general_EstimatedTime</name>
+    </customLabels>
+    <customLabels>
+        <label>Minuten</label>
+        <name>general_Minutes</name>
+    </customLabels>
+    <customLabels>
+        <label>Klaar</label>
+        <name>general_Finished</name>
+    </customLabels>
+    <customLabels>
+        <label>Vereist</label>
+        <name>general_Required</name>
+    </customLabels>
+    <customLabels>
+        <label>Lopende actie</label>
+        <name>general_ActionsInProgress</name>
+    </customLabels>
+    <customLabels>
+        <label>Begin</label>
+        <name>general_Start</name>
+    </customLabels>
+    <customLabels>
+        <label>Bekijken</label>
+        <name>general_Review</name>
+    </customLabels>
+    <customLabels>
+        <label>Acties</label>
+        <name>general_Actions</name>
+    </customLabels>
+    <customLabels>
+        <label>Relatie</label>
+        <name>general_Relationship</name>
+    </customLabels>
+    <customLabels>
+        <label>Naam</label>
+        <name>general_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>Telefoon</label>
+        <name>general_Phone</name>
+    </customLabels>
+    <customLabels>
+        <label>Laatst gewijzigd op</label>
+        <name>general_LastModifiedAt</name>
+    </customLabels>
+    <customLabels>
+        <label>Beschikbaar</label>
+        <name>general_Available</name>
+    </customLabels>
+    <customLabels>
+        <label>Alle</label>
+        <name>general_All</name>
+    </customLabels>
+    <customLabels>
+        <label>Formeel</label>
+        <name>general_Formal</name>
+    </customLabels>
+    <customLabels>
+        <label>Informeel</label>
+        <name>general_Informal</name>
+    </customLabels>
+    <customLabels>
+        <label>Sluiten</label>
+        <name>general_Close</name>
+    </customLabels>
+    <customLabels>
+        <label>Contactpersoon</label>
+        <name>general_Contact</name>
+    </customLabels>
+    <customLabels>
+        <label>Gerelateerd Contactpersoon</label>
+        <name>general_RelatedContact</name>
+    </customLabels>
+    <customLabels>
+        <label>Volgorde</label>
+        <name>general_Order</name>
+    </customLabels>
+    <customLabels>
+        <label>Concept</label>
+        <name>general_Draft</name>
+    </customLabels>
+    <customLabels>
+        <label>Geactiveerd</label>
+        <name>general_Activated</name>
+    </customLabels>
+    <customLabels>
+        <label>Geannuleerd</label>
+        <name>general_Cancelled</name>
+    </customLabels>
+    <customLabels>
+        <label>Familie</label>
+        <name>general_Family</name>
+    </customLabels>
+    <customLabels>
+        <label>Code</label>
+        <name>general_Code</name>
+    </customLabels>
+    <customLabels>
+        <label>Prijs</label>
+        <name>general_Price</name>
+    </customLabels>
+    <customLabels>
+        <label>Hoeveelheid</label>
+        <name>general_Quantity</name>
+    </customLabels>
+    <customLabels>
+        <label>Begin datum</label>
+        <name>general_StartDate</name>
+    </customLabels>
+    <customLabels>
+        <label>Einddatum</label>
+        <name>general_EndDate</name>
+    </customLabels>
+    <customLabels>
+        <label>Annuleren</label>
+        <name>general_Cancel</name>
+    </customLabels>
+    <customLabels>
+        <label>Volgende</label>
+        <name>general_Next</name>
+    </customLabels>
+    <customLabels>
+        <label>Terug</label>
+        <name>general_Back</name>
+    </customLabels>
+    <customLabels>
+        <label>Indienen</label>
+        <name>general_Submit</name>
+    </customLabels>
+    <customLabels>
+        <label>Fout bij verzending</label>
+        <name>general_SubmissionError</name>
+    </customLabels>
+    <customLabels>
+        <label>Vul de verplichte velden in.</label>
+        <name>general_FillRequiredFields</name>
+    </customLabels>
+    <customLabels>
+        <label>Abonnementen</label>
+        <name>general_Subscriptions</name>
+    </customLabels>
+    <customLabels>
+        <label>Bewerken</label>
+        <name>general_Update</name>
+    </customLabels>
+    <customLabels>
+        <label>Bestelling</label>
+        <name>general_Order2</name>
+    </customLabels>
+    <customLabels>
+        <label>Prijsboek</label>
+        <name>general_PriceBook</name>
+    </customLabels>
+    <customLabels>
+        <label>Activeringsherinnering</label>
+        <name>general_ActivationReminder</name>
+    </customLabels>
+    <customLabels>
+        <label>Contactpersoonzaak</label>
+        <name>general_ContactCases</name>
+    </customLabels>
+    <customLabels>
+        <label>Zaaknummer</label>
+        <name>general_CaseNumber</name>
+    </customLabels>
+    <customLabels>
+        <label>Onderwerp</label>
+        <name>general_Subject</name>
+    </customLabels>
+    <customLabels>
+        <label>Evenementcode</label>
+        <name>general_EventCode</name>
+    </customLabels>
+    <customLabels>
+        <label>Categorie</label>
+        <name>general_Category</name>
+    </customLabels>
+    <customLabels>
+        <label>Sessieduur</label>
+        <name>general_SessionsDuration</name>
+    </customLabels>
+    <customLabels>
+        <label>Gemaakt door</label>
+        <name>general_CreatedBy</name>
+    </customLabels>
+    <customLabels>
+        <label>Actie</label>
+        <name>general_Action</name>
+    </customLabels>
+    <customLabels>
+        <label>Details</label>
+        <name>general_Details</name>
+    </customLabels>
+    <customLabels>
+        <label>Extern systeem selecteren</label>
+        <name>general_SelectExternalSystem</name>
+    </customLabels>
+    <customLabels>
+        <label>Geen opties beschikbaar</label>
+        <name>general_NoOptionsAvailable</name>
+    </customLabels>
+    <customLabels>
+        <label>Voornaam</label>
+        <name>general_FirstName</name>
+    </customLabels>
+    <customLabels>
+        <label>Achternaam</label>
+        <name>general_LastName</name>
+    </customLabels>
+    <customLabels>
+        <label>Mobiele Telefoon</label>
+        <name>general_MobilePhone</name>
+    </customLabels>
+    <customLabels>
+        <label>Post Stad</label>
+        <name>general_MailingCity</name>
+    </customLabels>
+    <customLabels>
+        <label>Land Van Post</label>
+        <name>general_MailingCountry</name>
+    </customLabels>
+    <customLabels>
+        <label>Postcode Van De Post</label>
+        <name>general_MailingPostalCode</name>
+    </customLabels>
+    <customLabels>
+        <label>Post Straat</label>
+        <name>general_MailingStreet</name>
+    </customLabels>
+    <customLabels>
+        <label>Telefoon Thuis</label>
+        <name>general_HomePhone</name>
+    </customLabels>
+    <customLabels>
+        <label>Email</label>
+        <name>general_Email</name>
+    </customLabels>
+    <customLabels>
+        <label>Geslacht</label>
+        <name>general_Gender</name>
+    </customLabels>
+    <customLabels>
+        <label>Geboortedatum</label>
+        <name>general_Birthdate</name>
+    </customLabels>
+    <customLabels>
+        <label>Locaties</label>
+        <name>general_Locations</name>
+    </customLabels>
+    <customLabels>
+        <label>Inactief</label>
+        <name>general_Inactive</name>
+    </customLabels>
+    <customLabels>
+        <label>Registratie</label>
+        <name>general_Registration</name>
+    </customLabels>
+    <customLabels>
+        <label>Voor-en achternaam</label>
+        <name>general_FullName</name>
+    </customLabels>
+    <customLabels>
+        <label>Extern Systeem</label>
+        <name>general_ExternalSystem</name>
+    </customLabels>
+    <customLabels>
+        <label>Cliënt identificatie</label>
+        <name>general_ClientIdentification</name>
+    </customLabels>
+    <customLabels>
+        <label>Bewaren</label>
+        <name>general_Save</name>
+    </customLabels>
+    <customLabels>
+        <label>Ongeldig mobiel telefoonnummer</label>
+        <name>general_InvalidMobilePhoneNumber</name>
+    </customLabels>
+    <customLabels>
+        <label>Ongeldig e-mailadresformaat</label>
+        <name>general_InvalidEmailAddressFormat</name>
+    </customLabels>
+    <customLabels>
+        <label>Selecteer Locaties</label>
+        <name>general_SelectLocations</name>
+    </customLabels>
+    <customLabels>
+        <label>Status</label>
+        <name>general_Status</name>
+    </customLabels>
+    <customLabels>
+        <label>Status Selecteren</label>
+        <name>general_SelectStatus</name>
+    </customLabels>
+    <customLabels>
+        <label>Abonnementstype</label>
+        <name>general_SubscriptionType</name>
+    </customLabels>
+    <customLabels>
+        <label>Selecteer Abonnementstype</label>
+        <name>general_SelectSubscriptionType</name>
+    </customLabels>
+    <customLabels>
+        <label>Minuten/week</label>
+        <name>general_MinutesPerWeek</name>
+    </customLabels>
+    <customLabels>
+        <label>Abonnement</label>
+        <name>general_Subscription</name>
+    </customLabels>
+    <customLabels>
+        <label>Veranderd aan</label>
+        <name>general_ChangedOn</name>
+    </customLabels>
+    <customLabels>
+        <label>Veranderd door</label>
+        <name>general_ChangedBy</name>
+    </customLabels>
+    <customLabels>
+        <label>Bestellingsnummer</label>
+        <name>general_OrderNumber</name>
+    </customLabels>
+    <customLabels>
+        <label>Bestelstatus</label>
+        <name>general_OrderStatus</name>
+    </customLabels>
+    <customLabels>
+        <label>Activeringsdatum van bestelling</label>
+        <name>general_OrderActivationDate</name>
+    </customLabels>
+    <customLabels>
+        <label>Eindigen</label>
+        <name>general_End</name>
+    </customLabels>
+    <customLabels>
+        <label>Annulering in behandeling</label>
+        <name>general_CancellationInProgress</name>
+    </customLabels>
+    <customLabels>
+        <label>Actief</label>
+        <name>general_Active</name>
+    </customLabels>
+    <customLabels>
+        <label>Laatste {number} dagen</label>
+        <name>general_LastDays</name>
+    </customLabels>
+    <customLabels>
+        <label>Laatste {number} weken</label>
+        <name>general_LastWeeks</name>
+    </customLabels>
+    <customLabels>
+        <label>Laatste {number} maanden</label>
+        <name>general_LastMonths</name>
+    </customLabels>
+    <customLabels>
+        <label>Januari</label>
+        <name>general_January</name>
+    </customLabels>
+    <customLabels>
+        <label>Februari</label>
+        <name>general_February</name>
+    </customLabels>
+    <customLabels>
+        <label>Maart</label>
+        <name>general_March</name>
+    </customLabels>
+    <customLabels>
+        <label>April</label>
+        <name>general_April</name>
+    </customLabels>
+    <customLabels>
+        <label>Mei</label>
+        <name>general_May</name>
+    </customLabels>
+    <customLabels>
+        <label>Juni</label>
+        <name>general_June</name>
+    </customLabels>
+    <customLabels>
+        <label>Juli</label>
+        <name>general_July</name>
+    </customLabels>
+    <customLabels>
+        <label>Augustus</label>
+        <name>general_August</name>
+    </customLabels>
+    <customLabels>
+        <label>September</label>
+        <name>general_September</name>
+    </customLabels>
+    <customLabels>
+        <label>Oktober</label>
+        <name>general_October</name>
+    </customLabels>
+    <customLabels>
+        <label>November</label>
+        <name>general_November</name>
+    </customLabels>
+    <customLabels>
+        <label>December</label>
+        <name>general_December</name>
+    </customLabels>
+    <customLabels>
+        <label>Kopiëren</label>
+        <name>general_Copy</name>
+    </customLabels>
+    <customLabels>
+        <label>Klaar</label>
+        <name>general_Done</name>
+    </customLabels>
+    <customLabels>
+        <label>Vorig</label>
+        <name>general_Previous</name>
+    </customLabels>
+    <customLabels>
+        <label>Klaar</label>
+        <name>general_Finish</name>
+    </customLabels>
+    <customLabels>
+        <label>Gekopieerd naar het Klembord</label>
+        <name>general_CopiedToClipboard</name>
+    </customLabels>
+    <customLabels>
+        <label>Gerelateerde Gevallen</label>
+        <name>general_RelatedCases</name>
+    </customLabels>
+    <customLabels>
+        <label>optioneel</label>
+        <name>general_Optional</name>
+    </customLabels>
+    <customLabels>
+        <label>Geen voorgestelde contactpersonen</label>
+        <name>searchForClient_NoSuggested</name>
+    </customLabels>
+    <customLabels>
+        <label>Anderen</label>
+        <name>searchForClient_Others</name>
+    </customLabels>
+    <customLabels>
+        <label>Zorgnetwerk</label>
+        <name>searchForClient_Suggested</name>
+    </customLabels>
+    <customLabels>
+        <label>Groepen</label>
+        <name>searchForClient_Groups</name>
+    </customLabels>
+    <customLabels>
+        <label>Zoek Cliënt / Beller</label>
+        <name>searchForClient_WhoAreYouCallingFor</name>
+    </customLabels>
+    <customLabels>
+        <label>Beller</label>
+        <name>searchForClient_Caller</name>
+    </customLabels>
+    <customLabels>
+        <label>Beller is cliënt</label>
+        <name>searchForClient_CheckBox</name>
+    </customLabels>
+    <customLabels>
+        <label>Cliënt</label>
+        <name>searchForClient_Client</name>
+    </customLabels>
+    <customLabels>
+        <label>Gebruik dit onderdeel om de client te zoeken als de beller onbekend is of namens de client belt.</label>
+        <name>searchForClient_HelpText</name>
+    </customLabels>
+    <customLabels>
+        <label>Zoek contact</label>
+        <name>searchForClient_SearchForPatient</name>
+    </customLabels>
+    <customLabels>
+        <label>Zoek contact</label>
+        <name>searchForClient_SearchForCaller</name>
+    </customLabels>
+    <customLabels>
+        <label>Zorgcirkel synchroniseren</label>
+        <name>careCircle_SyncCareCircle</name>
+    </customLabels>
+    <customLabels>
+        <label>E-mail gekopieerd naar klembord</label>
+        <name>careCircle_CopyEmail</name>
+    </customLabels>
+    <customLabels>
+        <label>Geen beschikbare personen</label>
+        <name>careCircle_NoCareCircleMembers</name>
+    </customLabels>
+    <customLabels>
+        <label>Geen Beschikbare Data</label>
+        <name>careCircle_NoMedicalNotes</name>
+    </customLabels>
+    <customLabels>
+        <label>Geen aankomende afspraken voor de aankomende 8 dagen</label>
+        <name>careCircle_NoUpcomingAppointments</name>
+    </customLabels>
+    <customLabels>
+        <label>Selecteer een Extern Systeem om clients op te halen</label>
+        <name>accountExternalSystems_ComboboxLabel</name>
+    </customLabels>
+    <customLabels>
+        <label>Extern Systeem selecteren</label>
+        <name>accountExternalSystems_ComboboxPlaceholder</name>
+    </customLabels>
+    <customLabels>
+        <label>Voeg het vereiste externe systeem toe</label>
+        <name>accountExternalSystems_ComboboxMissingMessage</name>
+    </customLabels>
+    <customLabels>
+        <label>Contactpersonen voor noodgevallen</label>
+        <name>caseEmergencyContacts_EmergencyContacts</name>
+    </customLabels>
+    <customLabels>
+        <label>Nieuw contactpersoon voor noodgevallen</label>
+        <name>caseEmergencyContacts_NewEmergencyContact</name>
+    </customLabels>
+    <customLabels>
+        <label>Weet u zeker dat u de case wilt verlaten zonder deze te sluiten?</label>
+        <name>caseTabClosureConfirmation_ConfirmationMessage</name>
+    </customLabels>
+    <customLabels>
+        <label>Bestelinformatie</label>
+        <name>changeSubscription_OrderInfo</name>
+    </customLabels>
+    <customLabels>
+        <label>Selecteer Producten</label>
+        <name>changeSubscription_SelectProducts</name>
+    </customLabels>
+    <customLabels>
+        <label>Bestelproducten bewerken</label>
+        <name>changeSubscription_EditOrderProducts</name>
+    </customLabels>
+    <customLabels>
+        <label>Selecteer een bestelling die u wilt bewerken.</label>
+        <name>changeSubscription_SelectOrderToEdit</name>
+    </customLabels>
+    <customLabels>
+        <label>Selecteer minimaal één product.</label>
+        <name>changeSubscription_SelectOneProduct</name>
+    </customLabels>
+    <customLabels>
+        <label>Selecteer bestelling</label>
+        <name>changeSubscription_SelectOrder</name>
+    </customLabels>
+    <customLabels>
+        <label>De bestelling wordt op de aangegeven datum beëindigd</label>
+        <name>changeSubscription_OrderWillEndOnSpecifiedDate</name>
+    </customLabels>
+    <customLabels>
+        <label>Deze bestelling eindigt op</label>
+        <name>changeSubscription_OrderWillEndOn</name>
+    </customLabels>
+    <customLabels>
+        <label>Nieuwe bestelling</label>
+        <name>changeSubscription_NewOrder</name>
+    </customLabels>
+    <customLabels>
+        <label>Order bijwerken</label>
+        <name>changeSubscription_UpdateOrder</name>
+    </customLabels>
+    <customLabels>
+        <label>Optionele herinnering X dagen vóór de startdatum van de bestelling</label>
+        <name>changeSubscription_OptionalReminderXDays</name>
+    </customLabels>
+    <customLabels>
+        <label>Contactpersoon binnen dezelfde groep</label>
+        <name>contactGroup_ContactWithinSameGroup</name>
+    </customLabels>
+    <customLabels>
+        <label>Het bijwerken van de medische gegevens van de contactpersoon is mislukt. Je kunt proberen het handmatig bij te werken. Als de problemen zich blijven voordoen, kunt u contact opnemen met uw beheerder voor hulp</label>
+        <name>contactMedicalNotes_UpdatingMedicalNotesFailed</name>
+    </customLabels>
+    <customLabels>
+        <label>Het bijwerken van contactnotities is mislukt. Je kunt proberen het handmatig bij te werken. Als de problemen zich blijven voordoen, kunt u contact opnemen met uw beheerder voor hulp</label>
+        <name>contactNotes_UpdatingContactNotesFailed</name>
+    </customLabels>
+    <customLabels>
+        <label>Het bijwerken van contactrapporten is mislukt. Je kunt proberen het handmatig bij te werken. Als de problemen zich blijven voordoen, kunt u contact opnemen met uw beheerder voor hulp</label>
+        <name>contactReports_UpdatingContactReportsFailed</name>
+    </customLabels>
+    <customLabels>
+        <label>Het kan zijn dat de rapporten verouderd zijn. Vernieuw de pagina om de meest recente informatie te zien.</label>
+        <name>contactReports_ReportsMayBeOutdated</name>
+    </customLabels>
+    <customLabels>
+        <label>Zoek naar contactrapport</label>
+        <name>contactReports_searchForContactReport</name>
+    </customLabels>
+    <customLabels>
+        <label>Er is een onverwachte fout opgetreden. Probeer de pagina te vernieuwen en neem contact op met uw systeembeheerder of serviceprovider als het probleem zich blijft voordoen. Gebruik deze ID om een ticket te openen</label>
+        <name>errorUI_UnexpectedError</name>
+    </customLabels>
+    <customLabels>
+        <label>Cliënten ophalen</label>
+        <name>fetchClients_FetchClients</name>
+    </customLabels>
+    <customLabels>
+        <label>Cliëntgegevens ophalen</label>
+        <name>fetchClients_FetchClientsData</name>
+    </customLabels>
+    <customLabels>
+        <label>Voortgang van opgehaalde cliënten</label>
+        <name>fetchClients_FetchClientsProgress</name>
+    </customLabels>
+    <customLabels>
+        <label>Er is een time-out voor de integratie opgetreden. Probeer het opnieuw en neem contact op met uw systeembeheerder als het probleem zich blijft voordoen.</label>
+        <name>fetchClients_IntegrationTimeout</name>
+    </customLabels>
+    <customLabels>
+        <label>Deze cliënt heeft geen actief abonnement</label>
+        <name>inactiveClientMessage_NoActiveSubscription</name>
+    </customLabels>
+    <customLabels>
+        <label>Deze cliënt is per {date} inactief</label>
+        <name>inactiveClientMessage_ClientInactiveAsOf</name>
+    </customLabels>
+    <customLabels>
+        <label>Inactief vanaf</label>
+        <name>inactiveClientMessage_InactiveAsOf</name>
+    </customLabels>
+    <customLabels>
+        <label>Welke cliënt wilt u aanmelden?</label>
+        <name>registrationForm_WhichClient</name>
+    </customLabels>
+    <customLabels>
+        <label>Als de gegevens correct zijn, klikt u op Volgende. Als dit niet het geval is, klikt u op Terug om de cliënt identificatie opnieuw in te voeren</label>
+        <name>registrationForm_InformationCorrectNext</name>
+    </customLabels>
+    <customLabels>
+        <label>Zie dat voordat je verder gaat</label>
+        <name>registrationForm_SeeBeforeMovingForward</name>
+    </customLabels>
+    <customLabels>
+        <label>Cliënt opgehaald</label>
+        <name>registrationForm_FetchedClient</name>
+    </customLabels>
+    <customLabels>
+        <label>Vul de gevraagde cliënt identificatie in</label>
+        <name>registrationForm_FillInRequestedClientID</name>
+    </customLabels>
+    <customLabels>
+        <label>Cliënt is succesvol aangemaakt</label>
+        <name>registrationForm_ClientCreatedSuccessfully</name>
+    </customLabels>
+    <customLabels>
+        <label>Selecteer een aanhef</label>
+        <name>registrationForm_SelectSalutation</name>
+    </customLabels>
+    <customLabels>
+        <label>Gelieve een geldig e-mailadres in te geven</label>
+        <name>registrationForm_EnterValidEmail</name>
+    </customLabels>
+    <customLabels>
+        <label>Voer een geldig mobiel telefoonnummer in</label>
+        <name>registrationForm_EnterValidMobilePhone</name>
+    </customLabels>
+    <customLabels>
+        <label>Cliënt identificatie is niet geldig</label>
+        <name>registrationForm_ClientIDNotValid</name>
+    </customLabels>
+    <customLabels>
+        <label>Het updaten van veiligheidsbadges is mislukt. Je kunt proberen het handmatig bij te werken. Als de problemen zich blijven voordoen, kunt u contact opnemen met uw beheerder voor hulp</label>
+        <name>safetyBadges_UpdatingSafetyBadgesFailed</name>
+    </customLabels>
+    <customLabels>
+        <label>Cliënt identificatie invoeren</label>
+        <name>subscriptionsHistory_EnterClientID</name>
+    </customLabels>
+    <customLabels>
+        <label>Cliënt Nummer</label>
+        <name>subscriptionsHistory_ClientNumber</name>
+    </customLabels>
+    <customLabels>
+        <label>Beëindig Abonnement</label>
+        <name>subscriptionsHistory_EndSubscription</name>
+    </customLabels>
+    <customLabels>
+        <label>Medische Notities</label>
+        <name>syntilioConsoleCaseCentralist_MedicalNotes</name>
+    </customLabels>
+    <customLabels>
+        <label>eHealth</label>
+        <name>syntilioConsoleCaseCentralist_ClientDevice</name>
+    </customLabels>
+    <customLabels>
+        <label>Zorgnetwerk</label>
+        <name>syntilioConsoleCaseCentralist_CareCircle</name>
+    </customLabels>
+    <customLabels>
+        <label>Notities van klanten</label>
+        <name>syntilioConsoleCaseCentralist_ClientNotes</name>
+    </customLabels>
+    <customLabels>
+        <label>Cliëntinformatie</label>
+        <name>syntilioConsoleCaseCentralist_ClientInformation</name>
+    </customLabels>
+    <customLabels>
+        <label>Zorgrapportage Dossier</label>
+        <name>syntilioConsoleCaseCentralist_MedicalReport</name>
+    </customLabels>
+    <customLabels>
+        <label>Bijzonderheden Case</label>
+        <name>syntilioConsoleCaseCentralist_CaseNotes</name>
+    </customLabels>
+    <customLabels>
+        <label>Klant nieuwste rapporten</label>
+        <name>syntilioConsoleCaseCentralist_ClientLatestReports</name> 
+    </customLabels>
+    <customLabels>
+        <label>Recente gevallen</label>
+        <name>general_RecentCases</name> 
+    </customLabels>
+    <customLabels>
+        <label>Persoonlijk notitieblok</label>
+        <name>general_PersonalNotepad</name> 
+    </customLabels>
+    <customLabels>
+        <label>Accountgegevens</label>
+        <name>general_AccountDetails</name> 
+    </customLabels>
+    <customLabels>
+        <label>Beheer klanten</label>
+        <name>general_ManageClients</name> 
+    </customLabels>
+    <customLabels>
+        <label>Cachegegevens</label>
+        <name>general_CacheData</name> 
+    </customLabels>
+    <customLabels> 
+        <label>Casehistorie</label>
+        <name>general_CaseHistory</name> 
+    </customLabels>
+    <customLabels> 
+        <label>Activum details</label>
+        <name>general_AssetDetails</name> 
+    </customLabels>
+    <customLabels> 
+        <label>Externe ID</label>
+        <name>general_ExternalIds</name> 
+    </customLabels>
+       <customLabels> 
+        <label>Cliënt ID</label>
+        <name>general_ClientID</name> 
+    </customLabels>
+    <customLabels> 
+        <label>Openstaande Cases</label>
+        <name>general_OpenCases</name> 
+    </customLabels>
+    <customLabels> 
+        <label>Gesloten cases</label>
+        <name>general_ClosedCases</name> 
+    </customLabels>
+    <customLabels>
+        <label>Klantgegevens</label>
+        <name>general_ClientDetails</name> 
+    </customLabels>
+    <customLabels>
+        <label>Casusdetails</label>
+        <name>general_CaseDetails</name> 
+    </customLabels>
+    <customLabels>
+        <label>Systeemlogboeken</label>
+        <name>general_SystemLogs</name> 
+    </customLabels>
+    <customLabels>
+        <label>Afspraken</label>
+        <name>general_AppointmentCard</name> 
+    </customLabels>
+    <customLabels>
+        <label>Cases</label>
+        <name>general_Cases</name> 
+    </customLabels>
+    <customLabels>
+        <label>Zorgnetwerk</label>
+        <name>general_ClientContacts</name> 
+    </customLabels>
+    <customLabels>
+        <label>Klantendashboard</label>
+        <name>general_ClientDashboard</name> 
+    </customLabels>
+    <customLabels>
+        <label>Agenda-afspraken</label>
+        <name>general_AgendaAppointments</name> 
+    </customLabels>
+    <customLabels>
+        <label>Contacten / Contracten</label>
+        <name>general_ContactsContracts</name> 
+    </customLabels>
+    <customLabels>
+        <label>Berichtenbox (Chatter)</label>
+        <name>general_CommunicationChatter</name> 
+    </customLabels>
+    <customLabels>
+        <label>Meldingen Historie</label>
+        <name>general_EventHistory</name> 
+    </customLabels>
+    <customLabels>
+        <label>Cliënt Notities</label>
+        <name>general_ClientNotes</name> 
+    </customLabels>
+    <customLabels>
+        <label>Afspraken</label>
+        <name>general_Appointments</name> 
+    </customLabels>
+    <customLabels>
+        <label>Communicatie</label>
+        <name>general_Communication</name> 
+    </customLabels>
+    <customLabels>
+        <label>eHealth van cliënt</label>
+        <name>general_AssetsForParentContact</name> 
+    </customLabels>
+    <customLabels>
+        <label>Zorgdiensten</label>
+        <name>general_HealthcareServices</name> 
+    </customLabels>
+    <customLabels>
+        <label>Kon het formulier niet indienen</label>
+        <name>dynamicProtocols_FailedToSubmitForm</name> 
+    </customLabels>
+    <customLabels>
+        <label>Vragen beantwoord: {ansQuestion} van {allQuestions}</label>
+        <name>dynamicProtocols_AnsweredQuestions</name> 
+    </customLabels>
+    <customLabels>
+        <label>Actie voor</label>
+        <name>caseReport_ActionFor</name> 
+    </customLabels>
+    <customLabels>
+        <label>Zichtbaar voor</label>
+        <name>caseReport_VisibilityFor</name> 
+    </customLabels>
+    <customLabels>
+        <label>Niemand (of selecteer voor wie)</label>
+        <name>caseReport_ActionForPlaceholder</name> 
+    </customLabels>
+    <customLabels>
+        <label>ledereen (of selecteer voor wie)</label>
+        <name>caseReport_VisibilityForPlaceholder</name> 
+    </customLabels>
+    <customLabels>
+        <label>Hoofdlocatie</label>
+        <name>general_MainLocationName</name>
+    </customLabels>
+    <customLabels>
+        <label>Case aannemen?</label>
+        <name>caseProgressIndicator_AssignCase</name>
+    </customLabels>
+    <customLabels>
+        <label>Bevestiging Case Afronden</label>
+        <name>caseProgressIndicator_ConfirmClose</name>
+    </customLabels>
+    <customLabels>
+        <label>Jij bent niet de Case eigenaar, wil jij eigenaar zijn van deze Case?</label>
+        <name>caseProgressIndicator_NotCaseOwner</name>
+    </customLabels>
+    <customLabels>
+        <label>Casestatus kan niet worden gewijzigd omdat deze automatisch wordt gesloten</label>
+        <name>caseProgressIndicator_CaseAutomaticallyClosed</name>
+    </customLabels>
+    <customLabels>
+        <label>Maak nieuwe Case</label>
+        <name>case_CreateEmptyCase</name>
+    </customLabels>
+    <customLabels>
+        <label>Feedbackformulier</label>
+        <name>feedbackForm</name>
+    </customLabels>
+    <customLabels>
+        <label>Wat is het probleem?</label>
+        <name>feedbackForm_WhatIsTheProblem</name>
+    </customLabels>
+    <customLabels>
+        <label>Kunt u een URL-link toevoegen?</label>
+        <name>feedbackForm_UrlLink</name>
+    </customLabels>
+    <customLabels>
+        <label>Wat zijn de stappen om deze bug te reproduceren?</label>
+        <name>feedbackForm_StepsToReproduce</name>
+    </customLabels>
+    <customLabels>
+        <label>Wat had je verwacht?</label>
+        <name>feedbackForm_Expected</name>
+    </customLabels>
+    <customLabels>
+        <label>Wat is er eigenlijk gebeurd?</label>
+        <name>feedbackForm_Happened</name>
+    </customLabels>
+    <customLabels>
+        <label>Hoe groot is dit probleem voor u of uw organisatie?</label>
+        <name>feedbackForm_Problem</name>
+    </customLabels>
+    <customLabels>
+        <label>Afbeelding bijvoegen</label>
+        <name>feedbackForm_AttachImage</name>
+    </customLabels>
+    <customLabels>
+        <label>Opslaan &amp; Sluiten</label>
+        <name>general_SaveAndClose</name>
+    </customLabels>
+    <customLabels>
+        <label>Er is geen melding geselecteerd, kan je deze selecteren?</label>
+        <name>modal_NoEvent</name>
+    </customLabels>
+    <customLabels>
+        <label>Selecteer melding</label>
+        <name>modal_SelectEvent</name>
+    </customLabels>
+    <customLabels>
+        <label>Type melding</label>
+        <name>modal_EventName</name>
+    </customLabels>
+    <customLabels>
+        <label>Ja</label>
+        <name>general_Yes</name> 
+    </customLabels>
+    <customLabels>
+        <label>Nee</label>
+        <name>general_No</name> 
+    </customLabels>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>ActivateClient</name>
+            </choices>
+            <choices>
+                <name>ArchiveClient</name>
+            </choices>
+            <choices>
+                <name>ContinueOnboarding</name>
+            </choices>
+            <screens>
+                <fields>
+                    <name>ClientOnboardingActionChoice</name>
+                </fields>
+                <name>ClientOnboardingAction</name>
+            </screens>
+        </flows>
+        <fullName>Syntilio__Activate_or_Archive_Client</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>CallPatient</name>
+                </fields>
+                <name>Call_Patient</name>
+            </screens>
+        </flows>
+        <fullName>Syntilio__Call_Patient</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__Case_Assignment_Notification</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__Close_All_Cases</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__Close_Case</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__Create_A_Manual_Task</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>IntakeCaseExistsMessage</name>
+                </fields>
+                <name>IntakeCaseExistsScreen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>RedirectToRecordDetails</name>
+                </fields>
+                <name>RedirectCreatedIntakeCase</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>recordId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>RedirectIntakeCase</name>
+                </fields>
+                <name>RedirectToIntakeCase</name>
+            </screens>
+        </flows>
+        <fullName>Syntilio__Create_Intake_Case_And_Redirect</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__Create_Update_Case</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>AtionOutputDpText</name>
+                </fields>
+                <name>ActionOutputScreen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>DpText</name>
+                </fields>
+                <fields>
+                    <name>endDateMessageLater</name>
+                </fields>
+                <fields>
+                    <name>endDateMessageToday</name>
+                </fields>
+                <fields>
+                    <name>ordersEndDate</name>
+                </fields>
+                <name>Deactivate_Client_Screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>No_Subscription</name>
+                </fields>
+                <name>No_Activation</name>
+            </screens>
+        </flows>
+        <fullName>Syntilio__Deactivate_Client</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__Event_Handler</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__Log_Exception</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__Onboarding_Email_Notification</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <customErrorMessages>
+                <developerName>X0_3</developerName>
+            </customErrorMessages>
+        </flows>
+        <fullName>Syntilio__One_Main_Group_Validation</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__ParentAsset_Handler</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__Queue_RecordType_Case_Owner_Assignments</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>ContactGroupComp</name>
+                </fields>
+                <fields>
+                    <name>SelectionWarning</name>
+                </fields>
+                <name>ContactsInGroup</name>
+            </screens>
+        </flows>
+        <fullName>Syntilio__Shared_Device_Contact_Group</fullName>
+    </flowDefinitions>
+    <!-- <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>GetSelectedQuestionIdsAndanswerValues</name>
+                </fields>
+                <name>Questions_Contianer</name>
+            </screens>
+        </flows>
+        <fullName>Syntilio__Show_Questionnaire_Questions_and_Create_Protocol_Results</fullName>
+    </flowDefinitions> -->
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__Update_Case_Status_When_Case_Is_Picked</fullName>
+    </flowDefinitions>
+    <quickActions>
+        <label><!-- Guest Community Case --></label>
+        <name>GuestCommunityCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Log a Call --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewAccount --></label>
+        <name>NewAccount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Case --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Community Case --></label>
+        <name>NewCommunityCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewContact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewEvent --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewGroup --></label>
+        <name>NewGroup</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewLead --></label>
+        <name>NewLead</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewNote --></label>
+        <name>NewNote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewOpportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Task --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <reportTypes>
+        <description><!-- Cases en Rapportages --></description>
+        <label><!-- Cases en Rapportages --></label>
+        <name>Cases_with_Reports</name>
+        <sections>
+            <label><!-- Cases --></label>
+            <name>Cases</name>
+        </sections>
+        <sections>
+            <label><!-- Rapportages --></label>
+            <name>Rapportages</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cases en Reports --></description>
+        <label><!-- Cases en Reports --></label>
+        <name>Cases_with_Reports</name>
+        <sections>
+            <label><!-- Cases --></label>
+            <name>Cases</name>
+        </sections>
+        <sections>
+            <label><!-- Report Fields --></label>
+            <name>Report Fields</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cases with Events --></description>
+        <label><!-- Cases with Events --></label>
+        <name>Cases_with_Events</name>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
+            <label><!-- Cases --></label>
+            <name>Cases</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Clients with Client Information --></description>
+        <label><!-- Clients with Client Information --></label>
+        <name>Clients_with_Client_Information</name>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- External IDs --></label>
+            <name>External IDs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contracts, Order and Order Products --></description>
+        <label><!-- Contracts, Order and Order Products --></label>
+        <name>Contracts_with_Order_Products</name>
+        <sections>
+            <label><!-- Contracts --></label>
+            <name>Contracts</name>
+        </sections>
+        <sections>
+            <label><!-- Order Products --></label>
+            <name>Order Products</name>
+        </sections>
+        <sections>
+            <label><!-- Orders --></label>
+            <name>Orders</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Service Contracts with Contract Line Items --></description>
+        <label><!-- Service Contracts with Contract Line Items --></label>
+        <name>Service_Contracts_with_Contract_Line_Items</name>
+        <sections>
+            <label><!-- Contract Line Items --></label>
+            <name>Contract Line Items</name>
+        </sections>
+        <sections>
+            <label><!-- Service Contracts --></label>
+            <name>Service Contracts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Service Contracts with Entitlements --></description>
+        <label><!-- Service Contracts with Entitlements --></label>
+        <name>Service_Contracts_with_Entitlements</name>
+        <sections>
+            <label><!-- Entitlements --></label>
+            <name>Entitlements</name>
+        </sections>
+        <sections>
+            <label><!-- Service Contracts --></label>
+            <name>Service Contracts</name>
+        </sections>
+    </reportTypes>
+</Translations>

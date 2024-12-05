@@ -1,0 +1,42 @@
+.card-container {
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.icon-style {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.2rem;
+    --sds-c-icon-color-foreground-default: black;
+}
+
+.warning {
+    background-color: #fec572;
+}
+
+.error {
+    background-color: #fe4d4f;
+}
+
+.success {
+    background-color: #459e5d;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    padding-top: 0.3rem;
+    border-radius: 3rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.7rem;
+}
+/* 
+:host {
+    --sds-c-card-color-background: #fec572;
+} */

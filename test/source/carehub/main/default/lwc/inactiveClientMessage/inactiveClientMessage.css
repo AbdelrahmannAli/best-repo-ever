@@ -1,0 +1,13 @@
+.messageStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+:host {
+    --slds-c-card-header-spacing-block-end: 0px;
+    --slds-c-card-header-spacing-block-start: 0px;
+    --sds-c-card-color-background: #ba0517;
+}

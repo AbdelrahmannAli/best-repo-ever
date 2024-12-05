@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExternalSystemIsRequired</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISBLANK( Id__c )), ISBLANK( ExternalSystemId__c  ))</errorConditionFormula>
+    <errorDisplayField>ExternalSystemId__c</errorDisplayField>
+    <errorMessage>Ensure the External System for the External ID is filled in.</errorMessage>
+</ValidationRule>

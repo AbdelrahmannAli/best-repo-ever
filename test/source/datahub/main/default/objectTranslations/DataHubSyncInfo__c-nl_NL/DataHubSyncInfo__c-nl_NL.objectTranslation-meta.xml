@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value></value>
+    </caseValues>
+    <gender></gender>
+    <nameFieldLabel></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Het veld Externe systemen moet minimaal 1 ApiName bevatten en de indeling &quot;Systeem1,Systeem2,Systeem3 hebben&quot;</errorMessage>
+        <name>ExternalSystemsInvalid</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Frequentie is een verplicht veld. Vul dit in om het record te kunnen opslaan.</errorMessage>
+        <name>FrequencyNotFilledIn</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Objectnaam is een verplicht veld. Vul dit in om de record te kunnen opslaan.</errorMessage>
+        <name>ObjectNameNotFilledIn</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Synchronisatiemodus is een verplicht veld. Vul dit in om de record te kunnen opslaan.</errorMessage>
+        <name>SyncModeNotFilledIn</name>
+    </validationRules>
+</CustomObjectTranslation>

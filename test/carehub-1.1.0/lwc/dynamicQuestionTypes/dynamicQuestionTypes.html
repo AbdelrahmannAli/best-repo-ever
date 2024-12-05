@@ -1,0 +1,18 @@
+<template>
+  <template if:true={isText}>
+    <lightning-input required={required} type="text" name="text" label={label} onchange={handleChange}></lightning-input>
+  </template>
+  <template if:true={isRadio}>
+    <lightning-radio-group name={radioName} label={label} options={options} onchange={handleChange}
+      type="radio" required={required}>
+    </lightning-radio-group>
+  </template>
+  <template if:true={isSlider}>
+    <lightning-slider class={className} name="slider" label={label} value="0" min={sliderMin} max={sliderMax}
+      onchange={handleChange}></lightning-slider>
+  </template>
+  <template if:true={isPicklist}>
+    <lightning-combobox name="combobox" label={label} value={value} placeholder="Select Data" options={options}
+      onchange={handleChange} required={required}></lightning-combobox>
+  </template>
+</template>

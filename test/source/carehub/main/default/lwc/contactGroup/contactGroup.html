@@ -1,0 +1,19 @@
+<template>
+        <lightning-card title={labels.contactGroup_ContactWithinSameGroup} icon-name="standard:contact">
+            <div class="slds-m-around_medium">
+                <lightning-layout multiple-rows="true">
+                    <lightning-layout-item size="11">
+                        <template for:each={contacts} for:item="contact">
+                            <div key={contact.Id} class="slds-form-element">
+                                <label class="slds-radio">
+                                    <input type="radio" name="contactRadio" onchange={handleContactSelection} data-contact-id={contact.Syntilio__ContactId__c} checked={contact.isSelected} />
+                                    <span class="slds-radio_faux"></span>
+                                    <span class="slds-form-element__label">{contact.Syntilio__ContactId__r.Name}</span>
+                                </label>
+                            </div>
+                        </template>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </div>
+    </lightning-card>
+</template>

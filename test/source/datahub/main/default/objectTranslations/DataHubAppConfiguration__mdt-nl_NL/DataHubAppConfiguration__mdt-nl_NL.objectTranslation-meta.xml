@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value></value>
+    </caseValues>
+    <gender></gender>
+    <validationRules>
+        <errorMessage>Omgevingstype is een verplicht veld. Vul dit in om het record te kunnen opslaan.</errorMessage>
+        <name>EnvironmentTypeIsMissing</name>
+    </validationRules>
+</CustomObjectTranslation>

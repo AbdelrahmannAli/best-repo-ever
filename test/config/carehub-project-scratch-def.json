@@ -1,0 +1,54 @@
+{
+  "orgName": "Syntilio",
+  "edition": "Developer",
+  "features": [
+    "EnableSetPasswordInApi",
+    "ServiceCloud",
+    "ContactsToMultipleAccounts",
+    "DebugApex",
+    "SalesforceIdentityForCommunities",
+    "GuidanceHubAllowed",
+    "Communities",
+    "FlowSites",
+    "Knowledge",
+    "Sites"
+  ],
+  "namespace": "Syntilio",
+  "language": "en_US",
+  "settings": {
+    "orderSettings": {
+      "enableOrders": true,
+      "enableOptionalPricebook": true,
+      "enableOrderEvents": true
+    },
+    "experienceBundleSettings": {
+      "enableExperienceBundleMetadata": true
+    },
+    "communitiesSettings": {
+      "enableNetworksEnabled": true 
+    },
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    },
+    "omniChannelSettings": {
+      "enableOmniChannel": true,
+      "enableOmniSkillsRouting": true
+    },
+    "pathAssistantSettings": {
+      "pathAssistantEnabled": true
+    },
+    "enhancedNotesSettings": {
+      "enableEnhancedNotes": true
+    },
+    "languageSettings": {
+      "enableTranslationWorkbench": true
+    },
+    "accountSettings": {
+      "enableRelateContactToMultipleAccounts": true,
+      "enableAccountTeams": true
+    }
+  }
+}

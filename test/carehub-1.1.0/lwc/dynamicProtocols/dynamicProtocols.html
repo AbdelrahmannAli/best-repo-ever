@@ -1,0 +1,47 @@
+<template>
+  <template if:true={showProtocolOptions}>
+    <section>
+      <div class="protocolsBorder">
+        <p class="availableProtocols">Available Protocols ({protocolOptions.length})</p>
+        <template for:each={protocolOptions} for:item="option">
+          <div key={option.value} class="protocolLayout">
+            <div class="protocolDiv">
+              <figure style="margin-right: 1rem;">
+                <template if:true={option.Image}>
+                  <img src={option.Image} class="image">
+              </template>
+              <template if:false={option.Image}>
+                  <lightning-icon icon-name="utility:edit_form" variant="brand" size = "large" class="defaultIcon"></lightning-icon>
+              </template>
+              </figure>
+              <div style="flex-grow: 1;">
+                <p class="labelColor">{option.label}</p>
+                <p class="fontColor">{option.Description}</p>
+                <template if:true={option.Time}>
+                  <p class="fontColor">Estimated Time : {option.Time} minutes</p>
+                </template>
+              </div>
+            </div>
+            <lightning-button
+              data-name={option.value}
+              label="Start"
+              variant="brand"
+              onclick={handleProtocolChange}
+              class="startButton"
+              ></lightning-button>
+          </div>
+        </template>
+      </div>
+    </section>
+    
+  </template>
+  <template if:true={showFlow}>
+    <lightning-flow
+      flow-api-name={flowApiName}
+      onstatuschange={handleFlowStatusChange}
+      flow-input-variables={inputVariables}
+      flow-finish-behavior="NONE"
+    >
+    </lightning-flow>
+  </template>
+</template>

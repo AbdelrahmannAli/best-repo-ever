@@ -1,0 +1,5 @@
+<apex:page standardController="Case"
+           extensions="PatientObservationsCalloutExtension"
+           action="{!makePatientObservationsCallout}">
+    <apex:pageMessages />
+</apex:page>

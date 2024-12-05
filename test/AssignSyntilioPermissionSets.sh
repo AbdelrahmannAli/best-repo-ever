@@ -1,0 +1,1 @@
+sf apex run  --apexcodefile ./data/AssignPermissionSets.apex

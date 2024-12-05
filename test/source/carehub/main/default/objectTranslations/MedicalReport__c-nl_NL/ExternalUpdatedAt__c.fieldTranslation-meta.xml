@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Dit is de laatst geupdate datum/tijd vanuit het ECD</help>
+    <label>Extern Bijgewerkt Op</label>
+    <name>ExternalUpdatedAt__c</name>
+</CustomFieldTranslation>

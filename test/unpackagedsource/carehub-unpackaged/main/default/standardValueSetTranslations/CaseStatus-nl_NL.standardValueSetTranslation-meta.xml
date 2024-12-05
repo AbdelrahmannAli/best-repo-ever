@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Auto Closed</masterLabel>
+        <translation>Automatisch gesloten</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed</masterLabel>
+        <translation>Gesloten</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed By Device</masterLabel>
+        <translation>Gesloten door apparaat</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Escalated</masterLabel>
+        <translation>Geëscaleerd</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>New</masterLabel>
+        <translation>Nieuw</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Working</masterLabel>
+        <translation>In behandeling</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

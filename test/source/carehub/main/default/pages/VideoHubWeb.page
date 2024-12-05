@@ -1,0 +1,19 @@
+<apex:page standardController="Case" extensions="VideoHubRedirectController">
+    <apex:includeScript value="/support/console/59.0/integration.js"/>
+    <script type="text/javascript">
+    var redirectURL = "{!redirectURL}";
+    if (!redirectURL) {
+        alert('Client is not eligible for video calling');
+    } else {
+        //window.location.href = redirectURL;
+        window.open(redirectURL, "_blank");
+        if (sforce.console.isInConsole()) {
+            sforce.console.getEnclosingTabId(function(result) {
+                sforce.console.closeTab(result.id);
+            });
+        }
+    }
+    
+    
+    </script>
+</apex:page>

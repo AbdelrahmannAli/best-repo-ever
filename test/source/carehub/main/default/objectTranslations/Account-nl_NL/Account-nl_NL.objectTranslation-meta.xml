@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <label>Bedrijf</label>
+        <name>Business</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Vertegenwoordigt een Zorgorganisatie</description>
+        <label>Zorgorganisatie</label>
+        <name>CareOrganisation</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Cliënt</label>
+        <name>Client</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExternalSystemsInvalid</fullName>
+    <active>false</active>
+    <description>External Systems field must contain at least 1 ApiName and should be of format &quot;System1,System2,System3&quot;</description>
+    <errorConditionFormula>ISBLANK(ExternalSystems__c) || NOT(REGEX(ExternalSystems__c, &quot;^[^,]+(?:,[^,]+)*$&quot;))</errorConditionFormula>
+    <errorMessage>External Systems field must contain at least 1 ApiName and should be of format &quot;System1,System2,System3&quot;</errorMessage>
+</ValidationRule>

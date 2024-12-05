@@ -1,0 +1,79 @@
+<template>
+  <div class="component-container">
+    <div if:true={isLoading} class="div-text">
+      <lightning-spinner alternative-text="Loading" size="medium" style="margin: 0 auto;"></lightning-spinner>
+    </div>
+    <template if:false={showCareCircleMembers}>
+      <div class="divTemplate" style="display: flex; align-items:center;">
+        <div style="flex-grow: 1; text-align: right;">
+          <lightning-button-icon icon-name="utility:refresh" variant="brand" onclick={handleButtonClick}
+            style="float: right;"></lightning-button-icon>
+        </div>
+      </div>
+      <div class="center-content">
+        <div class="error-icon">
+            <lightning-icon icon-name="utility:cases" alternative-text="Error Icon" size="medium"  class="custom-icon-color"></lightning-icon>
+        </div>
+        <div class="no-mem-message">
+            {labels.careCircle_NoCareCircleMembers}
+        </div>
+      </div>
+    </template>
+    <template if:true={showCareCircleMembers}>
+      <div style="padding-bottom: 0.6rem;">
+        <template for:each={filterButtons} for:item="button">
+          <button key={button.label} data-name={button.name} class={button.class} onclick={handleButtonSelection}>
+            {button.label}
+          </button>
+        </template>
+        <lightning-button-icon icon-name="utility:refresh" variant="brand" onclick={handleButtonClick}
+          style="float: right;"></lightning-button-icon>
+          <template if:false={isChatDisabled}>
+          <lightning-button-icon icon-name="utility:chat" 
+          onclick={handleChatClick}
+          class="chat-button"
+          variant="brand" 
+          style="float: right;"></lightning-button-icon>
+        </template>
+      </div>
+
+      <div class="card-container">
+        <template for:each={careCircleMembers} for:item="careCircleMember">
+          <div class="card" key={careCircleMember.Id}>
+            <div class="left-section">
+              <lightning-icon icon-name="utility:profile_alt" alternative-text="User Icon" size="large"></lightning-icon>
+              <a href="javascript:void(0);" class="name" onclick={handleNameClick} data-id={careCircleMember.ContactId}>
+                {careCircleMember.Relationship}
+              </a>
+            </div>
+            <div class="right-section">
+              <a href="javascript:void(0);" class="name" onclick={handleNameClick} data-id={careCircleMember.ContactId}>
+                  {careCircleMember.Name}
+              </a>
+              <template if:true={careCircleMember.Phone}>
+                <lightning-click-to-dial record-id={careCircleMember.Id}
+                value={careCircleMember.Phone}></lightning-click-to-dial>
+              </template>
+              <template if:false={careCircleMember.Phone}>
+                <p>No Phone Number</p>
+              </template>
+              <template if:true={careCircleMember.Email}>
+                <a href="javascript:void(0);" onclick={handleRowAction} data-email={careCircleMember.Email}>
+                    {careCircleMember.Email}
+                </a>
+              </template>
+              <template if:false={careCircleMember.Email}>
+                <p>No Email</p>
+              </template>
+            </div>
+            <template if:true={careCircleMember.index}>
+              <div class="index-circle">
+                <span>{careCircleMember.index}</span>
+              </div>
+            </template>
+          </div>
+        </template>
+      </div>
+    </template>
+  </div>
+</template>

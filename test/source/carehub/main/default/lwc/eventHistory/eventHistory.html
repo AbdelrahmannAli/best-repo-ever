@@ -1,0 +1,24 @@
+<template>
+	<div if:true={loading} style="position: relative">
+		<lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+	</div>
+	<div class="wrapper">
+		<div if:false={loading} class="select-row">
+			<lightning-combobox
+				name="event"
+				value={selectedEventCode}
+				options={options}
+				onchange={handleChangeSelectedEvent}
+			>
+			</lightning-combobox>
+			<lightning-combobox
+				name="view"
+				value={selectedView}
+				options={viewOptions}
+				onchange={handleChangeSelectedView}
+			>
+			</lightning-combobox>
+		</div>
+		<canvas lwc:dom="manual" class="chart" data-id="chart"></canvas>
+	</div>
+</template>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OneGroupTypeOnly</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISBLANK(GroupId__c)),
+NOT(ISBLANK(ContactId__c)),
+NOT(ISBLANK(EventConfigurationId__c))
+)</errorConditionFormula>
+    <errorMessage>Please select either Contact Name or Event Configuration Name, but not both.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,279 @@
+<template>
+  <template if:true={showComponent}>
+    <template if:true={isLoading}>
+      <lightning-spinner
+        alternative-text="Loading"
+        size="small"
+      ></lightning-spinner>
+    </template>
+    <div
+      class="relatedListHeader slds-box slds-theme_shade slds-is-relative slds-tabs_card slds-page-header"
+    >
+      <div class="title__relatedListHeader">
+        <lightning-icon
+          size="x-small"
+          icon-name="utility:product"
+          alternative-text="Product"
+          title="Product"
+        ></lightning-icon>
+        <p
+          class="title__relatedListHeader slds-m-right--xx-small slds-card__header-link slds-card__header-title slds-truncate"
+        >
+          {labels.general_Subscriptions}
+        </p>
+      </div>
+      <template if:true={isContact}>
+        <div class="slds-grid slds-gutters slds-grid_align-end">
+          <div class="slds-col">
+            <lightning-button
+              label={labels.general_Update}
+              title="Non-primary action"
+              onclick={handleUpdateModalOpen}
+            ></lightning-button>
+          </div>
+          <div class="slds-col">
+            <lightning-button
+              label={labels.general_New}
+              title="Non-primary action"
+              onclick={handleModalOpen}
+              class="slds-m-left_x-small"
+            ></lightning-button>
+          </div>
+        </div>
+      </template>
+    </div>
+    <c-subscriptions-history
+      class="slds-m-top_small"
+      get-value-from-parent={recordId}
+    ></c-subscriptions-history>
+    <template if:true={isModalOpen}>
+      <section
+        role="dialog"
+        tabindex="-1"
+        aria-modal="true"
+        aria-labelledby="modal-heading-01"
+        class="slds-modal slds-fade-in-open"
+      >
+        <div class="slds-modal__container modal-width">
+          <button
+            class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+            title={labels.general_Close}
+            onclick={handleModalClose}
+          >
+            <lightning-icon
+              icon-name="utility:close"
+              alternative-text="close"
+              variant="inverse"
+              size="small"
+            ></lightning-icon>
+            <span class="slds-assistive-text">{labels.general_Close}</span>
+          </button>
+          <div class="slds-modal__header">
+            <h1
+              if:false={isUpdate}
+              id="modal-heading-01"
+              class="slds-modal__title slds-hyphenate"
+            >
+              {labels.changeSubscription_NewOrder}
+            </h1>
+            <h1
+              if:true={isUpdate}
+              id="modal-heading-02"
+              class="slds-modal__title slds-hyphenate"
+            >
+              {labels.changeSubscription_UpdateOrder}
+            </h1>
+          </div>
+          <div
+            class="slds-modal__content slds-p-around_medium"
+            id="modal-content-id-1"
+          >
+            <div if:true={selectOrderStep}>
+              <lightning-combobox
+                name="Order"
+                label={labels.general_Order2}
+                options={ordersOptions}
+                placeholder={labels.changeSubscription_SelectOrder}
+                required
+                value={selectedOrder}
+                onchange={handleOrderChange}
+              ></lightning-combobox>
+              <div if:true={isSelectedOrder} class="slds-p-top_medium">
+                <div if:true={loadingOrderChange} class="loading-order-change">
+                  <lightning-spinner
+                    class="spinner-styling"
+                    alternative-text="Loading"
+                    variant="brand"
+                    size="x-small"
+                  ></lightning-spinner>
+                </div>
+                <div if:false={loadingOrderChange}>
+                  <lightning-progress-indicator
+                    if:false={isOrderNotDraft}
+                    current-step={order.Status}
+                    type="path"
+                    variant="base"
+                  >
+                    <template for:each={selectedOrderSteps} for:item="step">
+                      <lightning-progress-step
+                        label={step.label}
+                        value={step.value}
+                        key={step.label}
+                        onstepfocus={handleStatusChange}
+                      ></lightning-progress-step>
+                    </template>
+                  </lightning-progress-indicator>
+                  <b class="slds-p-top_medium">{endDateMessage}</b>
+                  <lightning-input
+                    id="selectedEndDate"
+                    if:true={showEndDateInput}
+                    label={labels.general_EndDate}
+                    type="date"
+                    name="selectedEndDate"
+                    value={selectedEndDate}
+                    onchange={handleChange}
+                  >
+                  </lightning-input>
+                </div>
+              </div>
+            </div>
+
+            <div if:true={orderInfoStep}>
+              <lightning-combobox
+                id="orderPricebook"
+                name="Pricebook"
+                label={labels.general_PriceBook}
+                options={pricebooksOptions}
+                placeholder="Select Price Book"
+                required
+                value={order.Pricebook2Id}
+                onchange={handleChange}
+              ></lightning-combobox>
+              <lightning-input
+                id="orderStartDate"
+                label={labels.general_StartDate}
+                required
+                type="date"
+                name="orderStartDate"
+                value={order.EffectiveDate}
+                onchange={handleChange}
+              >
+              </lightning-input>
+              <lightning-input
+                id="orderEndDate"
+                label={labels.general_EndDate}
+                type="date"
+                name="orderEndDate"
+                value={order.EndDate}
+                onchange={handleChange}
+              >
+              </lightning-input>
+              <div class="label-container">
+                <label class="slds-text-title" for="activationReminder">
+                  {labels.general_ActivationReminder}
+                  <lightning-helptext
+                    class="helptext"
+                    alternative-text="First Name"
+                    content={labels.changeSubscription_OptionalReminderXDays}
+                  >
+                  </lightning-helptext>
+                </label>
+                <lightning-input
+                  id="orderActivationReminder"
+                  variant="label-hidden"
+                  label={labels.general_ActivationReminder}
+                  type="number"
+                  name="activationReminder"
+                  value={order.Syntilio__ActivationReminder__c}
+                  onchange={handleChange}
+                >
+                </lightning-input>
+              </div>
+            </div>
+
+            <div if:true={selectProductsStep} class="custom-datatable">
+              <lightning-datatable
+                key-field="Id"
+                data={productsList}
+                columns={productsColumns}
+                selected-rows={selectedProductIds}
+                onrowselection={handleProductSelection}
+              >
+              </lightning-datatable>
+            </div>
+
+            <div if:true={editOrderProductsStep} class="custom-datatable">
+              <lightning-datatable
+                key-field="Product2Id"
+                data={orderProducts}
+                columns={orderProductsColumns}
+                hide-checkbox-column
+                oncellchange={handleOrderProductsChange}
+              >
+              </lightning-datatable>
+            </div>
+          </div>
+          <div class="slds-modal__footer">
+            <div class="slds-grid slds-gutters slds-grid_align-spread">
+              <div class="slds-col slds-size_1-of-6 back-button-col">
+                <lightning-button
+                  label={backButtonText}
+                  onclick={handleBack}
+                ></lightning-button>
+              </div>
+              <div class="slds-col slds-size_4-of-6 slds-align-middle">
+                <lightning-progress-indicator
+                  current-step={step}
+                  type="base"
+                  variant="base"
+                >
+                  <template for:each={steps} for:item="step">
+                    <lightning-progress-step
+                      label={step.label}
+                      value={step.value}
+                      key={step.label}
+                    ></lightning-progress-step>
+                  </template>
+                </lightning-progress-indicator>
+              </div>
+              <div class="slds-col slds-size_1-of-6 next-button-col">
+                <div if:true={statusChanged} class="next-button-container">
+                  <lightning-button
+                    if:false={nextButtonLoading}
+                    label={labels.general_Submit}
+                    onclick={handleSubmitStatus}
+                    class="slds-m-around--small"
+                    variant="brand"
+                  ></lightning-button>
+                  <lightning-spinner
+                    if:true={nextButtonLoading}
+                    class="spinner-styling"
+                    alternative-text="Loading"
+                    variant="brand"
+                    size="x-small"
+                  ></lightning-spinner>
+                </div>
+                <div if:false={statusChanged} class="next-button-container">
+                  <lightning-button
+                    if:false={nextButtonLoading}
+                    disabled={isOrderNotDraft}
+                    label={nextButtonText}
+                    onclick={handleNext}
+                    variant="brand"
+                  ></lightning-button>
+                  <lightning-spinner
+                    if:true={nextButtonLoading}
+                    class="spinner-styling"
+                    alternative-text="Loading"
+                    variant="brand"
+                    size="x-small"
+                  ></lightning-spinner>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template> </template
+></template>

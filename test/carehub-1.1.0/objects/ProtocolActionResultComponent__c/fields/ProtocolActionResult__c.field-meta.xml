@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProtocolActionResult__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Action Result Name</label>
+    <referenceTo>ProtocolActionResult__c</referenceTo>
+    <relationshipLabel>Action Result Components</relationshipLabel>
+    <relationshipName>ActionResultComponents</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

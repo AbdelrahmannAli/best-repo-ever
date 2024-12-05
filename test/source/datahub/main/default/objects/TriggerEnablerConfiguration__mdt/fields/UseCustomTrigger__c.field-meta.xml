@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UseCustomTrigger__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>This field specifies whether to use a custom trigger or the standard Syntilio trigger</inlineHelpText>
+    <label>Use Custom Trigger</label>
+    <type>Checkbox</type>
+</CustomField>

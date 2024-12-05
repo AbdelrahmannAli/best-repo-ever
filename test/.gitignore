@@ -38,8 +38,21 @@ $RECYCLE.BIN/
 
 # Local environment variables
 .env
+.DS_Store
 
-# Python Salesforce Functions
-**/__pycache__/
-**/.venv/
-**/venv/
+**/**HealthCloudGA**
+.DS_Store
+**/appMenus/**
+
+.vscode/settings.json
+
+digicontactsource/objects/OrderItem/fields/RemainingMinutes__c.field-meta.xml
+
+migration/debug/*
+migration/destinationorg/data/*
+migration/destinationorg/describe/*
+migration/errors/*
+migration/sourceorg/data/*
+migration/sourceorg/describe/*
+
+dynamicprotocols/dist

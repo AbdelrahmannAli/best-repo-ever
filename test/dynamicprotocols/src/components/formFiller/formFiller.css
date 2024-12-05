@@ -1,0 +1,141 @@
+.formStyle .sd-root-modern.sd-root-modern--full-container {
+	--primary: #653189 !important;
+	/* height: 100% !important; */
+}
+
+/* .formStyle .sd-progress {
+	position: fixed !important;
+	bottom: 2.5rem !important;
+	z-index: 1000 !important;
+	left: 10rem !important;
+	right: 10rem !important;
+} */
+
+.formStyle .sd-progress__text {
+	display: flex !important;
+	justify-content: center !important;
+	font-size: 0.75rem !important;
+	text-align: center !important;
+}
+
+.formStyle .sd-progress__bar {
+	height: 0.3rem !important;
+}
+
+.formStyle .sd-question__header--location-top {
+	padding-bottom: calc(var(--sd-base-vertical-padding)) !important;
+}
+
+.formStyle .sd-question__content {
+	padding-bottom: 0.5rem !important;
+}
+
+.formStyle .sd-boolean__thumb {
+	background-color: var(--primary) !important;
+	color: white !important;
+}
+
+.formStyle .sd-page {
+	height: 15rem !important;
+	overflow-y: auto !important;
+	overflow-x: hidden !important;
+	margin-top: 1rem !important;
+	padding: 0.2rem !important;
+}
+
+.formStyle .sd-body.sd-body--static {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	position: relative !important;
+}
+
+.formStyle .sd-body__navigation.sd-action-bar {
+	gap: 0 !important;
+}
+
+.formStyle .sd-action-bar .sd-footer .sd-body__navigation {
+	display: flex !important;
+	justify-content: space-between;
+}
+
+.formStyle .sv-action#sv-nav-next {
+	display: flex !important;
+	justify-content: end !important;
+}
+
+.formStyle .sv-action#sv-nav-preview {
+	display: flex !important;
+	justify-content: end !important;
+}
+
+.formStyle .sv-action#sv-nav-start {
+	display: flex !important;
+	justify-content: end !important;
+}
+
+.formStyle .sv-action#sv-nav-complete {
+	display: flex !important;
+	justify-content: end !important;
+}
+
+.formStyle .sv-action#sv-nav-prev {
+	justify-content: start !important;
+	display: flex !important;
+}
+
+.formStyle .sd-body__navigation .sv-action .sd-btn {
+	width: 6rem !important;
+}
+
+.formStyle .sd-body.sd-body--static {
+	max-width: 100% !important;
+}
+
+.formStyle .sd-body__navigation {
+	padding-top: 1rem !important;
+}
+
+.formStyle .sd-footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formStyle .sd-selectbase {
+	display: flex !important;
+	flex-wrap: wrap !important;
+}
+
+.formStyle .sd-selectbase .sd-item {
+	width: 10rem !important;
+}
+
+.formStyle .sd-btn {
+	padding-top: 0.33rem !important;
+	padding-bottom: 0.33rem !important;
+	padding-right: 1.2rem !important;
+	padding-left: 1.2rem !important;
+	font-size: 0.75rem !important;
+	font-weight: 600 !important;
+}
+
+.formStyle .sd-title .sd-element__title .sd-question__title {
+	display: flex;
+	align-items: center;
+}
+
+.checkboxWrapper input[type="checkbox"] {
+	width: calc(3 * (var(--sjs-base-unit, var(--base-unit, 0.8rem)))) !important;
+	height: calc(3 * (var(--sjs-base-unit, var(--base-unit, 0.8rem)))) !important;
+	border-radius: 0.15em !important;
+	border: 0.15em solid var(--primary) !important;
+	outline: none !important;
+	cursor: pointer !important;
+	margin-bottom: 0 !important;
+	margin-right: 1rem !important;
+	display: flex !important;
+}
+
+.checkboxWrapper input[type="checkbox"]:checked {
+	content: icon !important;
+	accent-color: var(--primary) !important;
+}

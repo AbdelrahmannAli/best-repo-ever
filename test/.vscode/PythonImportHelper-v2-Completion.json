@@ -1,0 +1,406 @@
+[
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "red_text",
+        "kind": 2,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "def red_text(text):\n    red_color = \"\\033[1;31m\"\n    reset_color = \"\\033[0m\"\n    return f\"{red_color}{text}{reset_color}\"\ndef green_text(text):\n    green_color = \"\\033[1;32m\"\n    reset_color = \"\\033[0m\"\n    return f\"{green_color}{text}{reset_color}\"\ndef yellow_text(text):\n    yellow_color = \"\\033[1;33m\"",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "green_text",
+        "kind": 2,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "def green_text(text):\n    green_color = \"\\033[1;32m\"\n    reset_color = \"\\033[0m\"\n    return f\"{green_color}{text}{reset_color}\"\ndef yellow_text(text):\n    yellow_color = \"\\033[1;33m\"\n    reset_color = \"\\033[0m\"\n    return f\"{yellow_color}{text}{reset_color}\"\n# Clear the files inside a given directory\ndef delete_files_in_directory(directory_path):",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "yellow_text",
+        "kind": 2,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "def yellow_text(text):\n    yellow_color = \"\\033[1;33m\"\n    reset_color = \"\\033[0m\"\n    return f\"{yellow_color}{text}{reset_color}\"\n# Clear the files inside a given directory\ndef delete_files_in_directory(directory_path):\n    try:\n        files = os.listdir(directory_path)\n        for file in files:\n            file_path = os.path.join(directory_path, file)",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "delete_files_in_directory",
+        "kind": 2,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "def delete_files_in_directory(directory_path):\n    try:\n        files = os.listdir(directory_path)\n        for file in files:\n            file_path = os.path.join(directory_path, file)\n            if os.path.isfile(file_path):\n                os.remove(file_path)\n        print(f\"All files deleted successfully from {directory_path}.\")\n    except OSError:\n        print(f\"Error occurred while deleting files from {directory_path}.\")",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "ensure_directory_exists",
+        "kind": 2,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "def ensure_directory_exists(directory_path):\n    path = Path(directory_path)\n    if not path.exists():\n        path.mkdir(parents=True, exist_ok=True)\n# Make sure directories are ready before running the script\ndef organize_folders():\n    # Ensure directories exist\n    for folder_path in FOLDERS:\n        ensure_directory_exists(folder_path)\n    # Delete files in directories",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "organize_folders",
+        "kind": 2,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "def organize_folders():\n    # Ensure directories exist\n    for folder_path in FOLDERS:\n        ensure_directory_exists(folder_path)\n    # Delete files in directories\n    for folder_path in FOLDERS:\n        delete_files_in_directory(folder_path)\ndef log_error_in_file(error, file_name):\n    with open(f\"errors/{file_name}.txt\", 'a') as f:\n        f.write(error + \"\\n\")",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "log_error_in_file",
+        "kind": 2,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "def log_error_in_file(error, file_name):\n    with open(f\"errors/{file_name}.txt\", 'a') as f:\n        f.write(error + \"\\n\")\ndef log_debug_in_file(content, file_name):\n    with open(f\"debug/{file_name}.json\", 'w') as f:\n        f.write(content + \"\\n\")\n# Used to print the progress bar\ndef clear_lines(n):\n    for _ in range(n):\n        print(\"\\033[F\\033[K\", end='')",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "log_debug_in_file",
+        "kind": 2,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "def log_debug_in_file(content, file_name):\n    with open(f\"debug/{file_name}.json\", 'w') as f:\n        f.write(content + \"\\n\")\n# Used to print the progress bar\ndef clear_lines(n):\n    for _ in range(n):\n        print(\"\\033[F\\033[K\", end='')\n# Used to print the progress bar\ndef print_progress_bar(iteration, total, prefix = '', suffix = ''):\n    global LAST_PRINTED_LINE",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "clear_lines",
+        "kind": 2,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "def clear_lines(n):\n    for _ in range(n):\n        print(\"\\033[F\\033[K\", end='')\n# Used to print the progress bar\ndef print_progress_bar(iteration, total, prefix = '', suffix = ''):\n    global LAST_PRINTED_LINE\n    terminal_width = shutil.get_terminal_size().columns\n    number_of_lines_to_clear = (len(LAST_PRINTED_LINE) // terminal_width)\n    clear_lines(number_of_lines_to_clear)\n    length = 50",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "print_progress_bar",
+        "kind": 2,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "def print_progress_bar(iteration, total, prefix = '', suffix = ''):\n    global LAST_PRINTED_LINE\n    terminal_width = shutil.get_terminal_size().columns\n    number_of_lines_to_clear = (len(LAST_PRINTED_LINE) // terminal_width)\n    clear_lines(number_of_lines_to_clear)\n    length = 50\n    fill = '█'\n    decimals = 1\n    percent = (\"{0:.\" + str(decimals) + \"f}\").format(100 * (iteration / float(total)))\n    filledLength = int(length * iteration // total)",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "run_command",
+        "kind": 2,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "def run_command(command):\n    try:\n        command_output = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, shell=True)\n        return command_output\n    except:\n        return None\n# Converts an array to map with the key and value defined by the \"key_name\" and \"value_name\" attributes\n# if no \"value_name\" was specified, the value field of the given dict entry will be the object itself\ndef array_to_map(arr, key_name, value_name=None):\n    ids_map = dict({})",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "array_to_map",
+        "kind": 2,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "def array_to_map(arr, key_name, value_name=None):\n    ids_map = dict({})\n    for item in arr:\n        ids_map[item.get(key_name)] = (item.get(value_name) if value_name else item)\n    return ids_map\n# Check if a given field contains a value in any of the given records\ndef has_value_in_records_array(field_name, records_array):\n    for record in records_array:\n        if record.get(field_name):\n            return True",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "has_value_in_records_array",
+        "kind": 2,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "def has_value_in_records_array(field_name, records_array):\n    for record in records_array:\n        if record.get(field_name):\n            return True\n    return False\n# A function used to formulate the key to use in the VALUES_TO_OLD_IDS dict\ndef formulate_key(obj, object_name, isOld):\n    key_arr = []\n    for field in OBJECTS_DICT.get(object_name).keys():\n        field_value = obj.get(field)",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "formulate_key",
+        "kind": 2,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "def formulate_key(obj, object_name, isOld):\n    key_arr = []\n    for field in OBJECTS_DICT.get(object_name).keys():\n        field_value = obj.get(field)\n        # Make sure the field if valid and is \"filterable\" (meaning it can be used in a SOQL query)\n        if(\n            field_value == \"\" \n            or field_value is None \n            or not OBJECTS_DICT.get(object_name).get(field).get(\"filterable\")\n        ):",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "formulate_query",
+        "kind": 2,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "def formulate_query(object_name):\n    query_arr = []\n    for field in OBJECTS_DICT.get(object_name).keys():\n        if not OBJECTS_DICT.get(object_name).get(field).get(\"filterable\"):\n            continue\n        query_arr.append(field)\n    return f\"SELECT Id, {', '.join(query_arr)} FROM {object_name}\"\n# Check if a given record is found inside an array of records\ndef get_record_from_array(records_arr, obj):\n    for record in records_arr:",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "get_record_from_array",
+        "kind": 2,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "def get_record_from_array(records_arr, obj):\n    for record in records_arr:\n        match = True\n        for field in record.keys():\n            if field == \"Id\":\n                continue\n            if record.get(field) != obj.get(field):\n                match = False\n                break\n        if match:",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "insert_or_get_records",
+        "kind": 2,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "def insert_or_get_records(object_name, record_id = None):\n    # Use upsert bulk command to upsert the data into the destination org using a CSV file\n    bulk_upsert_result = run_command(f'sf data upsert bulk --sobject {object_name} --file destinationorg/data/{object_name}.csv --external-id Id --target-org {DESTINATION_ORG} --json --wait 30')\n    if not bulk_upsert_result:\n        return\n    bulk_upsert_result_json = json.loads(bulk_upsert_result.stdout)\n    if(not bulk_upsert_result_json.get(\"result\")\n        or not bulk_upsert_result_json.get(\"result\").get(\"records\")):\n        return\n    successfulResults = bulk_upsert_result_json.get(\"result\").get(\"records\").get(\"successfulResults\")",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "insert_one_record",
+        "kind": 2,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "def insert_one_record(object_name, record_id):\n    record = RECORDS_DICT.get(object_name).get(record_id)\n    fields = OBJECTS_DICT.get(object_name).values()\n    if not record or not fields:\n        return\n    field_row = []\n    values_to_insert = []\n    for field in fields:\n        field_name = field.get(\"name\")\n        if field_name == \"Name\" and record.get(field_name) and record.get(field_name) in record.get(\"Id\"):",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "insert_records",
+        "kind": 2,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "def insert_records(object_name):\n    if object_name in INSERTED_OBJECTS:\n        return\n    references = set(())\n    fields = OBJECTS_DICT.get(object_name)\n    if not fields:\n        INSERTED_OBJECTS.append(object_name)\n        return\n    # Query the records that already exist in the destination org\n    query_records_query = formulate_query(object_name)",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "FOLDERS",
+        "kind": 5,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "FOLDERS = [\"debug\", \"destinationorg\", \"destinationorg/data\", \"destinationorg/describe\", \"errors\", \n            \"sourceorg\", \"sourceorg/data\", \"sourceorg/describe\"]\n# These keywords are used to skip any objects that contain these words (object to lower case .contains)\nBANNED_KEYWORDS = [\"apex\", \"profile\", \"user\", \"permission\", \"prompt\", \"flow\", \"queue\", \n                    \"recentlyviewed\", \"setup\", \"suite\", \"assignment\"]\n# The regex pattern used to match the object name to be skipped or not\nBANNED_PATTERN = f'{\"|\".join(BANNED_KEYWORDS)}'\nSOURCE_ORG = \"\"\nDESTINATION_ORG = \"\"\n# The list of object names to be migrated",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "BANNED_KEYWORDS",
+        "kind": 5,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "BANNED_KEYWORDS = [\"apex\", \"profile\", \"user\", \"permission\", \"prompt\", \"flow\", \"queue\", \n                    \"recentlyviewed\", \"setup\", \"suite\", \"assignment\"]\n# The regex pattern used to match the object name to be skipped or not\nBANNED_PATTERN = f'{\"|\".join(BANNED_KEYWORDS)}'\nSOURCE_ORG = \"\"\nDESTINATION_ORG = \"\"\n# The list of object names to be migrated\nOBJECT_LIST = []\n# A dictionary containing all the objects and there fields with their metadata\n# Example: ",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "BANNED_PATTERN",
+        "kind": 5,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "BANNED_PATTERN = f'{\"|\".join(BANNED_KEYWORDS)}'\nSOURCE_ORG = \"\"\nDESTINATION_ORG = \"\"\n# The list of object names to be migrated\nOBJECT_LIST = []\n# A dictionary containing all the objects and there fields with their metadata\n# Example: \n# {\n#   Account: {\n#       Name: {",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "SOURCE_ORG",
+        "kind": 5,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "SOURCE_ORG = \"\"\nDESTINATION_ORG = \"\"\n# The list of object names to be migrated\nOBJECT_LIST = []\n# A dictionary containing all the objects and there fields with their metadata\n# Example: \n# {\n#   Account: {\n#       Name: {\n#           type: \"Text\",",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "DESTINATION_ORG",
+        "kind": 5,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "DESTINATION_ORG = \"\"\n# The list of object names to be migrated\nOBJECT_LIST = []\n# A dictionary containing all the objects and there fields with their metadata\n# Example: \n# {\n#   Account: {\n#       Name: {\n#           type: \"Text\",\n#           createable: True",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "OBJECT_LIST",
+        "kind": 5,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "OBJECT_LIST = []\n# A dictionary containing all the objects and there fields with their metadata\n# Example: \n# {\n#   Account: {\n#       Name: {\n#           type: \"Text\",\n#           createable: True\n#       }\n#   }",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "OBJECTS_DICT",
+        "kind": 5,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "OBJECTS_DICT = dict({})\n# Dictionaries containing all the objects and their records in the SOURCE/DESTINATION Org respectively\n# Example: \n# {\n#   Account: {\n#       \"SOME_ID\": {\n#           Name: \"Account\"\n#       }\n#   }\n# }",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "RECORDS_DICT",
+        "kind": 5,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "RECORDS_DICT = dict({})\nNEW_RECORDS_DICT = dict({})\n# A list of object names that are migrated\nINSERTED_OBJECTS = []\n# A Dictionary that maps old IDs (IDs from source org) to new IDs (IDs of the same record in the destination org)\nOLD_IDS_TO_NEW_IDS = dict({})\n# A Dictionary that maps a serialized (stringified) version of the record values to its ID in the source org\nVALUES_TO_OLD_IDS = dict({})\n# Used for printing the progress bar\nLAST_PRINTED_LINE = \"\"",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "NEW_RECORDS_DICT",
+        "kind": 5,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "NEW_RECORDS_DICT = dict({})\n# A list of object names that are migrated\nINSERTED_OBJECTS = []\n# A Dictionary that maps old IDs (IDs from source org) to new IDs (IDs of the same record in the destination org)\nOLD_IDS_TO_NEW_IDS = dict({})\n# A Dictionary that maps a serialized (stringified) version of the record values to its ID in the source org\nVALUES_TO_OLD_IDS = dict({})\n# Used for printing the progress bar\nLAST_PRINTED_LINE = \"\"\ndef red_text(text):",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "INSERTED_OBJECTS",
+        "kind": 5,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "INSERTED_OBJECTS = []\n# A Dictionary that maps old IDs (IDs from source org) to new IDs (IDs of the same record in the destination org)\nOLD_IDS_TO_NEW_IDS = dict({})\n# A Dictionary that maps a serialized (stringified) version of the record values to its ID in the source org\nVALUES_TO_OLD_IDS = dict({})\n# Used for printing the progress bar\nLAST_PRINTED_LINE = \"\"\ndef red_text(text):\n    red_color = \"\\033[1;31m\"\n    reset_color = \"\\033[0m\"",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "OLD_IDS_TO_NEW_IDS",
+        "kind": 5,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "OLD_IDS_TO_NEW_IDS = dict({})\n# A Dictionary that maps a serialized (stringified) version of the record values to its ID in the source org\nVALUES_TO_OLD_IDS = dict({})\n# Used for printing the progress bar\nLAST_PRINTED_LINE = \"\"\ndef red_text(text):\n    red_color = \"\\033[1;31m\"\n    reset_color = \"\\033[0m\"\n    return f\"{red_color}{text}{reset_color}\"\ndef green_text(text):",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "VALUES_TO_OLD_IDS",
+        "kind": 5,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "VALUES_TO_OLD_IDS = dict({})\n# Used for printing the progress bar\nLAST_PRINTED_LINE = \"\"\ndef red_text(text):\n    red_color = \"\\033[1;31m\"\n    reset_color = \"\\033[0m\"\n    return f\"{red_color}{text}{reset_color}\"\ndef green_text(text):\n    green_color = \"\\033[1;32m\"\n    reset_color = \"\\033[0m\"",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "LAST_PRINTED_LINE",
+        "kind": 5,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "LAST_PRINTED_LINE = \"\"\ndef red_text(text):\n    red_color = \"\\033[1;31m\"\n    reset_color = \"\\033[0m\"\n    return f\"{red_color}{text}{reset_color}\"\ndef green_text(text):\n    green_color = \"\\033[1;32m\"\n    reset_color = \"\\033[0m\"\n    return f\"{green_color}{text}{reset_color}\"\ndef yellow_text(text):",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "result = run_command(f'sf sobject list --target-org {SOURCE_ORG} --json')\nif not result:\n    print(red_text(\"Failed to get SObject List => \" + str(result)))\n    sys.exit()\nresult_json = json.loads(result.stdout)\nif(result_json.get('status') != 0):\n    print(red_text(\"Failed to get SObject List => \" + json.dumps(result_json, indent=4)))\n    sys.exit()\nOBJECT_LIST = result_json.get('result')\n# Filter the list to only the objects that should be migrated",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "result_json",
+        "kind": 5,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "result_json = json.loads(result.stdout)\nif(result_json.get('status') != 0):\n    print(red_text(\"Failed to get SObject List => \" + json.dumps(result_json, indent=4)))\n    sys.exit()\nOBJECT_LIST = result_json.get('result')\n# Filter the list to only the objects that should be migrated\nOBJECT_LIST = [\n    object_name\n    for object_name in OBJECT_LIST\n    if not re.search(BANNED_PATTERN, object_name.lower())",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "OBJECT_LIST",
+        "kind": 5,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "OBJECT_LIST = result_json.get('result')\n# Filter the list to only the objects that should be migrated\nOBJECT_LIST = [\n    object_name\n    for object_name in OBJECT_LIST\n    if not re.search(BANNED_PATTERN, object_name.lower())\n]\nNUM_OF_OBJECTS = len(OBJECT_LIST)\nprint()\nfor i, object_name in enumerate(OBJECT_LIST):",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "OBJECT_LIST",
+        "kind": 5,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "OBJECT_LIST = [\n    object_name\n    for object_name in OBJECT_LIST\n    if not re.search(BANNED_PATTERN, object_name.lower())\n]\nNUM_OF_OBJECTS = len(OBJECT_LIST)\nprint()\nfor i, object_name in enumerate(OBJECT_LIST):\n    print_progress_bar(i + 1, NUM_OF_OBJECTS, f\"Fetching describe from {yellow_text(SOURCE_ORG)}\", f\"{object_name} {i + 1}/{NUM_OF_OBJECTS}\")\n    # Get the describe for each object",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    },
+    {
+        "label": "NUM_OF_OBJECTS",
+        "kind": 5,
+        "importPath": "migration.MigrateData",
+        "description": "migration.MigrateData",
+        "peekOfCode": "NUM_OF_OBJECTS = len(OBJECT_LIST)\nprint()\nfor i, object_name in enumerate(OBJECT_LIST):\n    print_progress_bar(i + 1, NUM_OF_OBJECTS, f\"Fetching describe from {yellow_text(SOURCE_ORG)}\", f\"{object_name} {i + 1}/{NUM_OF_OBJECTS}\")\n    # Get the describe for each object\n    # The describe is the metadata of the object, this includes whether the object is createable, \n    # the fields and relationships in this record and their metadata\n    source_object_describe_command = run_command(f'sf sobject describe --target-org {SOURCE_ORG} --sobject {object_name} --json >> sourceorg/describe/{object_name}.txt')\n    if not source_object_describe_command:\n        log_error_in_file(f\"Source Org: Failed to execute {object_name} describe => {str(source_object_describe_command)}\", \"fetch\")",
+        "detail": "migration.MigrateData",
+        "documentation": {}
+    }
+]

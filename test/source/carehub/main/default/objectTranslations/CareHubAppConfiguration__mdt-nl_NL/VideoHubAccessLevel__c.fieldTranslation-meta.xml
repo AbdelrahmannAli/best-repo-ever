@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Toegangsniveau VideoHub</label>
+    <name>VideoHubAccessLevel__c</name>
+    <picklistValues>
+        <masterLabel>No Access</masterLabel>
+        <translation>Geen Toegang</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Standalone</masterLabel>
+        <translation>Op Zichzelf Staand</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Subscription</masterLabel>
+        <translation>Abonnement</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Als het nummer van de volgorde al in gebruik is wordt deze, en de daaropvolgende waarden, automatisch gehernummerd.</help>
+    <label>Volgorde</label>
+    <name>Order__c</name>
+</CustomFieldTranslation>

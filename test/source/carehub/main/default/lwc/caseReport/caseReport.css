@@ -1,0 +1,83 @@
+.report-card {
+	height: 10rem;
+}
+
+.report-text-area {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.report-generate-summary-button {
+	margin-left: 1rem;
+}
+
+.slds-button.slds-button_brand {
+	float: right;
+	margin-bottom: 0.75rem;
+	margin-right: 1rem;
+	z-index: 2;
+}
+
+.slds-tabs_default {
+	padding: 0rem 0.6rem 0rem !important;
+}
+
+.div-text {
+	text-align: center;
+}
+
+:host {
+	--sds-c-textarea-sizing-min-height: 10rem;
+}
+
+.report-actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.select-expertise-group {
+	flex: 5;
+}
+
+.action-title {
+	flex: 3;
+	font-size: 1em;
+	padding-top: 1.1rem;
+}
+
+.report-actions-container {
+	margin-left: 1rem;
+	margin-right: 1rem;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.custom-fav-button {
+	top: 29%;
+	left: 90%;
+	cursor: pointer;
+	pointer-events: fill !important;
+}
+
+.optional-label {
+    color: grey;
+	font-size: smaller;
+}
+
+.report-actions-wrapper {
+    position: relative;
+}
+
+.loading-overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,17 @@
+.slds-m-around_medium {
+    text-align: center;
+}
+
+.progress-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.percentage-label {
+    font-size: 1.0rem;  
+    color: #000000;
+    margin-bottom: 0.5rem;
+}

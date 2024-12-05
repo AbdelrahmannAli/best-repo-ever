@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>Syntilio</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>SyntilioConsole</application>
+        <default>true</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <layoutAssignments>
+        <layout>Account-Syntilio CareHub Care Organisation Layout</layout>
+        <recordType>Account.Syntilio__Business</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Syntilio CareHub Care Organisation Layout</layout>
+        <recordType>Account.Syntilio__CareOrganisation</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Syntilio CareHub Account Layout</layout>
+        <recordType>Account.Syntilio__Client</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Asset-Syntilio CareHub Asset Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Syntilio__CareHubAppConfiguration__mdt-Syntilio CareHub App Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Syntilio__CareOrganizationContractRelation__c-Syntilio CareHub Care Organization Contract Relation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Syntilio CareHub Admin Case Layout</layout>
+        <recordType>Case.Syntilio__SyntilioDefault</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Syntilio Console Grouping Case</layout>
+        <recordType>Case.Syntilio__GroupingCase</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseClose-Close Case Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseClose-Close Case Layout</layout>
+        <recordType>Case.Syntilio__SyntilioDefault</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Syntilio Console Client Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Syntilio Console Client Layout</layout>
+        <recordType>Contact.Syntilio__Client</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Syntilio CareHub Business Contact Layout</layout>
+        <recordType>Contact.Syntilio__Business</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Syntilio Console Client Layout</layout>
+        <recordType>Contact.Syntilio__Partner</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Syntilio Console Client Layout</layout>
+        <recordType>Contact.Syntilio__SharedDevice</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Syntilio Care Circle Layout</layout>
+        <recordType>Contact.Syntilio__CareCircle</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Syntilio__ContactContactRelationship__c-Syntilio CareHub Contact to Contact Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout
+    >Syntilio__EventConfiguration__c-Syntilio CareHub Event Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout
+    >Syntilio__ExternalSystem__c-Syntilio CareHub External Systems Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Syntilio__Group__c-Syntilio CareHub Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Syntilio__GroupMember__c-Syntilio CareHub Group Member Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Location-Syntilio CareHub Location Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderItem-Syntilio CareHub Order Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Order-Syntilio CareHub Subscriptions Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Syntilio CareHub Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Syntilio__Protocol__c-Syntilio CareHub Protocol Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Syntilio__ProtocolResult__c-Syntilio CareHub Protocol Result Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout
+    >Syntilio__ProtocolActivator__c-Syntilio CareHub Protocol Activator Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Syntilio__Question__c-Syntilio CareHub Question Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout
+    >Syntilio__SyntilioEvent__c-Syntilio CareHub Syntilio Event Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout
+    >Syntilio__ServiceZipCode__c-Syntilio CareHub Service Zip Code Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-Syntilio CareHub Task Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-Syntilio CareHub Task Layout</layout>
+        <recordType>Task.Syntilio__EventTask</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout
+    >Syntilio__ContactToLocation__c-Syntilio CareHub Contact to Location Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Syntilio__CallLog__c-Syntilio CareHub Call Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Syntilio__CareOperatingHours__c-Syntilio CareHub Care Operating Hours Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Syntilio__MedicalPolicy__c-Syntilio CareHub Medical Policy Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Syntilio__ContactNote__c-Syntilio CareHub Contact Note Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Syntilio__ContactAlert__c-Syntilio CareHub Contact Alert Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Syntilio__MedicalReport__c-Syntilio CareHub Medical Report Layout</layout>
+    </layoutAssignments>
+</Profile>

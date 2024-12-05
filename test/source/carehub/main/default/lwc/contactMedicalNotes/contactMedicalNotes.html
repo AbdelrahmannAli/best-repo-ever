@@ -1,0 +1,41 @@
+<template>
+	<div class="wrapper-container">
+		<div if:true={isLoading} class="div-text">
+			<lightning-spinner
+				alternative-text="Loading"
+				size="medium"
+				style="margin: 0 auto"
+			></lightning-spinner>
+		</div>
+		<div class="refresh-button-div">
+			<lightning-button-icon
+				icon-name="utility:refresh"
+				variant="brand"
+				onclick={handleButtonClick}
+			></lightning-button-icon>
+		</div>
+		<template if:false={showMedicalNotes}>
+			<div class="center-content">
+                <div class="error-icon">
+                    <lightning-icon icon-name="utility:cases" alternative-text="Error Icon" size="medium"></lightning-icon>
+                </div>
+                <div class="no-events-message">
+                    {labels.careCircle_NoMedicalNotes}
+                </div>
+            </div>
+		</template>
+		<template if:true={showMedicalNotes}>
+			<div class="medical-notes-container">
+				<ol class="list">
+					<template for:each={contactMedicalNotes} for:item="noteLines" for:index="index">
+						<li key={noteLines.id}>
+							<template for:each={noteLines} for:item="line">
+								<p key={line}>{line}</p>
+							</template>
+						</li>
+					</template>
+				</ol>
+			</div>
+		</template>
+	</div>
+</template>

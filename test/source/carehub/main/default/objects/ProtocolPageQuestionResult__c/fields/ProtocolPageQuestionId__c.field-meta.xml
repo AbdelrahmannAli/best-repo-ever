@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProtocolPageQuestionId__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Protocol Page Question Name</label>
+    <referenceTo>ProtocolPageQuestion__c</referenceTo>
+    <relationshipLabel>Protocol Page Question Results</relationshipLabel>
+    <relationshipName>ProtocolPageQuestionResults</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

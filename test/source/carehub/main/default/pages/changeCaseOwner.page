@@ -1,0 +1,49 @@
+<apex:page standardController="Case" extensions="CaseOwnerController">
+    <apex:includeScript value="/support/console/59.0/integration.js"/>
+
+    <script>
+      
+        window.onload = function() {
+            Visualforce.remoting.Manager.invokeAction(
+                '{!$RemoteAction.CaseOwnerController.changeOwner}',
+                '{!caseId}',  
+                function(result, event) {
+                    if (event.status && result) {
+                        if (sforce && sforce.one) {
+                            sforce.one.showToast({
+                                title: "Success!",
+                                message: "The case has been successfully assigned to you.",
+                                type: "success"
+                            });
+                        }
+                        if (sforce && sforce.console) {
+                            sforce.console.getEnclosingTabId(function(result) {
+                                const tabId = result.id;
+                                sforce.console.closeTab(tabId);
+                            });
+                        } else {
+                            window.close();
+                        }
+                    } else {
+                        console.error("Failed to change the Case owner:", event.message);
+                        
+                        if (sforce && sforce.one) {
+                            sforce.one.showToast({
+                                title: "Warning!",
+                                message: "You are already the Case owner",
+                                type: "warning" 
+                            });
+                        }
+                        
+                        if (sforce && sforce.console) {
+                            sforce.console.getEnclosingTabId(function(result) {
+                                const tabId = result.id;
+                                sforce.console.closeTab(tabId);
+                            });
+                        }
+                    }
+                }
+            );
+        };
+    </script>
+</apex:page>

@@ -1,0 +1,41 @@
+<template>
+    <div class="contact-notes-container">
+        <div if:true={isLoading} class="div-text">
+            <lightning-spinner
+                alternative-text="Loading"
+                size="medium"
+                style="margin: 0 auto"
+            ></lightning-spinner>
+        </div>
+        <div class="refresh-button-div">
+        <lightning-button-icon
+            icon-name="utility:refresh"
+            variant="brand"
+            onclick={handleButtonClick}
+        ></lightning-button-icon>
+        </div>
+        <template if:false={showClientNotes}>
+            <div class="center-content">
+                <div class="error-icon">
+                    <lightning-icon icon-name="utility:cases" alternative-text="Error Icon" size="medium"></lightning-icon>
+                </div>
+                <div class="no-events-message">
+                    {labels.careCircle_NoMedicalNotes}
+                </div>
+            </div>
+        </template>
+        <template if:true={showClientNotes}>
+            <div class="client-notes-container">
+                <ol class="list">
+                    <template for:each={contactNotes} for:item="contactNote">
+                        <li key={contactNote.Id} class="listItem">
+                            <div class="authorTitle">{contactNote.Syntilio__Author__c}</div>
+                            {contactNote.Syntilio__Content__c}
+                        </li>
+                    </template>
+                </ol>
+            </div>
+        </template>
+    </div>
+</template>
+

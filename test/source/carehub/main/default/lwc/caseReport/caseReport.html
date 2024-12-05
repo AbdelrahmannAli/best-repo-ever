@@ -1,0 +1,117 @@
+<template>
+	<lightning-card class="report-card">
+		<div class="slds-tabs_default slds-tabs_medium">
+			<ul class="slds-tabs_default__nav" role="tablist">
+				<li class={newTab.class} title={labels.general_New} role="presentation">
+					<a
+						class="slds-tabs_default__link"
+						data-name="New"
+						onclick={handleTabSwitch}
+						role="tab"
+						tabindex={newTab.tabindex}
+						aria-selected={newTab.aria_selected}
+						aria-controls="new-tab-content"
+						id="new-tab-content__item"
+						>{labels.general_New}</a
+					>
+				</li>
+				<li class={historyTab.class} title={labels.general_History} role="presentation">
+					<a
+						class="slds-tabs_default__link"
+						data-name="History"
+						onclick={handleTabSwitch}
+						role="tab"
+						tabindex={historyTab.tabindex}
+						aria-selected={historyTab.aria_selected}
+						aria-controls="history-tab-content"
+						id="history-tab-content__item"
+						>{labels.general_History}</a
+					>
+				</li>
+			</ul>
+
+			<div
+				id="new-tab-content"
+				class={newTab.content_class}
+				role="tabpanel"
+				aria-labelledby="new-tab-content__item"
+			>
+				<button
+					class="slds-button slds-button_brand"
+					slot="actions"
+					onclick={handleSend}
+				>
+					{labels.general_Send}
+				</button>
+				<div
+					class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right"
+				>
+					<lightning-button-icon
+						size="medium"
+						role="button"
+						onclick={handleFav}
+						icon-name={favIconName}
+						class="front slds-input__icon slds-input__icon_right custom-fav-button"
+						variant="bare"
+					>
+					</lightning-button-icon>
+					<lightning-textarea
+						name="reportInput"
+						id="reportComments"
+						class="report-text-area"
+					>
+					</lightning-textarea>
+				</div>
+				<div class="report-actions-wrapper">
+					<template if:true={isLoading}>
+						<div class="loading-overlay">
+							<lightning-spinner
+								alternative-text="Loading"
+								size="medium"
+							></lightning-spinner>
+						</div>
+					</template>
+					<div class="report-actions-container">
+						<div class="report-actions">
+							<p class="action-title">
+								{labels.caseReport_ActionFor} 
+								<span class="optional-label"> ({labels.general_Optional}) </span>
+							</p>
+							<c-multi-select-combobox
+								class="select-expertise-group"
+								label="Select Expertise Groups"
+								placeholder={labels.caseReport_ActionForPlaceholder}
+								options={expertise}
+								onvaluechange={handleActionChange}
+								multiple="true"
+							></c-multi-select-combobox>
+						</div>
+						<div class="report-actions">
+							<p class="action-title">
+								{labels.caseReport_VisibilityFor} 
+								<span class="optional-label"> ({labels.general_Optional}) </span>
+							</p>
+							<c-multi-select-combobox
+								class="select-expertise-group"
+								label="Select Expertise Groups"
+								placeholder={labels.caseReport_VisibilityForPlaceholder}
+								options={expertise}
+								onvaluechange={handleVisibilityChange}
+								multiple="true"
+							></c-multi-select-combobox>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div
+				id="history-tab-content"
+				class={historyTab.content_class}
+				role="tabpanel"
+				aria-labelledby="history-tab-content__item"
+			>
+				<c-contact-reports record-id={recordId}></c-contact-reports>
+			</div>
+		</div>
+	</lightning-card>
+</template>

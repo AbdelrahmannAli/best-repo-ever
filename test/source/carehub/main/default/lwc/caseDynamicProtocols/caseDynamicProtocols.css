@@ -1,0 +1,92 @@
+.protocolsBorder{
+    padding: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-width: 0.063rem;
+    border-style: solid;
+    border-color: rgb(201, 201, 201);
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10);
+}
+.labelColor{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0.5rem;
+}
+.fontColor{
+    color: rgb(0, 0, 0);
+}
+.buttons-div{
+    align-items: end; 
+    text-align: end;
+}
+
+.button-style{
+    width: 5.5rem;
+}
+
+.button-margin{
+    margin-top: 0.5rem;
+}
+
+.image{
+    max-width: 3.5rem; 
+    max-height: 3.5rem;
+}
+.defaultIcon{
+    margin-right:0.5rem
+}
+.protocolLayout{
+    border: 0.1rem solid #ccc; 
+    padding: 0.8rem; 
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: start; 
+    background-color: rgb(249, 244, 249);
+}
+.protocolDiv{
+    display: flex; 
+    flex-grow: 1;
+}
+.iconDivStyle{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.availableProtocols{
+    font-weight: bold; 
+    color: rgb(0, 0, 0); 
+    margin-bottom: 10px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+.status{
+    margin-top: 0.5rem;
+    padding: 0.4rem; 
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    float: left;
+    border-radius: 3rem;
+}
+.status.finished{
+    background-color: #1e9d40;
+}
+.status.required{
+    background-color: #fe4d4f;
+}
+.status.actions{
+    background-color: #fe4d4f;
+}
+.statusIcon{
+    margin-right: 0.2rem;
+    --sds-c-icon-color-foreground-default: white;
+}

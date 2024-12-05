@@ -1,0 +1,18 @@
+{
+  "orgName": "Tekunda",
+  "edition": "Developer",
+  "features": ["EnableSetPasswordInApi", "ContactsToMultipleAccounts","DebugApex"],
+  "namespace": "Tekunda",
+  "language": "en_US",
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    },  
+    "enhancedNotesSettings": {
+      "enableEnhancedNotes": true
+    }
+  }
+}

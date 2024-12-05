@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<p>Subject: Welcome to DigiContact!</p>
+
+<p>Dear {{{Recipient.Name}}}</p>
+
+<p>To get started, please follow the steps below:</p>
+
+<p><strong>Step 1: Download Our App</strong></p>
+
+<p>Visit our [App Store/Google Play] page to download the [Your App Name] app. Simply click the link below or search for "[Your App Name]" in the respective app store:</p>
+
+<p>[Include App Store and Google Play download links]</p>
+
+<p><strong>Step 2: Account Setup</strong></p>
+
+<p>After installing the app, open it and follow the on-screen instructions to set up your account. You will need to provide the following information:</p>
+
+<ul>
+	<li>[Include any specific account setup details]</li>
+</ul>
+
+<p><strong>Step 3: Additional Resources</strong></p>
+
+<p>For additional guidance and support, we've prepared some helpful resources:</p>
+
+<ul>
+	<li>[Link to FAQs]</li>
+	<li>[Link to Video Tutorials]</li>
+	<li>[Link to Knowledge Base]</li>
+</ul>
+
+<p><strong>Step 4: Connect with Us</strong></p>
+
+<p>Have questions or need assistance? Our dedicated support team is here to help. Reach out to us at [<a target="_new">support@email.com</a>] or call</p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<div style="text-align: left;">&nbsp;
+<p style="text-align: left;">Hi {{{Recipient.Name}}},</p>
+
+<p>We are reaching out to schedule your next Syntilio visit regarding your device&nbsp;{{{Case.AssetId}}} under case number {{{Case.CaseNumber}}}. Kindly use the following appointment booking url to schedule the visit based on your preferred window.<br />
+<br />
+<a href="https://americano-coldbrew-1429-dev-ed.my.site.com/booking/s/?contactId={{{Case.ContactId}}}&amp;caseId={{{Case.Id}}}">https://americano-coldbrew-1429-dev-ed.my.site.com/booking/s/?contactId={{{Case.ContactId}}}&amp;caseId={{{Case.Id}}}</a><br />
+&nbsp;<br />
+If you need to make any changes to your appointment, you can call our customer support line or drop us an email.</p>
+
+<p>Please let us know if you have any questions.</p>
+
+<p>See you soon!!</p>
+&nbsp;
+
+<div><img alt="User-added image" src="https://syntilio.com/logo.png" style="max-width: 1896.2px; width: 256px; height: 72px;" title="User-added image" /></div>
+</div>
+
+<div id="" style="left: 41.9062px; top: 130px;">&nbsp;</div>
+
+<div id="" style="left: 41.9062px; top: 130px;">&nbsp;</div>
+
+<div id="" style="left: 8px; top: 268px;">&nbsp;</div>
+
+<div id="" style="left: 8px; top: 268px;">&nbsp;</div>
+
+</body></html>

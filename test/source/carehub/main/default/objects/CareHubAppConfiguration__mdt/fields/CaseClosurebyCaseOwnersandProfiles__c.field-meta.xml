@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CaseClosurebyCaseOwnersandProfiles__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>If you leave the text field blank, anyone can close the case. However, if you enter specific profile names, separated by commas, only those profiles will be able to close the case. For example, if you enter "System Administrator, Manager, Support” only users with those profiles can bypass the validation and close the case.</inlineHelpText>
+    <label>Case Closure by Case Owners and Profiles</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

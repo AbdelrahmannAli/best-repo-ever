@@ -1,0 +1,36 @@
+<template>
+    <div if:true={isAccountRecord}>
+        <lightning-card title={labels.fetchClients_FetchClients} icon-name="standard:client">
+            <template if:true={dataFetched}>
+                <div>
+                    <lightning-datatable
+                            key-field={}
+                            data={clientsData}
+                            show-row-number-column
+                            hide-checkbox-column
+                            columns={columns}>
+                    </lightning-datatable>
+                </div>
+            </template>
+            <div class="slds-text-align--center slds-p-around--small">
+                
+                <template if:false={dataFetched}>
+                    <div if:false={isLoading}>
+                        <template if:false={isExternalSystemSelected}>
+                            <c-account-external-systems account-id={recordId} onexternalsystem={selectExternalSystem}></c-account-external-systems>
+                        </template>
+                        <template if:true={isExternalSystemSelected}>
+                            <lightning-button label={labels.fetchClients_FetchClientsData} onclick={startFetchingClientsData} variant="brand"></lightning-button>
+                        </template>
+                    </div>
+                </template>
+                <div if:true={isLoading}>
+                    <h2 class="slds-m-bottom--small">
+                        {labels.fetchClients_FetchClientsProgress}
+                    </h2>
+                    <lightning-spinner alternative-text="Loading" size="medium" style="display: flex; justify-content: center; align-items: center;"></lightning-spinner>
+                </div>
+            </div>
+        </lightning-card>
+    </div>
+</template>

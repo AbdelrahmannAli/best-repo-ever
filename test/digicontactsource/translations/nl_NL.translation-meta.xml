@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <customApplications>
+        <description xsi:nil="true"/>
+        <label><!-- Syntilio --></label>
+        <name>Syntilio</name>
+    </customApplications>
+    <customApplications>
+        <description xsi:nil="true"/>
+        <label><!-- Syntilio Console --></label>
+        <name>Syntilio_Console</name>
+    </customApplications>
+    <customTabs>
+        <label><!-- Getting Started --></label>
+        <name>Getting_Started</name>
+    </customTabs>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Get_Case_Details</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>All_Instances</name>
+            </choices>
+            <choices>
+                <name>This_Instance_Only</name>
+            </choices>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>category</name>
+                        <value/>
+                    </inputParameters>
+                    <name>flowConfirm</name>
+                </fields>
+                <name>ConfirmationScreen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>additionalInformation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>appointmentType</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>city</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>comments</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>contactId</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>country</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>endDateTime</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>parentRecordId</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>postalCode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>serviceTerritoryId</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>startDateTime</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>state</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>street</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>workTypeId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>newFlowReview</name>
+                </fields>
+                <name>ReviewScreen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>anonymousBooking</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>isAnonymousBooking</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>parentRecordId</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>serviceAppointmentId</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>serviceTerritoryId</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>workTypeId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>SelectNewServiceResourceScreenComponent</name>
+                </fields>
+                <name>SelectNewServiceResourceScreen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>isAnonymousBooking</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>isHideSkip</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>isInbound</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>parentRecordId</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>selectedEndTime</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>selectedStartTime</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>serviceTerritoryId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>flowTimeslot</name>
+                </fields>
+                <name>TimeSlotScreen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>AllOrThisRecurrence</name>
+                </fields>
+                <name>modifyWhichAppointment</name>
+            </screens>
+            <stages>
+                <name>CandidateStage</name>
+            </stages>
+            <stages>
+                <name>ChooseRecurrenceStage</name>
+            </stages>
+            <stages>
+                <name>ConfirmationStage</name>
+            </stages>
+            <stages>
+                <name>ReviewStage</name>
+            </stages>
+            <stages>
+                <name>TimeSlotStage</name>
+            </stages>
+        </flows>
+        <fullName>Modify_Service_Appointment</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>selectedApptType</name>
+                        <value/>
+                    </inputParameters>
+                    <name>flowApptType</name>
+                </fields>
+                <name>AppointmentTypeScreen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>contactId</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>isInbound</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>parentRecordId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>flowTriage</name>
+                </fields>
+                <name>AttendeesScreen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>flowConfirm</name>
+                </fields>
+                <name>ConfirmationScreen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>city</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>country</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>postalCode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>serviceTerritoryId</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>state</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>street</name>
+                        <value/>
+                    </inputParameters>
+                    <name>flowLocation</name>
+                </fields>
+                <name>LocationScreen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>recordId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>RedirectToCase</name>
+                </fields>
+                <name>RedirectToCaseScreen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>additionalInformation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>appointmentType</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>city</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>comments</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>contactId</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>country</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>endDateTime</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>isAnonymousBooking</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>parentRecordId</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>postalCode</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>serviceTerritoryId</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>startDateTime</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>state</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>street</name>
+                        <value/>
+                    </inputParameters>
+                    <name>newFlowReview</name>
+                </fields>
+                <name>ReviewScreen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>isAnonymousBooking</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>parentRecordId</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>selectedEndTime</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>selectedStartTime</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>serviceTerritoryId</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>showTimeZonePicklist</name>
+                        <value/>
+                    </inputParameters>
+                    <name>flowTimeslot</name>
+                </fields>
+                <name>TimeSlotScreen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>additionalInformation</name>
+                        <value/>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>comments</name>
+                        <value/>
+                    </inputParameters>
+                    <name>flowWorkType</name>
+                </fields>
+                <name>TopicScreen</name>
+            </screens>
+            <stages>
+                <name>AppointmentTypeStage</name>
+            </stages>
+            <stages>
+                <name>AttendeesStage</name>
+            </stages>
+            <stages>
+                <name>CandidateStage</name>
+            </stages>
+            <stages>
+                <name>ConfirmationStage</name>
+            </stages>
+            <stages>
+                <name>LocationStage</name>
+            </stages>
+            <stages>
+                <name>ReviewStage</name>
+            </stages>
+            <stages>
+                <name>TimeSlotStage</name>
+            </stages>
+            <stages>
+                <name>TopicStage</name>
+            </stages>
+        </flows>
+        <fullName>Outbound_New_Appointment_With_Virtual_Territories</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>CaseTypesChoices</name>
+                </fields>
+                <name>ChooseCaseType</name>
+            </screens>
+        </flows>
+        <fullName>Plan_Appointment</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Route_Case_To_Agent_in_Omni_Channel</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Schedule_Recurring_Appointments</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>ActivateClient</name>
+            </choices>
+            <choices>
+                <name>ArchiveClient</name>
+            </choices>
+            <choices>
+                <name>ContinueOnboarding</name>
+            </choices>
+            <screens>
+                <fields>
+                    <name>ClientOnboardingActionChoice</name>
+                </fields>
+                <name>ClientOnboardingAction</name>
+            </screens>
+        </flows>
+        <fullName>Syntilio__Activate_or_Archive_Client</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>CallPatient</name>
+                </fields>
+                <name>Call_Patient</name>
+            </screens>
+        </flows>
+        <fullName>Syntilio__Call_Patient</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__Case_Assignment_Notification</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__Close_All_Cases</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__Close_Case</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__Create_A_Manual_Task</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>IntakeCaseExistsMessage</name>
+                </fields>
+                <name>IntakeCaseExistsScreen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>RedirectToRecordDetails</name>
+                </fields>
+                <name>RedirectCreatedIntakeCase</name>
+            </screens>
+            <screens>
+                <fields>
+                    <inputParameters>
+                        <name>recordId</name>
+                        <value/>
+                    </inputParameters>
+                    <name>RedirectIntakeCase</name>
+                </fields>
+                <name>RedirectToIntakeCase</name>
+            </screens>
+        </flows>
+        <fullName>Syntilio__Create_Intake_Case_And_Redirect</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__Create_Update_Case</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>AtionOutputDpText</name>
+                </fields>
+                <name>ActionOutputScreen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>DpText</name>
+                </fields>
+                <fields>
+                    <name>endDateMessageLater</name>
+                </fields>
+                <fields>
+                    <name>endDateMessageToday</name>
+                </fields>
+                <fields>
+                    <name>ordersEndDate</name>
+                </fields>
+                <name>Deactivate_Client_Screen</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>No_Subscription</name>
+                </fields>
+                <name>No_Activation</name>
+            </screens>
+        </flows>
+        <fullName>Syntilio__Deactivate_Client</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__Event_Handler</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__Log_Exception</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__Onboarding_Email_Notification</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <customErrorMessages>
+                <developerName>X0_3</developerName>
+            </customErrorMessages>
+        </flows>
+        <fullName>Syntilio__One_Main_Group_Validation</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__ParentAsset_Handler</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__Queue_RecordType_Case_Owner_Assignments</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>ContactGroupComp</name>
+                </fields>
+                <fields>
+                    <name>SelectionWarning</name>
+                </fields>
+                <name>ContactsInGroup</name>
+            </screens>
+        </flows>
+        <fullName>Syntilio__Shared_Device_Contact_Group</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <screens>
+                <fields>
+                    <name>GetSelectedQuestionIdsAndanswerValues</name>
+                </fields>
+                <name>Questions_Contianer</name>
+            </screens>
+        </flows>
+        <fullName>Syntilio__Show_Questionnaire_Questions_and_Create_Protocol_Results</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows/>
+        <fullName>Syntilio__Update_Case_Status_When_Case_Is_Picked</fullName>
+    </flowDefinitions>
+    <quickActions>
+        <label><!-- Call Notes --></label>
+        <name>Call_Notes</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Guest Community Case --></label>
+        <name>GuestCommunityCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Log a Call --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewAccount --></label>
+        <name>NewAccount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Case --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Community Case --></label>
+        <name>NewCommunityCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewContact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewEvent --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewGroup --></label>
+        <name>NewGroup</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewLead --></label>
+        <name>NewLead</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewNote --></label>
+        <name>NewNote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewOpportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Task --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <reportTypes>
+        <description><!-- Accounts with Entitlements with Contacts --></description>
+        <label><!-- Accounts with Entitlements with Contacts --></label>
+        <name>Accounts_with_Entitlements_with_Contacts</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Entitlements --></label>
+            <name>Entitlements</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Case Session Times --></description>
+        <label><!-- Case Session Times --></label>
+        <name>Case_Session_Times</name>
+        <sections>
+            <label><!-- Cases --></label>
+            <name>Cases</name>
+        </sections>
+        <sections>
+            <label><!-- Session Times --></label>
+            <name>Session Times</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cases with Events --></description>
+        <label><!-- Cases with Events --></label>
+        <name>Cases_with_Events</name>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
+            <label><!-- Cases --></label>
+            <name>Cases</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cases with Reports --></description>
+        <label><!-- Cases with Reports --></label>
+        <name>Cases_with_Reports</name>
+        <sections>
+            <label><!-- Cases --></label>
+            <name>Cases</name>
+        </sections>
+        <sections>
+            <label><!-- Report Fields --></label>
+            <name>Report Fields</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Clients with Client Information --></description>
+        <label><!-- Clients with Client Information --></label>
+        <name>Clients_with_Client_Information</name>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- External IDs --></label>
+            <name>External IDs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Clients without a Location --></description>
+        <label><!-- Clients without a Location --></label>
+        <name>Clients_without_a_Location</name>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+        <sections>
+            <label><!-- Contacts To Locations --></label>
+            <name>Contacts To Locations</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contracts, Order and Order Products --></description>
+        <label><!-- Contracts, Order and Order Products --></label>
+        <name>Contracts_with_Order_Products</name>
+        <sections>
+            <label><!-- Contracts --></label>
+            <name>Contracts</name>
+        </sections>
+        <sections>
+            <label><!-- Order Products --></label>
+            <name>Order Products</name>
+        </sections>
+        <sections>
+            <label><!-- Orders --></label>
+            <name>Orders</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Knowledge Article Searches --></description>
+        <label><!-- Knowledge Article Searches --></label>
+        <name>Knowledge_Article_Searches</name>
+        <sections>
+            <label><!-- Knowledge Article Searches --></label>
+            <name>Knowledge Article Searches</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Knowledge Articles --></description>
+        <label><!-- Knowledge Articles --></label>
+        <name>Knowledge_Articles</name>
+        <sections>
+            <label><!-- Knowledge Articles --></label>
+            <name>Knowledge Articles</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Knowledge Articles Views --></description>
+        <label><!-- Knowledge Articles Views --></label>
+        <name>Knowledge_Articles_Views</name>
+        <sections>
+            <label><!-- Knowledge Article Views --></label>
+            <name>Knowledge Article Views</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Knowledge Articles Votes --></description>
+        <label><!-- Knowledge Articles Votes --></label>
+        <name>Knowledge_Articles_Votes</name>
+        <sections>
+            <label><!-- Knowledge Article Votes --></label>
+            <name>Knowledge Article Votes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Knowledge Articles with Votes --></description>
+        <label><!-- Knowledge Articles with Votes --></label>
+        <name>Knowledge_Articles_w_Votes</name>
+        <sections>
+            <label><!-- Article Vote Statistics --></label>
+            <name>Article Vote Statistics</name>
+        </sections>
+        <sections>
+            <label><!-- Knowledge Articles --></label>
+            <name>Knowledge Articles</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Knowledge Articles with View --></description>
+        <label><!-- Knowledge Articles with View --></label>
+        <name>Knowledge_Articles_with_view</name>
+        <sections>
+            <label><!-- Article View Statistics --></label>
+            <name>Article View Statistics</name>
+        </sections>
+        <sections>
+            <label><!-- Knowledge Articles --></label>
+            <name>Knowledge Articles</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Knowledge Keyword Search --></description>
+        <label><!-- Knowledge Keyword Search --></label>
+        <name>Knowledge_Keyword_Search</name>
+        <sections>
+            <label><!-- Knowledge Keyword Search --></label>
+            <name>Knowledge Keyword Search</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities met historische trending --></description>
+        <label><!-- Opportunities met historische trending --></label>
+        <name>Opportunities_met_historische_trending</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunity (historisch) --></label>
+            <name>Opportunity (historisch)</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Service Contracts with Contract Line Items --></description>
+        <label><!-- Service Contracts with Contract Line Items --></label>
+        <name>Service_Contracts_with_Contract_Line_Items</name>
+        <sections>
+            <label><!-- Contract Line Items --></label>
+            <name>Contract Line Items</name>
+        </sections>
+        <sections>
+            <label><!-- Service Contracts --></label>
+            <name>Service Contracts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Service Contracts with Entitlements --></description>
+        <label><!-- Service Contracts with Entitlements --></label>
+        <name>Service_Contracts_with_Entitlements</name>
+        <sections>
+            <label><!-- Entitlements --></label>
+            <name>Entitlements</name>
+        </sections>
+        <sections>
+            <label><!-- Service Contracts --></label>
+            <name>Service Contracts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Screen Flows --></description>
+        <label><!-- Screen Flows --></label>
+        <name>screen_flows_prebuilt_crt</name>
+        <sections>
+            <label><!-- Flow Interview Log Entries --></label>
+            <name>Flow Interview Log Entries</name>
+        </sections>
+        <sections>
+            <label><!-- Flow Interview Logs --></label>
+            <name>Flow Interview Logs</name>
+        </sections>
+    </reportTypes>
+</Translations>

@@ -1,0 +1,12 @@
+<template>
+    <lightning-combobox
+        required
+        id="accountExternalCMP"
+        value={value}
+        name="External Systems"
+        label={labels.accountExternalSystems_ComboboxLabel}
+        placeholder={labels.accountExternalSystems_ComboboxPlaceholder}
+        options={externalSystems}
+        message-when-value-missing={labels.accountExternalSystems_ComboboxMissingMessage}
+        onchange={selectExternalSystem}></lightning-combobox>
+</template>

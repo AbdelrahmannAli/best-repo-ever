@@ -1,0 +1,92 @@
+<template>
+	<template if:true={showProtocols}>
+		<section>
+			<div class="protocolsBorder">
+				<div class="availableProtocols">
+					<div class="iconDivStyle">
+						<lightning-icon icon-name="utility:task" alternative-text="protocols" variant="brand"
+							size="small" >
+						</lightning-icon>
+					</div>
+					{labels.general_Protocols}
+				</div>
+				<template for:each={protocols} for:item="protocol">
+					<div key={protocol.value} class="protocolLayout">
+						<div class="protocolDiv">
+							<figure style="margin-right: 1rem">
+								<template if:true={protocol.Image}>
+									<img src={protocol.Image} class="image" />
+								</template>
+								<template if:false={protocol.Image}>
+									<lightning-icon icon-name="utility:edit_form" variant="brand" size="large"
+										class="defaultIcon"></lightning-icon>
+								</template>
+							</figure>
+							<div style="flex-grow: 1">
+								<p class="labelColor">{protocol.label}</p>
+								<p class="fontColor">{protocol.Description}</p>
+								<template if:true={protocol.Time}>
+									<p class="fontColor">
+										{labels.general_EstimatedTime} : {protocol.Time}
+										{labels.general_Minutes}
+									</p>
+								</template>
+								<template if:true={protocol.finished}>
+									<div class="status finished">
+										<lightning-icon icon-name="utility:priority" alternative-text="Finished!"
+											title="Finished flag" size="x-small" class="statusIcon"></lightning-icon>
+										{labels.general_Finished}
+									</div>
+								</template>
+								<template if:true={protocol.required}>
+									<div class="status required">
+										<lightning-icon icon-name="utility:warning" alternative-text="Required!"
+											title="Required" size="x-small" class="statusIcon"></lightning-icon>
+										{labels.general_Required}
+									</div>
+								</template>
+								<template if:true={protocol.actions}>
+									<div class="status actions">
+										<lightning-icon icon-name="utility:clock" alternative-text="Actions!"
+											title="Actions" size="x-small" class="statusIcon"></lightning-icon>
+										{labels.general_ActionsInProgress}
+									</div>
+								</template>
+							</div>
+						</div>
+						<div class="buttons-div">
+							<div class="button-style">
+								<div if:true={protocol.required}>
+									<lightning-button data-id={protocol.value} label={labels.general_Start}
+										onclick={handleProtocolSelected} variant="brand" stretch></lightning-button>
+								</div>
+								<div if:false={protocol.required}>
+									<lightning-button data-id={protocol.value} label={labels.general_Review}
+										onclick={handleProtocolSelected} variant="neutral" stretch></lightning-button>
+								</div>
+							</div>
+							<template if:true={protocol.showActionButton}>
+							<div if:false={protocol.required} class="button-style button-margin">
+								<lightning-button data-id={protocol.value} label={labels.general_Actions}
+									onclick={handleProtocolSelected} variant={protocol.actionsBrand}
+									stretch></lightning-button>
+							</div>
+							</template>
+						</div>
+					</div>
+				</template>
+			</div>
+		</section>
+	</template>
+	<template if:true={showSurvey}>
+		<div style="overflow: auto">
+			<c-form-filler case-id={recordId} protocol-id={selectedProtocol} survey-view={surveyView}
+				end-survey={endSurvey}></c-form-filler>
+		</div>
+	</template>
+	<template if:true={showFlow}>
+		<lightning-flow flow-api-name={flowApiName} onstatuschange={handleFlowStatusChange}
+			flow-input-variables={inputVariables} flow-finish-behavior="NONE">
+		</lightning-flow>
+	</template>
+</template>

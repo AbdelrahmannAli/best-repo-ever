@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexTestSuite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <testClassName>Syntilio.AuditTrailControllerTest</testClassName>
+    <testClassName>Syntilio.ContactTriggerHandlerTest</testClassName>
+    <testClassName>Syntilio.DataHubCalloutTest</testClassName>
+    <testClassName>Syntilio.DataHubDestinationsTest</testClassName>
+    <testClassName>Syntilio.DataHubModelTest</testClassName>
+    <testClassName>Syntilio.DataHubSynchronisationTest</testClassName>
+    <testClassName>Syntilio.DataHubSyncInfoValidationTest</testClassName>
+    <testClassName>Syntilio.DataHubSyncTest</testClassName>
+    <testClassName>Syntilio.DataHubTestDataFactory</testClassName>
+    <testClassName>Syntilio.DataHubUtilitiesTest</testClassName>
+    <testClassName>Syntilio.FileTriggerHandlerTest</testClassName>
+    <testClassName>Syntilio.HandleExceptionTest</testClassName>
+    <testClassName>Syntilio.HttpClientMock</testClassName>
+    <testClassName>Syntilio.HttpClientTest</testClassName>
+    <testClassName>Syntilio.MockNotSuccessfulDataHubCallout</testClassName>
+    <testClassName>Syntilio.MockSuccessfulDataHubCallout</testClassName>
+    <testClassName>Syntilio.ResponseHandlerTest</testClassName>
+    <testClassName>Syntilio.SchedulableDataHubSyncTest</testClassName>
+    <testClassName>Syntilio.SyntilioHttpClientTest</testClassName>
+    <testClassName>Syntilio.UpsertToDatabaseTest</testClassName>
+</ApexTestSuite>

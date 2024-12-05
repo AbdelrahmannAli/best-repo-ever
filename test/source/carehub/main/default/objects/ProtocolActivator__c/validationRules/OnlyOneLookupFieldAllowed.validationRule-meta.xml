@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OnlyOneLookupFieldAllowed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(Syntilio__Global__c),
+OR(
+AND(
+    NOT(ISBLANK(ContactId__c)),
+    NOT(ISBLANK(Event__c)),
+    ISBLANK(GroupId__c),
+    NOT(ISBLANK(Protocol__c))
+),
+AND(
+    NOT(ISBLANK(ContactId__c)),
+    ISBLANK(Event__c),
+    NOT(ISBLANK(GroupId__c)),
+    NOT(ISBLANK(Protocol__c))
+),
+AND(
+    ISBLANK(ContactId__c),
+    NOT(ISBLANK(Event__c)),
+    NOT(ISBLANK(GroupId__c)),
+    NOT(ISBLANK(Protocol__c))
+),
+AND(
+    NOT(ISBLANK(ContactId__c)),
+    NOT(ISBLANK(Event__c)),
+    NOT(ISBLANK(GroupId__c)),
+    NOT(ISBLANK(Protocol__c))
+),
+AND(
+    ISBLANK(ContactId__c),
+    ISBLANK(Event__c),
+    ISBLANK(GroupId__c),
+    NOT(ISBLANK(Protocol__c))
+)
+))</errorConditionFormula>
+    <errorMessage>Please select one of the following fields: Global, Contact, Event, or Group Name. You cannot fill more than one.</errorMessage>
+</ValidationRule>

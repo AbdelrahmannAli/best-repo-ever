@@ -1,0 +1,21 @@
+<template>
+	<template if:true={showProgressBar}>
+		<template if:true={statusOptions.length}>
+			<lightning-card>
+				<div style="padding-left: 1rem; padding-bottom: 0.5rem">
+					<lightning-progress-indicator type="path" current-step={currentStep}>
+						<template for:each={statusOptions} for:item="option">
+							<lightning-progress-step
+								key={option.value}
+								label={option.label}
+								value={option.value}
+								onclick={handleStepClick}
+							>
+							</lightning-progress-step>
+						</template>
+					</lightning-progress-indicator>
+				</div>
+			</lightning-card>
+		</template>
+	</template>
+</template>

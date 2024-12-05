@@ -1,0 +1,124 @@
+{
+  "appPageId" : "bc71e1f3-3c55-41e7-bb9a-bc38a4f521ba",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "3b321c42-afda-4adc-b398-9aa97327bd44",
+  "label" : "Home",
+  "regions" : [ {
+    "id" : "c3f5a4a2-46ae-4abd-a9d8-11eea7334cd9",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "3a0aa6ef-c51b-4953-b3f4-130299e41140",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "974c8859-f812-4325-8485-7e7a771e86e8",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "111cc",
+            "tabName" : "Details"
+          }, {
+            "UUID" : "25894c51-9c6e-4d81-bf97-078c70e11efc",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Fetch Clients"
+          }, {
+            "UUID" : "15d7a3a9-8031-4e1c-928f-b76fef16ca2d",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Client Registration"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "3a0aa6ef-c51b-4953-b3f4-130299e41140",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!CurrentUser.accountId}"
+          },
+          "componentName" : "forceCommunity:recordDetail",
+          "id" : "60bdfb27-f37f-442a-845e-fe8591cac0e2",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "974c8859-f812-4325-8485-7e7a771e86e8",
+        "regionLabel" : "Details",
+        "regionName" : "111cc",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!CurrentUser.accountId}"
+          },
+          "componentName" : "Syntilio:fetchClients",
+          "id" : "6e6f9b9f-7ed5-46d4-b4dc-f26f80db5a90",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "25894c51-9c6e-4d81-bf97-078c70e11efc",
+        "regionLabel" : "Fetch Clients",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!CurrentUser.accountId}"
+          },
+          "componentName" : "Syntilio:registrationForm",
+          "id" : "e65c681e-497e-4063-8d32-18c135dbd60f",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "15d7a3a9-8031-4e1c-928f-b76fef16ca2d",
+        "regionLabel" : "Client Registration",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "29767721-b676-45f8-8242-796d4d7a0595",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "435fa194-18df-4cda-8057-630a1f9b5c50",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "53af5538-f2a9-4e45-a7ce-d1b27c56736d",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "a3f188b9-a289-4e66-9dd4-1b5190fc8124",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b25cbf41-3896-4397-bc7f-f62910700a37",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

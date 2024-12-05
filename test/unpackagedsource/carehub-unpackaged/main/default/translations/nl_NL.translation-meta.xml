@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <prompts>
+        <name>OmnichannelInappGuidance</name>
+        <promptVersions>
+            <body>Welkom! Om werkitems te ontvangen, schakelt u uw Omni-Channel-status naar &apos;Online&apos;. Klik op de widget in de hulpprogrammabalk en selecteer &apos;Online&apos; om verbonden te blijven.</body>
+            <name>Omnichannel Inapp Guidance</name>
+            <title>Schakel naar online in Omni-Channel</title>
+        </promptVersions>
+    </prompts>
+</Translations>

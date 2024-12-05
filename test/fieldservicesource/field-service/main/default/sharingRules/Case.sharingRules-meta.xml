@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingGuestRules>
+        <fullName>caseWorkOrder</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>caseWorkOrder</label>
+        <sharedTo>
+            <guestUser>Service_Appointment_Booking</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>AssetId</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>true</includeHVUOwnedRecords>
+    </sharingGuestRules>
+</SharingRules>

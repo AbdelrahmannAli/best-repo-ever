@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>A welcoming text, for new useres</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Experience Bundle Welcome Template</name>
+    <style>none</style>
+    <subject>Welcome to {!Community_Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

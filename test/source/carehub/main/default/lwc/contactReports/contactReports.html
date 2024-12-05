@@ -1,0 +1,107 @@
+<template>
+	<template if:true={needsUpdate}>
+		<div class="slds-notify slds-notify_alert slds-alert_warning" role="alert">
+			<span class="slds-assistive-text">warning</span>
+			<h2>{labels.contactReports_ReportsMayBeOutdated}</h2>
+		</div>
+	</template>
+	<div class="header-div">
+		<lightning-input
+			if:true={contactReports}
+			type="search"
+			placeholder={labels.contactReports_searchForContactReport}
+			value={searchTerm}
+			onchange={handleSearch}
+			class="search-size"
+		></lightning-input>
+		<lightning-button-icon
+			icon-name="utility:refresh"
+			variant="brand"
+			onclick={handleButtonClick}
+		></lightning-button-icon>
+	</div>
+	<div if:true={isLoading} class="div-text">
+		<lightning-spinner
+			alternative-text="Loading"
+			size="medium"
+			style="margin: 0 auto"
+		></lightning-spinner>
+	</div>
+	<div class="scrollable">
+		<template for:each={displayedReports} for:item="report">
+			<lightning-card key={report.Id}>
+				<div class="slds-grid">
+					<div class="slds-col slds-size_2-of-6 icon-column">
+						<div class="icon-placeholder">
+							<template if:true={report.Syntilio__Flagged__c}>
+								<lightning-icon
+									icon-name="utility:favorite"
+									size="x-small"
+									variant="brand"
+									class="star-icon"
+								></lightning-icon>
+							</template>
+						</div>
+						<div class="content-column">
+							<template if:true={report.Syntilio__ExternalUpdatedAt__c}>
+								<lightning-formatted-rich-text
+									class="label-class title-bold line-break"
+									value={report.Syntilio__ExternalUpdatedAt__c}
+								></lightning-formatted-rich-text>
+							</template>
+							<template if:true={report.Syntilio__AuthorRole__c}>
+								<span class="role-span">
+									<lightning-formatted-rich-text
+										class="label-class line-break"
+										value={report.firstRole}
+									></lightning-formatted-rich-text>
+									<template if:true={report.hasMore}>
+										<span class="helptext-span">
+											<lightning-helptext
+												icon-name="utility:more"
+												content={report.Syntilio__AuthorRole__c}
+											></lightning-helptext>
+										</span>
+									</template>
+								</span>
+							</template>
+							<template if:true={report.Syntilio__Author__c}>
+								<lightning-formatted-rich-text
+									class="label-class line-break"
+									value={report.Syntilio__Author__c}
+								></lightning-formatted-rich-text>
+							</template>
+							<template if:true={report.Syntilio__ExternalUpdatedAt__c}>
+								<p class="label-class">
+									<a data-id={report.AccountId} onclick={handleAccountClick}>
+										{report.AccountName}
+									</a>
+								</p>
+							</template>
+							<template
+								if:true={report.ExternalSystems}
+								for:each={report.ExternalSystems}
+								for:item="externalSystem"
+							>
+								<span
+									key={externalSystem.Id}
+									class="label-class external-system line-break"
+								>
+									<a data-id={externalSystem.Id} onclick={handleExternalSystemClick}>
+										{externalSystem.Name}
+									</a>
+								</span>
+							</template>
+						</div>
+					</div>
+					<div class="slds-col slds-size_4-of-6">
+						<lightning-formatted-rich-text
+							class="comments-div"
+							value={report.Syntilio__Comments__c}
+						></lightning-formatted-rich-text>
+					</div>
+				</div>
+			</lightning-card>
+		</template>
+	</div>
+</template>

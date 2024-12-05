@@ -1,0 +1,115 @@
+<template>
+  <lightning-button
+    variant="brand"
+    icon-name="utility:edit"
+    label="Create Work Order"
+    title="Create Work Order"
+    name="createWorkOrder"
+    onclick={createWorkOrder}
+    class="slds-align_absolute-center"
+  >
+  </lightning-button>
+
+  <template if:true={openCreateServiceAppointment}>
+    <section
+      role="dialog"
+      tabindex="-1"
+      aria-labelledby="modal-heading-01"
+      aria-modal="true"
+      aria-describedby="modal-createWorkOrder-id-1"
+      class="slds-modal slds-fade-in-open"
+    >
+      <div class="slds-modal__container">
+        <header class="slds-modal__header">
+          <button
+            class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+            title="Close"
+            onclick={closeServiceAppointmentModal}
+          >
+            <lightning-icon
+              icon-name="utility:close"
+              alternative-text="close"
+              variant="inverse"
+              size="small"
+            ></lightning-icon>
+            <span class="slds-assistive-text">Close</span>
+          </button>
+          <h2
+            id="modal-addAccountHeading-01"
+            class="slds-text-heading_medium slds-hyphenate"
+          >
+            Create a new Service Appointment
+          </h2>
+        </header>
+        <div
+          class="slds-modal__content slds-p-around_medium"
+          id="addAccountsModal-content-id-1"
+        >
+          <lightning-record-edit-form
+            object-api-name="ServiceAppointment"
+            onerror={handleError}
+            onsuccess={handleSuccess}
+          >
+            <div class="slds-form-element">
+              <label class="slds-form-element__label">{labelSubject}</label>
+              <lightning-input-field
+                variant="label-hidden"
+                field-name={nameField}
+                required
+              ></lightning-input-field>
+            </div>
+
+            <lightning-messages></lightning-messages>
+            <label for="parentId" class="slds-form-element__label"
+              >Account</label
+            >
+            <lightning-input-field
+              id="parentId"
+              field-name="ParentRecordId"
+              value={workOrderId}
+              variant="label-hidden"
+            ></lightning-input-field>
+            <lightning-input-field
+              field-name="ContactId"
+              value={relatedContactId}
+            ></lightning-input-field>
+            <lightning-input-field field-name="Description">
+            </lightning-input-field>
+            <lightning-input-field field-name="Address">
+            </lightning-input-field>
+            <lightning-input-field field-name="EarliestStartTime">
+            </lightning-input-field>
+            <lightning-input-field field-name="DueDate">
+            </lightning-input-field>
+            <lightning-input-field field-name="ArrivalWindowStartTime">
+            </lightning-input-field>
+            <lightning-input-field field-name="ArrivalWindowEndTime">
+            </lightning-input-field>
+            <lightning-input-field field-name="SchedStartTime">
+            </lightning-input-field>
+            <lightning-input-field field-name="SchedEndTime">
+            </lightning-input-field>
+            <lightning-button
+              class="slds-float_right"
+              variant="brand"
+              type="submit"
+              name="submit"
+              label="Create New"
+            >
+            </lightning-button>
+          </lightning-record-edit-form>
+        </div>
+        <footer class="slds-modal__footer">
+          <button
+            class="slds-button slds-button_neutral"
+            onclick={closeServiceAppointmentModal}
+            title="Cancel"
+          >
+            Cancel
+          </button>
+        </footer>
+      </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+  </template>
+</template>

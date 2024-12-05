@@ -1,0 +1,21 @@
+<template>
+        <div class="card-container">
+                <template if:true={resuscitation}>
+                        <div class={resuscitationClass}>
+                                <span>
+                                        <lightning-icon class="icon-style" size="small"
+                                                icon-name="utility:heart"></lightning-icon>
+                                        {resuscitation}
+                                </span>
+                        </div>
+                </template>
+                <template for:each={alerts} for:item="alert">
+                        <div class="card warning" key={alert.Id}>
+                                <span>
+                                        <img src={alert.Syntilio__Icon__c} alt={alert.Name} class="icon-style" />
+                                        {alert.description}
+                                </span>
+                        </div>
+                </template>
+        </div>
+</template>

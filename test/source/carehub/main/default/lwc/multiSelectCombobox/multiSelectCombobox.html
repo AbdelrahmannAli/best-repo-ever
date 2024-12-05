@@ -1,0 +1,160 @@
+<template>
+    <div class="slds-form-element multi-select-combobox-container">
+        <div class="slds-form-element__control">
+            <div class="slds-combobox_container">
+                <div
+                    class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open"
+                    aria-expanded="true"
+                    aria-haspopup="listbox"
+                    role="combobox"
+                >
+                    <div
+                        class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
+                        role="none"
+                    >
+                        <div
+                            class="slds-input slds-combobox__input"
+                            aria-controls="listbox-id-1"
+                            aria-autocomplete="list"
+                            aria-activedescendant=""
+                            aria-expanded="true"
+                            aria-haspopup="listbox"
+                            id="combobox-id-1"
+                            role="textbox"
+                            onclick={toggleDropdown}
+                        >
+                            <template if:true={selectedOptions.length}>
+                                <div class="slds-pill_container">
+                                    <template for:each={selectedOptions} for:item="option">
+                                        <span class="slds-pill" key={option.value}>
+                                            <span class="slds-pill__label">{option.label}</span>
+                                            <button
+                                                class="slds-button slds-button_icon slds-pill__remove"
+                                                title="Remove"
+                                                data-value={option.value}
+                                                onclick={removeOption}
+                                            >
+                                                <lightning-icon icon-name="utility:close" size="x-small"></lightning-icon>
+                                            </button>
+                                        </span>
+                                    </template>
+                                </div>
+                            </template>
+                            <template if:false={selectedOptions.length}>
+                                <input
+                                    type="text"
+                                    placeholder={placeholder}
+                                    oninput={handleSearch}
+                                    class="slds-input slds-truncate"
+                                    aria-label={placeholder}
+                                    role="combobox"
+                                />
+                            </template>
+                            <button
+                                class="slds-button slds-button_icon slds-input__icon slds-input__icon_right"
+                                title="Show More"
+                                onclick={toggleDropdown}
+                            >
+                                <lightning-icon icon-name="utility:down" size="x-small"></lightning-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        class="slds-dropdown slds-dropdown_length-with-icon-7 slds-dropdown_fluid slds-hide"
+                        role="listbox">
+                        <template if:true={splitContact}>
+                            <div class="slds-m-top_small slds-m-bottom_xx-small custom-grey-text">{labels.searchForClient_Groups}</div>
+                            <ul class="slds-listbox slds-listbox_vertical" role="group" aria-label="Others">
+                                <template for:each={groupedOptions.groups} for:item="option">
+                                    <li class="slds-listbox__item" role="presentation" key={option.value}>
+                                        <div
+                                            class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small slds-media_center"
+                                            role="option"
+                                        >
+                                            <span class="slds-media__body">
+                                                <span class="slds-truncate" title={option.label} data-id={option.value} onclick={handleSelect}>
+                                                    {option.label}
+                                                </span>
+                                            </span>
+                                            <template if:true={multiple}>
+                                                <lightning-input
+                                                    type="checkbox"
+                                                    data-id={option.value}
+                                                    checked={option.selected}
+                                                    disabled={isDisabled}
+                                                    onclick={handleSelect}
+                                                ></lightning-input>
+                                            </template>
+                                        </div>
+                                    </li>
+                                </template>
+                            </ul>
+
+                            <template if:true={showSuggestedTemp}>
+                                <div class="slds-m-bottom_xx-small custom-grey-text">{labels.searchForClient_Suggested}</div>
+                                <template if:false={suggestedCallerflag}>
+                                    <div class="slds-m-bottom_xx-small no-caller">{labels.searchForClient_NoSuggested}</div>
+                                </template>
+                                <template if:true={suggestedCallerflag}>
+                                    <ul class="slds-listbox slds-listbox_vertical" role="group" aria-label="Suggested">
+                                        <template for:each={groupedOptions.careCircleMembers} for:item="option">
+                                            <li class="slds-listbox__item" role="presentation" key={option.value}>
+                                                <div
+                                                    class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small slds-media_center"
+                                                    role="option"
+                                                >
+                                                    <span class="slds-media__body">
+                                                        <span class="slds-truncate" title={option.label} data-id={option.value} onclick={handleSelect}>
+                                                            {option.label}
+                                                        </span>
+                                                    </span>
+                                                    <template if:true={multiple}>
+                                                        <lightning-input
+                                                            type="checkbox"
+                                                            data-id={option.value}
+                                                            checked={option.selected}
+                                                            disabled={isDisabled}
+                                                            onclick={handleSelect}
+                                                        ></lightning-input>
+                                                    </template>
+                                                </div>
+                                            </li>
+                                        </template>
+                                    </ul>
+                                </template>
+                            </template>
+                        </template>
+
+                        <template if:false={splitContact}>
+                            <ul class="slds-listbox slds-listbox_vertical" role="group" aria-label="Suggested for you">
+                                <template for:each={options} for:item="option">
+                                    <li class="slds-listbox__item" role="presentation" key={option.value}>
+                                        <div
+                                            class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small slds-media_center"
+                                            role="option"
+                                        >
+                                            <span class="slds-media__body">
+                                                <span class="slds-truncate" title={option.label} data-id={option.value} onclick={handleSelect}>
+                                                    {option.label}
+                                                </span>
+                                            </span>
+                                            <template if:true={multiple}>
+                                                <lightning-input
+                                                    type="checkbox"
+                                                    data-id={option.value}
+                                                    checked={option.selected}
+                                                    disabled={isDisabled}
+                                                    onclick={handleSelect}
+                                                ></lightning-input>
+                                            </template>
+                                        </div>
+                                    </li>
+                                </template>
+                            </ul>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

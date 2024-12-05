@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UpdateContactLocationinCases__c</fullName>
+    <defaultValue>true</defaultValue>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>If this field is enabled, the flow runs in the background to check for a location related to the contact and then automatically updates the case.</inlineHelpText>
+    <label>Update Contact Location in Cases</label>
+    <type>Checkbox</type>
+</CustomField>

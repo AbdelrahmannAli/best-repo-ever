@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Codeset</label>
+    <name>CodeSet__c</name>
+    <picklistValues>
+        <masterLabel>Blood Pressure</masterLabel>
+        <translation>Bloeddruk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electrocardiogram</masterLabel>
+        <translation>Elektrocardiogram</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Glucose</masterLabel>
+        <translation>Glucose</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Heart Rate</masterLabel>
+        <translation>Hartslag</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oxygen Saturation</masterLabel>
+        <translation>Zuurstofverzadiging</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weight</masterLabel>
+        <translation>Gewicht</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,10 @@
+* {
+    background-color: #fff;
+}
+
+.spinner{
+    position: relative;
+    display: inline-block;
+    width: 8rem;
+    height: 8rem;
+}

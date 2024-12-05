@@ -1,0 +1,9 @@
+Dag {!EmailMessage.ToAddress}
+
+Er is vandaag een Medido melding binnegekomen voor {!Case.Contact}.
+{!Contact.MailingAddress}
+
+Wil je deze opvolgen.
+
+Groet,
+de TWB Zorg CEntrale

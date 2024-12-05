@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EnvironmentTypeIsMissing</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(TEXT(EnvironmentType__c))</errorConditionFormula>
+    <errorDisplayField>EnvironmentType__c</errorDisplayField>
+    <errorMessage>Environment type is a required field, please fill in to be able to save the record.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,29 @@
+{
+  "orgName": "Syntilio",
+  "sourceOrg": "00D7Q000004ScIq",
+  "features": ["EnableSetPasswordInApi", "ServiceCloud","ContactsToMultipleAccounts", "HealthCloudAddOn","DebugApex"],
+  "namespace": "Syntilio",
+  "language": "en_US",
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    },
+    "omniChannelSettings": {
+      "enableOmniChannel": true,
+      "enableOmniSkillsRouting": true
+    },
+    "pathAssistantSettings": {
+      "pathAssistantEnabled": true
+    },  
+    "enhancedNotesSettings": {
+      "enableEnhancedNotes": true
+    },
+    "accountSettings": {
+      "enableRelateContactToMultipleAccounts": true,
+      "enableAccountTeams": true
+    }
+  }
+}

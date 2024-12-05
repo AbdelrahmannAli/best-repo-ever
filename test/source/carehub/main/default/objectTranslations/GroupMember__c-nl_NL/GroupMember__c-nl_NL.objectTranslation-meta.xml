@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value></value>
+    </caseValues>
+    <gender></gender>
+    <nameFieldLabel></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Vul het veld Groepsnaam in.</errorMessage>
+        <name>GroupNameNotEmpty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Zorg ervoor dat u contacten uitsluitend aan een contactgroep toewijst.</errorMessage>
+        <name>GroupOfContactsOnly</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Zorg ervoor dat u gebeurtenisconfiguraties exclusief toewijst aan een gebeurtenisconfiguratiegroep.</errorMessage>
+        <name>GroupOfEventConfigurationsOnly</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Vul de contactpersoon naam of de naam van de gebeurtenisconfiguratie in, maar niet beide.</errorMessage>
+        <name>GroupTypeNotEmpty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Selecteer Contactpersoon naam of Naam van gebeurtenisconfiguratie, maar niet beide.</errorMessage>
+        <name>OneGroupTypeOnly</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,51 @@
+.wrapper-container {
+	position: relative;
+}
+.medical-notes-container {
+	padding: 0.1rem;
+	margin-bottom: 0.2rem;
+	background-color: #fff;
+}
+
+.border-title {
+	margin-top: 0;
+	margin-bottom: 0.3rem;
+	font-size: 1rem;
+	color: #333;
+	font-weight: bold;
+	margin-left: 0.7rem;
+}
+.list {
+	margin-left: 1.4rem;
+	margin-bottom: 0.7rem;
+}
+.refresh-button-div {
+	display: flex;
+	justify-content: end;
+	align-items: start;
+	padding-bottom: 0.5rem;
+}
+p {
+    margin-bottom: 1rem; 
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20;
+}
+
+.no-events-message {
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    color: #777;
+}
+
+.error-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

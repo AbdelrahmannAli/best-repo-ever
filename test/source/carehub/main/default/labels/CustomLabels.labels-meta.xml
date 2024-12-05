@@ -1,0 +1,1649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>general_Relationship</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Relationship</shortDescription>
+        <value>Relationship</value>
+    </labels>
+    <labels>
+        <fullName>general_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>general_Phone</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Phone</shortDescription>
+        <value>Phone</value>
+    </labels>
+    <labels>
+        <fullName>general_LastModifiedAt</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Last Modified At</shortDescription>
+        <value>Last Modified At</value>
+    </labels>
+    <labels>
+        <fullName>general_Available</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Available</shortDescription>
+        <value>Available</value>
+    </labels>
+    <labels>
+        <fullName>general_All</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - All</shortDescription>
+        <value>All</value>
+    </labels>
+    <labels>
+        <fullName>general_Formal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Formal</shortDescription>
+        <value>Formal</value>
+    </labels>
+    <labels>
+        <fullName>general_Informal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Informal</shortDescription>
+        <value>Informal</value>
+    </labels>
+    <labels>
+        <fullName>general_New</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - New</shortDescription>
+        <value>New</value>
+    </labels>
+    <labels>
+        <fullName>general_History</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - History</shortDescription>
+        <value>History</value>
+    </labels>
+    <labels>
+        <fullName>general_Send</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Send</shortDescription>
+        <value>Send</value>
+    </labels>
+    <labels>
+        <fullName>general_Protocols</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Protocols</shortDescription>
+        <value>Protocols</value>
+    </labels>
+    <labels>
+        <fullName>general_EstimatedTime</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Estimated Time</shortDescription>
+        <value>Estimated Time</value>
+    </labels>
+    <labels>
+        <fullName>general_Minutes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Minutes</shortDescription>
+        <value>Minutes</value>
+    </labels>
+    <labels>
+        <fullName>general_Finished</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Finished</shortDescription>
+        <value>Finished</value>
+    </labels>
+    <labels>
+        <fullName>general_Required</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Required</shortDescription>
+        <value>Required</value>
+    </labels>
+    <labels>
+        <fullName>general_ActionsInProgress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Actions in progress</shortDescription>
+        <value>Actions in progress</value>
+    </labels>
+    <labels>
+        <fullName>general_Start</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Start</shortDescription>
+        <value>Start</value>
+    </labels>
+    <labels>
+        <fullName>general_Review</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Review</shortDescription>
+        <value>Review</value>
+    </labels>
+    <labels>
+        <fullName>general_Actions</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Actions</shortDescription>
+        <value>Actions</value>
+    </labels>
+    <labels>
+        <fullName>general_Close</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Close</shortDescription>
+        <value>Close</value>
+    </labels>
+    <labels>
+        <fullName>general_Contact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Contact</shortDescription>
+        <value>Contact</value>
+    </labels>
+    <labels>
+        <fullName>general_RelatedContact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Related Contact</shortDescription>
+        <value>Related Contact</value>
+    </labels>
+    <labels>
+        <fullName>general_Order</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Order</shortDescription>
+        <value>Order</value>
+    </labels>
+    <labels>
+        <fullName>general_Draft</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Draft</shortDescription>
+        <value>Draft</value>
+    </labels>
+    <labels>
+        <fullName>general_Activated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Activated</shortDescription>
+        <value>Activated</value>
+    </labels>
+    <labels>
+        <fullName>general_Cancelled</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Cancelled</shortDescription>
+        <value>Cancelled</value>
+    </labels>
+    <labels>
+        <fullName>general_Family</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Family</shortDescription>
+        <value>Family</value>
+    </labels>
+    <labels>
+        <fullName>general_Code</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Code</shortDescription>
+        <value>Code</value>
+    </labels>
+    <labels>
+        <fullName>general_Price</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Price</shortDescription>
+        <value>Price</value>
+    </labels>
+    <labels>
+        <fullName>general_Quantity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Quantity</shortDescription>
+        <value>Quantity</value>
+    </labels>
+    <labels>
+        <fullName>general_StartDate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Start Date</shortDescription>
+        <value>Start Date</value>
+    </labels>
+    <labels>
+        <fullName>general_EndDate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - End Date</shortDescription>
+        <value>End Date</value>
+    </labels>
+    <labels>
+        <fullName>general_Cancel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>general_Next</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Next</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>general_Back</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Back</shortDescription>
+        <value>Back</value>
+    </labels>
+    <labels>
+        <fullName>general_Submit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Submit</shortDescription>
+        <value>Submit</value>
+    </labels>
+    <labels>
+        <fullName>general_SubmissionError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Submission Error </shortDescription>
+        <value>Submission Error </value>
+    </labels>
+    <labels>
+        <fullName>general_SubmissionError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Submission Error</shortDescription>
+        <value>Submission Error</value>
+    </labels>
+    <labels>
+        <fullName>general_FillRequiredFields</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Fill required fields</shortDescription>
+        <value>Please fill the required fields.</value>
+    </labels>
+    <labels>
+        <fullName>general_Subscriptions</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Subscriptions</shortDescription>
+        <value>Subscriptions</value>
+    </labels>
+    <labels>
+        <fullName>general_Update</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Update</shortDescription>
+        <value>Update</value>
+    </labels>
+    <labels>
+        <fullName>general_Order2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Order2</shortDescription>
+        <value>Order2</value>
+    </labels>
+    <labels>
+        <fullName>general_PriceBook</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Price Book</shortDescription>
+        <value>Price Book</value>
+    </labels>
+    <labels>
+        <fullName>general_ActivationReminder</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Activation Reminder</shortDescription>
+        <value>Activation Reminder</value>
+    </labels>
+    <labels>
+        <fullName>general_ContactCases</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Contact Cases</shortDescription>
+        <value>Contact Cases</value>
+    </labels>
+    <labels>
+        <fullName>general_CaseNumber</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Case Number</shortDescription>
+        <value>Case Number</value>
+    </labels>
+    <labels>
+        <fullName>general_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Subject</shortDescription>
+        <value>Subject</value>
+    </labels>
+    <labels>
+        <fullName>general_EventCode</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Event Code</shortDescription>
+        <value>Event Code</value>
+    </labels>
+    <labels>
+        <fullName>general_Category</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Category</shortDescription>
+        <value>Category</value>
+    </labels>
+    <labels>
+        <fullName>general_SessionsDuration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Sessions Duration</shortDescription>
+        <value>Sessions Duration</value>
+    </labels>
+    <labels>
+        <fullName>general_CreatedBy</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Created By</shortDescription>
+        <value>Created By</value>
+    </labels>
+    <labels>
+        <fullName>general_Action</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Action</shortDescription>
+        <value>Action</value>
+    </labels>
+    <labels>
+        <fullName>general_Details</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Details</shortDescription>
+        <value>Details</value>
+    </labels>
+    <labels>
+        <fullName>general_SelectExternalSystem</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Select External System</shortDescription>
+        <value>Select External System</value>
+    </labels>
+    <labels>
+        <fullName>general_NoOptionsAvailable</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - No options available</shortDescription>
+        <value>No options available</value>
+    </labels>
+    <labels>
+        <fullName>general_FirstName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - First Name</shortDescription>
+        <value>First Name</value>
+    </labels>
+    <labels>
+        <fullName>general_LastName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Last Name</shortDescription>
+        <value>Last Name</value>
+    </labels>
+    <labels>
+        <fullName>general_MobilePhone</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Mobile Phone</shortDescription>
+        <value>Mobile Phone</value>
+    </labels>
+    <labels>
+        <fullName>general_MailingCity</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Mailing City</shortDescription>
+        <value>Mailing City</value>
+    </labels>
+    <labels>
+        <fullName>general_MailingCountry</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Mailing Country</shortDescription>
+        <value>Mailing Country</value>
+    </labels>
+    <labels>
+        <fullName>general_MailingPostalCode</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Mailing PostalCode</shortDescription>
+        <value>Mailing PostalCode</value>
+    </labels>
+    <labels>
+        <fullName>general_MailingStreet</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Mailing Street</shortDescription>
+        <value>Mailing Street</value>
+    </labels>
+    <labels>
+        <fullName>general_HomePhone</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Home Phone</shortDescription>
+        <value>Home Phone</value>
+    </labels>
+    <labels>
+        <fullName>general_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Email</shortDescription>
+        <value>Email</value>
+    </labels>
+    <labels>
+        <fullName>general_Gender</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Gender</shortDescription>
+        <value>Gender</value>
+    </labels>
+    <labels>
+        <fullName>general_Birthdate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Birthdate</shortDescription>
+        <value>Birthdate</value>
+    </labels>
+    <labels>
+        <fullName>general_Locations</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Locations</shortDescription>
+        <value>Locations</value>
+    </labels>
+    <labels>
+        <fullName>general_Inactive</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Inactive</shortDescription>
+        <value>Inactive</value>
+    </labels>
+    <labels>
+        <fullName>general_Registration</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Registration</shortDescription>
+        <value>Registration</value>
+    </labels>
+    <labels>
+        <fullName>general_FullName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Full Name</shortDescription>
+        <value>Full Name</value>
+    </labels>
+    <labels>
+        <fullName>general_ExternalSystem</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - External System</shortDescription>
+        <value>External System</value>
+    </labels>
+    <labels>
+        <fullName>general_ClientID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Client ID</shortDescription>
+        <value>Client ID</value>
+    </labels>
+        <labels>
+        <fullName>general_ClientIdentification</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Client Identification</shortDescription>
+        <value>Client Identification</value>
+    </labels>
+    <labels>
+        <fullName>general_Save</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>general_InvalidMobilePhoneNumber</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Invalid mobile phone number</shortDescription>
+        <value>Invalid mobile phone number</value>
+    </labels>
+    <labels>
+        <fullName>general_InvalidEmailAddressFormat</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Invalid email address format</shortDescription>
+        <value>Invalid email address format</value>
+    </labels>
+    <labels>
+        <fullName>general_SelectLocations</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Select Locations</shortDescription>
+        <value>Select Locations</value>
+    </labels>
+    <labels>
+        <fullName>general_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Status</shortDescription>
+        <value>Status</value>
+    </labels>
+    <labels>
+        <fullName>general_SelectStatus</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Select Status</shortDescription>
+        <value>Select Status</value>
+    </labels>
+    <labels>
+        <fullName>general_SubscriptionType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Subscription Type</shortDescription>
+        <value>Subscription Type</value>
+    </labels>
+    <labels>
+        <fullName>general_SelectSubscriptionType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Select Subscription Type</shortDescription>
+        <value>Select Subscription Type</value>
+    </labels>
+    <labels>
+        <fullName>general_MinutesPerWeek</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Minutes/week</shortDescription>
+        <value>Minutes/week</value>
+    </labels>
+    <labels>
+        <fullName>general_Subscription</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Subscription</shortDescription>
+        <value>Subscription</value>
+    </labels>
+    <labels>
+        <fullName>general_ChangedOn</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Changed On</shortDescription>
+        <value>Changed On</value>
+    </labels>
+    <labels>
+        <fullName>general_ChangedBy</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Changed By</shortDescription>
+        <value>Changed By</value>
+    </labels>
+    <labels>
+        <fullName>general_OrderNumber</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Order Number</shortDescription>
+        <value>Order Number</value>
+    </labels>
+    <labels>
+        <fullName>general_OrderStatus</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Order Status</shortDescription>
+        <value>Order Status</value>
+    </labels>
+    <labels>
+        <fullName>general_OrderActivationDate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Order Activation Date</shortDescription>
+        <value>Order Activation Date</value>
+    </labels>
+    <labels>
+        <fullName>general_End</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - End</shortDescription>
+        <value>End</value>
+    </labels>
+    <labels>
+        <fullName>general_CancellationInProgress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Cancellation in progress</shortDescription>
+        <value>Cancellation in progress</value>
+    </labels>
+    <labels>
+        <fullName>general_Active</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Active</shortDescription>
+        <value>Active</value>
+    </labels>
+    <labels>
+        <fullName>general_LastDays</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Last Days</shortDescription>
+        <value>Last {number} Days</value>
+    </labels>
+    <labels>
+        <fullName>general_LastWeeks</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Last Weeks</shortDescription>
+        <value>Last {number} Weeks</value>
+    </labels>
+    <labels>
+        <fullName>general_LastMonths</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Last Months</shortDescription>
+        <value>Last {number} Months</value>
+    </labels>
+    <labels>
+        <fullName>general_January</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - January</shortDescription>
+        <value>January</value>
+    </labels>
+    <labels>
+        <fullName>general_February</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - February</shortDescription>
+        <value>February</value>
+    </labels>
+    <labels>
+        <fullName>general_March</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - March</shortDescription>
+        <value>March</value>
+    </labels>
+    <labels>
+        <fullName>general_April</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - April</shortDescription>
+        <value>April</value>
+    </labels>
+    <labels>
+        <fullName>general_May</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - May</shortDescription>
+        <value>May</value>
+    </labels>
+    <labels>
+        <fullName>general_June</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - June</shortDescription>
+        <value>June</value>
+    </labels>
+    <labels>
+        <fullName>general_July</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - July</shortDescription>
+        <value>July</value>
+    </labels>
+    <labels>
+        <fullName>general_August</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - August</shortDescription>
+        <value>August</value>
+    </labels>
+    <labels>
+        <fullName>general_September</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - September</shortDescription>
+        <value>September</value>
+    </labels>
+    <labels>
+        <fullName>general_October</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - October</shortDescription>
+        <value>October</value>
+    </labels>
+    <labels>
+        <fullName>general_November</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - November</shortDescription>
+        <value>November</value>
+    </labels>
+    <labels>
+        <fullName>general_December</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - December</shortDescription>
+        <value>December</value>
+    </labels>
+    <labels>
+        <fullName>general_Copy</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Copy</shortDescription>
+        <value>Copy</value>
+    </labels>
+    <labels>
+        <fullName>general_Done</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Done</shortDescription>
+        <value>Done</value>
+    </labels>
+    <labels>
+        <fullName>general_Previous</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Previous</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>general_Finish</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Finish</shortDescription>
+        <value>Finish</value>
+    </labels>
+    <labels>
+        <fullName>general_CopiedToClipboard</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Copied to Clipboard</shortDescription>
+        <value>Copied to Clipboard</value>
+    </labels>
+
+    <labels>
+        <fullName>general_RelatedCases</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Related Cases</shortDescription>
+        <value>Related Cases</value>
+    </labels>
+    <labels>
+        <fullName>general_Optional</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Optional</shortDescription>
+        <value>optional</value>
+    </labels>
+    <labels>
+        <fullName>searchForClient_WhoAreYouCallingFor</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search for client - Who are you calling for</shortDescription>
+        <value>Caller/client component </value>
+    </labels>
+    <labels>
+        <fullName>searchForClient_Caller</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search for client - Caller</shortDescription>
+        <value>Caller </value>
+    </labels>
+    <labels>
+        <fullName>searchForClient_HelpText</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search for client - Help Text</shortDescription>
+        <value>Use this component to search for the client when the caller is unknown or calling on behalf of the client.</value>
+    </labels>
+    <labels>
+        <fullName>searchForClient_SearchForPatient</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search for client - Search for patient</shortDescription>
+        <value>Search for client</value>
+    </labels>
+    <labels>
+        <fullName>searchForClient_SearchForCaller</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search for client - Search for caller</shortDescription>
+        <value>Search for caller</value>
+    </labels>
+    <labels>
+        <fullName>careCircle_NoCareCircleMembers</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Care Circle - No care circle members</shortDescription>
+        <value>No Available Members</value>
+    </labels>
+    <labels>
+        <fullName>careCircle_SyncCareCircle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Care Circle - Sync Care Circle</shortDescription>
+        <value>Sync Care Circle</value>
+    </labels>
+    <labels>
+        <fullName>careCircle_CopyEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email copied to clipboard</shortDescription>
+        <value>Email copied to clipboard</value>
+    </labels>
+    <labels>
+        <fullName>accountExternalSystems_ComboboxLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Care Circle - Combobox Label</shortDescription>
+        <value>Select External System to Fetch Clients</value>
+    </labels>
+    <labels>
+        <fullName>accountExternalSystems_ComboboxPlaceholder</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Care Circle - Combobox Placeholder</shortDescription>
+        <value>Select External System</value>
+    </labels>
+    <labels>
+        <fullName>accountExternalSystems_ComboboxMissingMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Care Circle - Combobox Missing Message</shortDescription>
+        <value>Please add the required external system</value>
+    </labels>
+    <labels>
+        <fullName>caseEmergencyContacts_EmergencyContacts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Emergency Contacts - Emergency Contacts</shortDescription>
+        <value>Emergency Contacts</value>
+    </labels>
+    <labels>
+        <fullName>caseEmergencyContacts_NewEmergencyContact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Emergency Contacts - New Emergency Contact</shortDescription>
+        <value>New Emergency Contact</value>
+    </labels>
+    <labels>
+        <fullName>caseTabClosureConfirmation_ConfirmationMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Tab Closure Confirmation - Confirmation Message</shortDescription>
+        <value>Are you sure you want to navigate away from the case without closing it?</value>
+    </labels>
+    <labels>
+        <fullName>changeSubscription_OrderInfo</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Change Subscription - Order Info</shortDescription>
+        <value>Order Info</value>
+    </labels>
+    <labels>
+        <fullName>changeSubscription_SelectProducts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Change Subscription - Select Products</shortDescription>
+        <value>Select Products</value>
+    </labels>
+    <labels>
+        <fullName>changeSubscription_EditOrderProducts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Change Subscription - Edit Order Products</shortDescription>
+        <value>Edit Order Products</value>
+    </labels>
+    <labels>
+        <fullName>changeSubscription_SelectOrderToEdit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Change Subscription - Select order to edit</shortDescription>
+        <value>Please select an order to edit.</value>
+    </labels>
+    <labels>
+        <fullName>changeSubscription_SelectOneProduct</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Change Subscription - Select one product</shortDescription>
+        <value>Please select at least one product.</value>
+    </labels>
+    <labels>
+        <fullName>changeSubscription_SelectOrder</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Change Subscription - Select order</shortDescription>
+        <value>Select Order</value>
+    </labels>
+    <labels>
+        <fullName>changeSubscription_OrderWillEndOnSpecifiedDate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Change Subscription - Order will end on specified date</shortDescription>
+        <value>The order will be ended on the specified date</value>
+    </labels>
+    <labels>
+        <fullName>changeSubscription_OrderWillEndOn</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Change Subscription - Order will end on</shortDescription>
+        <value>This order will end on</value>
+    </labels>
+    <labels>
+        <fullName>changeSubscription_NewOrder</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Change Subscription - New Order</shortDescription>
+        <value>New Order</value>
+    </labels>
+    <labels>
+        <fullName>changeSubscription_UpdateOrder</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Change Subscription - Update Order</shortDescription>
+        <value>Update Order</value>
+    </labels>
+    <labels>
+        <fullName>changeSubscription_OptionalReminderXDays</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Change Subscription - Optional Reminder X Days</shortDescription>
+        <value>Optional reminder X days before the order start date</value>
+    </labels>
+    <labels>
+        <fullName>contactGroup_ContactWithinSameGroup</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact Group - Contact within same group</shortDescription>
+        <value>Contact within the same group</value>
+    </labels>
+    <labels>
+        <fullName>contactMedicalNotes_UpdatingMedicalNotesFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact Medical Notes - Updating medical notes failed</shortDescription>
+        <value>Updating contact medical notes failed. You can try manually updating it. If issues persist, contact your administrator for assistance</value>
+    </labels>
+    <labels>
+        <fullName>contactNotes_UpdatingContactNotesFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact Notes - Updating contact notes failed</shortDescription>
+        <value>Updating contact notes failed. You can try manually updating it. If issues persist, contact your administrator for assistance</value>
+    </labels>
+    <labels>
+        <fullName>contactReports_UpdatingContactReportsFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact Reports - Updating contact reports failed</shortDescription>
+        <value>Updating contact reports failed. You can try manually updating it. If issues persist, contact your administrator for assistance</value>
+    </labels>
+    <labels>
+        <fullName>contactReports_ReportsMayBeOutdated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact Reports - Reports may be outdated</shortDescription>
+        <value>The reports may be outdated. Refresh the page to see the latest information.</value>
+    </labels>
+    <labels>
+        <fullName>contactReports_searchForContactReport</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact Reports - Search for contact report</shortDescription>
+        <value>Search for contact report</value>
+    </labels>
+    <labels>
+        <fullName>errorUI_UnexpectedError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error UI - Unexpected error</shortDescription>
+        <value>An unexpected error has occurred. Try refreshing the page, and if the problem continues, contact your system administrator or service provider. Use this Id to open a ticket</value>
+    </labels>
+    <labels>
+        <fullName>fetchClients_FetchClients</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fetch Clients - Fetch Clients</shortDescription>
+        <value>Fetch Clients</value>
+    </labels>
+    <labels>
+        <fullName>fetchClients_FetchClientsData</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fetch Clients - Fetch Clients Data</shortDescription>
+        <value>Fetch Clients Data</value>
+    </labels>
+    <labels>
+        <fullName>fetchClients_FetchClientsProgress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fetch Clients - Fetch Clients Progress</shortDescription>
+        <value>Fetch Clients Progress</value>
+    </labels>
+    <labels>
+        <fullName>fetchClients_IntegrationTimeout</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Fetch Clients - Integration Timeout</shortDescription>
+        <value>Integration time out, Please try again and if the issue still persist contact your system admin.</value>
+    </labels>
+    <labels>
+        <fullName>inactiveClientMessage_NoActiveSubscription</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Inactive Client Message - No active subscription</shortDescription>
+        <value>This client does not have an active subscription</value>
+    </labels>
+    <labels>
+        <fullName>inactiveClientMessage_ClientInactiveAsOf</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Inactive Client Message - Client Inactive as of</shortDescription>
+        <value>This client will be inactive as of</value>
+    </labels>
+    <labels>
+        <fullName>inactiveClientMessage_InactiveAsOf</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Inactive Client Message - Inactive as of</shortDescription>
+        <value>Inactive as of</value>
+    </labels>
+    <labels>
+        <fullName>registrationForm_WhichClient</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Registration Form - Which client</shortDescription>
+        <value>Which client would you like to register?</value>
+    </labels>
+    <labels>
+        <fullName>registrationForm_InformationCorrectNext</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Registration Form - Information correct next</shortDescription>
+        <value>If the information is correct, click next. If not, click back to re-enter the client ID</value>
+    </labels>
+    <labels>
+        <fullName>registrationForm_SeeBeforeMovingForward</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Registration Form - See before moving forward</shortDescription>
+        <value>See that before moving forward</value>
+    </labels>
+    <labels>
+        <fullName>registrationForm_FetchedClient</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Registration Form - Fetched Client</shortDescription>
+        <value>Fetched Client</value>
+    </labels>
+    <labels>
+        <fullName>registrationForm_FillInRequestedClientID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Registration Form - Fill in requested client ID</shortDescription>
+        <value>Please fill the requested client ID</value>
+    </labels>
+    <labels>
+        <fullName>registrationForm_ClientCreatedSuccessfully</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Registration Form - Client created successfully</shortDescription>
+        <value>Client was created successfully</value>
+    </labels>
+    <labels>
+        <fullName>registrationForm_SelectSalutation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Registration Form - Select salutation</shortDescription>
+        <value>Please select a salutation</value>
+    </labels>
+    <labels>
+        <fullName>registrationForm_EnterValidEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Registration Form - Enter valid email</shortDescription>
+        <value>Please enter a valid email address</value>
+    </labels>
+    <labels>
+        <fullName>registrationForm_EnterValidMobilePhone</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Registration Form - Enter valid mobile phone</shortDescription>
+        <value>Please enter a valid mobile phone number</value>
+    </labels>
+    <labels>
+        <fullName>registrationForm_ClientIDNotValid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Registration Form - Client ID is not valid</shortDescription>
+        <value>Client ID is not valid</value>
+    </labels>
+    <labels>
+        <fullName>safetyBadges_UpdatingSafetyBadgesFailed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Safety Badges - Updating safety badges failed</shortDescription>
+        <value>Updating safety badges failed. You can try manually updating it. If issues persist, contact your administrator for assistance</value>
+    </labels>
+    <labels>
+        <fullName>subscriptionsHistory_EnterClientID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Subscriptions History - Enter Client ID</shortDescription>
+        <value>Enter Client ID</value>
+    </labels>
+    <labels>
+        <fullName>subscriptionsHistory_ClientNumber</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Subscriptions History - Client Number</shortDescription>
+        <value>Client Number</value>
+    </labels>
+    <labels>
+        <fullName>subscriptionsHistory_EndSubscription</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Subscriptions History - End Subscription</shortDescription>
+        <value>End Subscription</value>
+    </labels>
+    <labels>
+        <fullName>syntilioConsoleCaseCentralist_MedicalNotes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Accordion Name for medical notes</shortDescription>
+        <value>Medical Notes</value>
+    </labels>
+    <labels>
+        <fullName>syntilioConsoleCaseCentralist_ClientDevice</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Accordion Name for client devices</shortDescription>
+        <value>Client Devices</value>
+    </labels>
+    <labels>
+        <fullName>syntilioConsoleCaseCentralist_CareCircle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Accordion Name for care circle</shortDescription>
+        <value>Care Circle</value>
+    </labels>
+    <labels>
+        <fullName>syntilioConsoleCaseCentralist_ClientNotes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Accordion Name for client notes</shortDescription>
+        <value>Medical Notes</value>
+    </labels>
+    <labels>
+        <fullName>syntilioConsoleCaseCentralist_ClientInformation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Client Information</shortDescription>
+        <value>Client Information</value>
+    </labels>
+    <labels>
+        <fullName>syntilioConsoleCaseCentralist_MedicalReport</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Medical Report</shortDescription>
+        <value>ECD Medical Report</value>
+    </labels>
+    <labels>
+        <fullName>syntilioConsoleCaseCentralist_CaseNotes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Notes</shortDescription>
+        <value>Case Notes</value>
+    </labels>
+    <labels>
+        <fullName>syntilioConsoleCaseCentralist_ClientLatestReports</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Client Latest Reports</shortDescription>
+        <value>Client Latest Reports</value>
+    </labels>
+    <labels>
+        <fullName>general_RecentCases</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Recent Cases</shortDescription>
+        <value>Recent Cases</value>
+    </labels>
+    <labels>
+        <fullName>general_PersonalNotepad</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Personal Notepad</shortDescription>
+        <value>Personal Notepad</value>
+    </labels>
+    <labels>
+        <fullName>general_AccountDetails</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Account Details</shortDescription>
+        <value>Account Details</value>
+    </labels>
+    <labels>
+        <fullName>general_ManageClients</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Manage Clients</shortDescription>
+        <value>Manage Clients</value>
+    </labels>
+    <labels>
+        <fullName>general_CacheData</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Cache Data</shortDescription>
+        <value>Cache Data</value>
+    </labels> 
+    <labels>
+        <fullName>general_CaseHistory</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Case History</shortDescription>
+        <value>Case History</value>
+    </labels>
+    <labels>
+        <fullName>general_AssetDetails</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Asset Details</shortDescription>
+        <value>Asset Details</value>
+    </labels>
+    <labels>
+        <fullName>general_ExternalIds</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - External IDs</shortDescription>
+        <value>External IDs</value>
+    </labels>
+    <labels>
+        <fullName>general_OpenCases</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Open Cases</shortDescription>
+        <value>Open Cases</value>
+    </labels>
+    <labels>
+        <fullName>general_ClosedCases</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Closed Cases</shortDescription>
+        <value>Closed Cases</value>
+    </labels>
+    <labels>
+        <fullName>general_ClientDetails</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Client Details</shortDescription>
+        <value>Client Details</value>
+    </labels>
+    <labels>
+        <fullName>general_CaseDetails</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Case Details</shortDescription>
+        <value>Case Details</value>
+    </labels>
+    <labels>
+        <fullName>general_SystemLogs</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - System Logs</shortDescription>
+        <value>System Logs</value>
+    </labels>
+    <labels>
+        <fullName>general_AppointmentCard</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Appointment Card</shortDescription>
+        <value>Appointment Card</value>
+    </labels>
+    <labels>
+        <fullName>general_Cases</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Cases</shortDescription>
+        <value>Cases</value>
+    </labels>
+    <labels>
+        <fullName>general_ClientContacts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Client Contacts</shortDescription>
+        <value>Client Contacts</value>
+    </labels>
+    <labels>
+        <fullName>general_ClientDashboard</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Client Dashboard</shortDescription>
+        <value>Client Dashboard</value>
+    </labels>
+    <labels>
+        <fullName>general_AgendaAppointments</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Agenda Appointments</shortDescription>
+        <value>Agenda Appointments</value>
+    </labels>
+    <labels>
+        <fullName>general_ContactsContracts</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Contacts / Contracts</shortDescription>
+        <value>Contacts / Contracts</value>
+    </labels>
+    <labels>
+        <fullName>general_CommunicationChatter</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Communication (Chatter)</shortDescription>
+        <value>Communication (Chatter)</value>
+    </labels>
+    <labels>
+        <fullName>general_EventHistory</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Event History</shortDescription>
+        <value>Event History</value>
+    </labels>
+    <labels>
+        <fullName>general_ClientNotes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Client Notes</shortDescription>
+        <value>Client Notes</value>
+    </labels>
+    <labels>
+        <fullName>general_Appointments</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Appointments</shortDescription>
+        <value>Appointments</value>
+    </labels>
+    <labels>
+        <fullName>general_Communication</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Communication</shortDescription>
+        <value>Communication</value>
+    </labels>
+    <labels>
+        <fullName>general_AssetsForParentContact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Assets for Parent Contact</shortDescription>
+        <value>Assets for Parent Contact</value>
+    </labels>
+    <labels>
+        <fullName>general_HealthcareServices</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Healthcare Services</shortDescription>
+        <value>Healthcare Services</value>
+    </labels>
+    <labels>
+        <fullName>dynamicProtocols_FailedToSubmitForm</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Failed to submit form</shortDescription>
+        <value>Failed to submit form</value>
+    </labels>
+    <labels>
+        <fullName>dynamicProtocols_AnsweredQuestions</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Answered Questions</shortDescription>
+        <value>Answered {ansQuestion} from {allQuestions} questions</value>
+    </labels>
+    <labels>
+        <fullName>caseReport_ActionFor</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>caseReport - Action for</shortDescription>
+        <value>Action for</value>
+    </labels>
+    <labels>
+        <fullName>caseReport_VisibilityFor</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription> Medical Report - Visibility for</shortDescription>
+        <value>Visible for</value>
+    </labels>
+    <labels>
+        <fullName>caseReport_ActionForPlaceholder</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription> Medical Report - Action for placeholder</shortDescription>
+        <value>Nobody (or select for who)</value>
+    </labels>
+    <labels>
+        <fullName>caseReport_VisibilityForPlaceholder</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription> Medical Report - Visibility for placeholder</shortDescription>
+        <value>Everyone (or select for who)</value>
+    </labels>
+    <labels>
+        <fullName>general_MainLocationName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - MainLocationName</shortDescription>
+        <value>Main Location</value>
+    </labels>
+    <labels>
+        <fullName>careCircle_NoMedicalNotes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Care Circle - No Medical Notes</shortDescription>
+        <value>No Available Data</value>
+    </labels>
+    <labels>
+        <fullName>careCircle_NoUpcomingAppointments</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Care Circle - No Upcoming Appointments</shortDescription>
+        <value>No Upcoming Appointments for the next 8 days</value>
+    </labels>
+    <labels>
+        <fullName>caseProgressIndicator_NotCaseOwner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Progress Indicator - Not Case Owner</shortDescription>
+        <value>You are not the case owner, do you want to assign it to yourself?</value>
+    </labels>
+        <labels>
+        <fullName>caseProgressIndicator_CaseAutomaticallyClosed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Progress Indicator - Case Automatically Closed</shortDescription>
+        <value>Case Status cannot be changed as it is automatically closed</value>
+    </labels>
+    <labels>
+        <fullName>feedbackForm_WhatIsTheProblem</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Feedback Form - The Problem</shortDescription>
+        <value>What is the problem?</value>
+    </labels>
+    <labels>
+        <fullName>feedbackForm_UrlLink</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Feedback Form - Url Link</shortDescription>
+        <value>Can you add URL link?</value>
+    </labels>
+    <labels>
+        <fullName>feedbackForm_StepsToReproduce</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Feedback Form - Steps To Reproduce</shortDescription>
+        <value>What are the steps to reproduce this Bug?</value>
+    </labels>
+    <labels>
+        <fullName>feedbackForm_Expected</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Feedback Form - Expected</shortDescription>
+        <value>What did you expect?</value>
+    </labels>
+    <labels>
+        <fullName>feedbackForm_Happened</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Feedback Form - Happened</shortDescription>
+        <value>What actually happened?</value>
+    </labels>
+    <labels>
+        <fullName>feedbackForm_Problem</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Feedback Form - How Big Is The Problem</shortDescription>
+        <value>How big is this problem for you or your organization?</value>
+    </labels>
+    <labels>
+        <fullName>feedbackForm_AttachImage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Feedback Form - Attach Image</shortDescription>
+        <value>Attach Image</value>
+    </labels>
+    <labels>
+        <fullName>case_CreateEmptyCase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case - Create Empty Case</shortDescription>
+        <value>Create Empty Case</value>
+    </labels>
+    <labels>
+        <fullName>feedbackForm</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Feedback Form</shortDescription>
+        <value>Feedback Form</value>
+    </labels>
+    <labels>
+        <fullName>searchForClient_NoSuggested</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search For Client - No Suggested</shortDescription>
+        <value>No suggested Contact Person</value>
+    </labels>
+    <labels>
+        <fullName>searchForClient_Others</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search For Client - Others</shortDescription>
+        <value>Others</value>
+    </labels>
+    <labels>
+        <fullName>searchForClient_Suggested</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search For Client - Suggested</shortDescription>
+        <value>Care Network</value>
+    </labels>
+    <labels>
+        <fullName>searchForClient_Groups</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search For Client - Groups</shortDescription>
+        <value>Groups</value>
+    </labels>
+    <labels>
+        <fullName>searchForClient_CheckBox</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search for client - Check Box</shortDescription>
+        <value>Caller is Client</value>
+    </labels>
+    <labels>
+        <fullName>searchForClient_Client</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search for client - Client</shortDescription>
+        <value>Client</value>
+    </labels>
+    <labels>
+        <fullName>caseProgressIndicator_AssignCase</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Progress Indicator - Assign Case To Me</shortDescription>
+        <value>Assign this case to yourself ?</value>
+    </labels>
+    <labels>
+        <fullName>caseProgressIndicator_ConfirmClose</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Progress Indicator - Confirm Close</shortDescription>
+        <value>Confirm Close Case</value>
+    </labels>
+    <labels>
+        <fullName>general_SaveAndClose</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Save And Close</shortDescription>
+        <value>Save &amp; Close</value>
+    </labels>
+    <labels>
+        <fullName>modal_NoEvent</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Modal - No Event</shortDescription>
+        <value>There is no Event selected, please select an event.</value>
+    </labels>
+    <labels>
+        <fullName>modal_SelectEvent</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Modal - Select Event</shortDescription>
+        <value>Select an Event</value>
+    </labels>
+    <labels>
+        <fullName>modal_EventName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Modal - Event Name</shortDescription>
+        <value>Event Name</value>
+    </labels>
+    <labels>
+        <fullName>general_Yes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - Yes</shortDescription>
+        <value>Yes</value>
+    </labels>
+    <labels>
+        <fullName>general_No</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>General - No</shortDescription>
+        <value>No</value>
+    </labels>
+</CustomLabels>

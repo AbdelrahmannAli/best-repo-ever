@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Relatie van de Cliënt</label>
+    <name>RelatedContactId__c</name>
+    <relationshipLabel>Relatie van de Cliënt</relationshipLabel>
+</CustomFieldTranslation>

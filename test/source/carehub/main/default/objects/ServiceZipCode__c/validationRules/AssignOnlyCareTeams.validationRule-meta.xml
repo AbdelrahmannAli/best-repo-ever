@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AssignOnlyCareTeams</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT( ContactId__r.RecordType.DeveloperName = &apos;CareCircle&apos;)</errorConditionFormula>
+    <errorMessage>Selection is only allowed of contact records with the Record Type Care Circle.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NonOwnerClosingCase</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    NOT(ISBLANK(CaseClosurebyCaseOwnersandProfiles__c)),
+    CaseClosureByNonCaseOwners__c = TRUE
+)</errorConditionFormula>
+    <errorMessage>Both ‘Case Closure by Case Owners and Profiles’ and ‘Case Closure by Non-Case Owners’ cannot be selected at the same time. Please choose only one option.</errorMessage>
+</ValidationRule>

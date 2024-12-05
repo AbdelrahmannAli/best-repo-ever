@@ -1,0 +1,10 @@
+version: "3"
+services:
+  syntilio:
+    container_name: syntilio
+    image: salesforce/salesforcedx:latest-full
+    restart: on-failure
+    working_dir: '/home/syntilio'
+    command: ["sleep","infinity"]
+    volumes:
+      - ./:/home/syntilio

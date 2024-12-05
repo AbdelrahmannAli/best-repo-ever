@@ -1,0 +1,54 @@
+{
+  "orgName": "Syntilio",
+  "sourceOrg": "00D8d000007YAjC",
+  "features": [
+    "EnableSetPasswordInApi",
+    "ServiceCloud",
+    "ContactsToMultipleAccounts",
+    "HealthCloudAddOn",
+    "FieldService:3",
+    "FieldServiceDispatcherUser:3",
+    "FieldServiceMobileUser:3",
+    "FieldServiceSchedulingUser:3",
+    "LightningScheduler",
+    "AssetScheduling:3",
+    "SalesforceIdentityForCommunities",
+    "Communities",
+    "FlowSites",
+    "Knowledge",
+    "Sites",
+    "DebugApex"
+  ],
+  "namespace": "Syntilio",
+  "language": "en_US",
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    },
+    "omniChannelSettings": {
+      "enableOmniChannel": true,
+      "enableOmniSkillsRouting": true
+    },
+    "fieldServiceSettings": {
+      "enableWorkOrders": true,
+      "fieldServiceOrgPref": true,
+      "isLocationHistoryEnabled": true
+    },
+    "communitiesSettings": {
+      "enableNetworksEnabled": true
+    },
+    "pathAssistantSettings": {
+      "pathAssistantEnabled": true
+    },  
+    "enhancedNotesSettings": {
+      "enableEnhancedNotes": true
+    },
+    "accountSettings": {
+      "enableRelateContactToMultipleAccounts": true,
+      "enableAccountTeams": true
+    }
+  }
+}

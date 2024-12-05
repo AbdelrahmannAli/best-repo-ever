@@ -1,0 +1,20 @@
+.surveyCreatorStyle {
+	--sjs-primary-backcolor: #653189;
+	height: 100%;
+}
+
+.surveyCreatorStyle .svc-creator__banner {
+	display: none;
+}
+
+.surveyCreatorStyle .svc-string-editor {
+	pointer-events: none;
+}
+
+.surveyCreatorStyle .svc-flyout-side-bar .svc-side-bar__shadow {
+	z-index: 50;
+}
+
+.surveyCreatorStyle .svc-flyout-side-bar .svc-side-bar__wrapper {
+	z-index: 50;
+}

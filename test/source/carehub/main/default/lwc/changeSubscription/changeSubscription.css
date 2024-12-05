@@ -1,0 +1,66 @@
+.relatedListHeader {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.title__relatedListHeader {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	max-width: 80%;
+	overflow: hidden;
+	gap: 10px;
+	color: #181818 !important;
+}
+
+.custom-datatable {
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+.readonly-path {
+	pointer-events: none;
+}
+
+.modal-width {
+	width: 80% !important;
+	max-width: 80% !important;
+}
+
+.next-button-container {
+	position: relative;
+	display: inline-block;
+}
+
+.spinner-styling {
+	background-color: transparent;
+}
+
+.loading-order-change {
+	position: relative;
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+}
+
+.label-container {
+	position: relative;
+	margin-top: 0.1rem;
+	margin-bottom: 0.1rem;
+}
+
+.helptext {
+	top: -0.1rem;
+}
+
+.back-button-col {
+	justify-content: center;
+	text-align: center;
+}
+
+.next-button-col {
+	justify-content: center;
+	text-align: center;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Case Actie</label>
+    <name>CaseAction__c</name>
+    <picklistValues>
+        <masterLabel>Close</masterLabel>
+        <translation>Case Afsluiten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Event</masterLabel>
+        <translation>Taak Aanmaken</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Upsert</masterLabel>
+        <translation>Case Invoegen</translation>
+    </picklistValues>
+</CustomFieldTranslation>

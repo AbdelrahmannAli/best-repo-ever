@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <quickActions>
+        <label></label>
+        <name>Case_Client_Data_View</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Deactiveer Klant</label>
+        <name>Deactivate_Client</name>
+    </quickActions>
+    <quickActions>
+        <aspect>Master</aspect>
+        <label>Synchroniseer Afspraken</label>
+        <name>Sync_Appointments</name>
+    </quickActions>
+    <recordTypes>
+        <description>Vertegenwoordigt een zorgorganisatie</description>
+        <label>Zakelijk</label>
+        <name>Business</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Vertegenwoordigt een formeel of informeel contact met een klant</description>
+        <label>Zorgnetwerk</label>
+        <name>CareCircle</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Vertegenwoordigt een cliënt</description>
+        <label>Cliënt</label>
+        <name>Client</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Vertegenwoordigt een B2B portalpartner</description>
+        <label>Partner</label>
+        <name>Partner</name>
+    </recordTypes>
+    <recordTypes>
+        <description>Vertegenwoordigt een centraal contact voor een groep cliënten die hetzelfde apparaat gebruiken</description>
+        <label>Gedeeld Apparaat</label>
+        <name>SharedDevice</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Zorg ervoor dat de Parent Organisatie voor het Zorgnetwerk is ingevuld.</errorMessage>
+        <name>CareTeamOrganisationIsRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Zorg ervoor dat het telefoonnummer van het Zorgnetwerk is ingevukld.</errorMessage>
+        <name>CareTeamPhoneIsRequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Om verder te kunnen gaan, moet in ieder geval de postcode van de patiënt worden ingevuld.</errorMessage>
+        <name>ClientZipCodeEmpty</name>
+    </validationRules>
+</CustomObjectTranslation>

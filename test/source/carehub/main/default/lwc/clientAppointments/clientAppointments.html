@@ -1,0 +1,80 @@
+<template>
+    <div class="card-container">
+        <div if:true={isLoading} class="div-text">
+            <lightning-spinner alternative-text="Loading" size="medium" style="margin: 0 auto;"></lightning-spinner>
+        </div>
+        <div style="flex-grow: 1; text-align: right;">
+            <lightning-button-icon icon-name="utility:refresh" variant="brand" onclick={handleButtonClick}
+            style="float: right;" class="action-button"></lightning-button-icon>
+            <template if:false={isChatDisabled}>
+                <lightning-button-icon icon-name="utility:chat"  variant="brand" onclick={handleChatClick}
+                style="float: right;" class="action-button chat-button"></lightning-button-icon>
+            </template>
+        </div>
+        <template if:true={noEvents}>
+            <div class="center-content">
+                <div class="error-icon">
+                    <lightning-icon icon-name="utility:cases" alternative-text="Error Icon" size="medium" class="custom-icon-color"></lightning-icon>
+                </div>
+                <div class="no-events-message">
+                    {labels.careCircle_NoUpcomingAppointments}
+                </div>
+            </div>
+        </template>
+        <template if:false={noEvents}>
+            <template for:each={events} for:item="event">
+                <div key={event.Id} class="card">
+                    <div class="card-header">{event.StartDateTime}</div>
+                    <div class="card-info">
+                        <div class="card-row-small">
+                            <lightning-icon icon-name="utility:clock" alternative-text="Clock Icon"
+                            size="x-small"></lightning-icon>
+                             <p>{event.Time}</p>
+                        </div>
+                        <div class="card-row-small">
+                            <lightning-icon icon-name="utility:user" alternative-text="Profile Icon"
+                            size="x-small"></lightning-icon>
+                            <template if:true={event.Employee}> 
+                                <p>{event.Employee}</p>
+                            </template>
+                        </div>
+                        <div class="card-row-small">
+                            <lightning-icon icon-name="utility:home" alternative-text="Home Icon"
+                            size="x-small"></lightning-icon> 
+                            <template if:true={event.Location}>
+                                <p>{event.Location}</p>
+                            </template>
+                            <template if:false={event.Location}>
+                                <p>No Location available</p>
+                            </template>
+                        </div>
+                        <template for:each={event.Plan} for:item="item" for:index="index">
+                            <div key={item.Id} class="card-row-small">
+                                <lightning-icon icon-name="utility:list" alternative-text="Agenda Icon" size="x-small"></lightning-icon>
+                                <p>{item.hourTypeName} {item.duration} min.</p>
+                            </div>
+                        </template>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-row">
+                            <div class="icon">
+                                <lightning-icon icon-name="utility:note" alternative-text="Note Icon"
+                                size="x-small"></lightning-icon>
+                            </div>
+                            <template if:true={event.DescriptionAvailable}>
+                                <div class="text-content">
+                                    <p>{event.Description}</p>
+                                </div>
+                            </template>
+                            <template if:false={event.DescriptionAvailable}>
+                                <div class="text-content">
+                                    <p>No Notes available</p>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </template>
+    </div>
+</template>

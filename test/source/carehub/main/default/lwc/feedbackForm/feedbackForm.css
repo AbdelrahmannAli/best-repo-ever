@@ -1,0 +1,54 @@
+
+.button-group lightning-radio-group {
+    padding: var(--lwc-spacingSmall), 0;
+    width: 100%;
+} 
+
+.button-group .custom-radio-group {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: var(--lwc-spacingLarge);
+    width: 100%;
+}
+
+.form-input {
+    width: 90%;
+    height: 100%;
+    position: relative;
+    margin-left: var(--lwc-spacingMedium);
+    margin-bottom: var(--lwc-spacingLarge);
+}
+
+.file-upload-container {
+    margin-bottom: var(--lwc-spacingLarge);
+    margin-left: var(--lwc-spacingMedium);
+    border-radius: 8px;
+
+} 
+.file-upload {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.card{
+    padding: 1rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.submit-button { 
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--lwc-spacingMedium);
+
+}
+
+.confirmation-message{
+    margin-left: var(--lwc-spacingMedium);
+}
+.confirmation-message .text{
+    font-size: medium;
+}

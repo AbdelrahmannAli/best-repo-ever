@@ -1,0 +1,153 @@
+.slds-text-title_caps {
+	font-size: 1.2rem;
+}
+
+.divTemplate {
+	border-width: 0;
+	border-style: none;
+	border-color: transparent;
+	border-radius: 0;
+	box-shadow: none;
+	background: transparent;
+}
+
+.component-container {
+	position: relative;
+    max-height: 400px; 
+    overflow-y: auto;
+}
+
+.title {
+	position: relative;
+	font-size: medium;
+	font-weight: bold;
+	color: #333;
+}
+
+.syncButtonDiv {
+	display: flex;
+	justify-content: end;
+	padding-bottom: 0.5rem;
+}
+
+.card-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card-text {
+	font-size: 1em;
+	color: var(--lwc-brandAccessible);
+	word-break: break-all;
+}
+
+.card-relationship {
+	font-size: 1em;
+	color: var(--lwc-brandAccessible);
+	font-weight: bold;
+	word-break: break-all;
+}
+
+:host {
+	--slds-c-icon-color-foreground-default: var(--lwc-brandAccessible);
+}
+
+
+.custom-icon-color {
+	--slds-c-icon-color-foreground-default: #777;
+}
+
+.no-mem-message {
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    color: #777;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20;
+}
+
+.error-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    align-items: stretch;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.125rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0.625rem 0;
+    color: var(--lwc-brandAccessible);
+    overflow: hidden;
+}
+
+.left-section {
+    width: 33.33%;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	word-break: break-word;
+}
+
+.right-section {
+    width: 66.66%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+}
+.relationship {
+	font-weight: bold;
+}
+  
+
+  
+  .name {
+	font-weight: bold;
+  }
+
+
+.index-circle {
+	border: 1px solid #000;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 16px; 
+    margin-left: -40px; 
+    position: relative;
+    z-index: 2;
+}
+
+
+.index-circle span {
+	font-weight: bold;
+	color: #000;
+}
+
+.chat-button{
+    margin-right:0.5rem;
+}
+

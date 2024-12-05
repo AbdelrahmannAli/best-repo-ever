@@ -1,0 +1,58 @@
+.helptext {
+    margin-top: -0.3rem;
+}
+.slds-form-element {
+    min-width: fit-content;
+}
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.title-helptext-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    white-space: pre-wrap;
+}
+
+.tableTitle {
+    margin-right: 4px; 
+}
+
+.section{
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 100%;
+    border: 2px solid rgb(227, 224, 224);
+    border-radius: 0.25rem; 
+}
+
+.slds-align_absolute-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.slds-grid {
+    display: flex;
+}
+
+.slds-flex-grow {
+    flex-grow: 1; 
+}
+.slds-m-bottom_small{
+    margin-bottom: -1rem; 
+    --lwc-spacingSmall: 0.5rem
+}
+
+.slds-m-right_x-small {
+    margin-right: 0.5rem; 
+    margin-bottom: 0.5rem;
+}
+
+.sideicon{
+    --slds-c-icon-color-foreground-default: #653189;
+}

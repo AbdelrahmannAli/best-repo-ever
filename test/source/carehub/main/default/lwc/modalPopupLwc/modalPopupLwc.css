@@ -1,0 +1,23 @@
+.slds-modal__header {
+    text-align: unset;
+}
+
+.slds-scoped-notification {
+    padding: var(--lwc-spacingXxSmall, 0.75rem);
+}
+
+.dropdown-lists {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.slds-form-element {
+    flex: 1;
+}
+
+.slds-modal__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

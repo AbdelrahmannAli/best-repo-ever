@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CodeSet__c</fullName>
+    <externalId>false</externalId>
+    <label>Code Set</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>spo2</fullName>
+                <default>false</default>
+                <label>Oxygen Saturation</label>
+            </value>
+            <value>
+                <fullName>ecg</fullName>
+                <default>false</default>
+                <label>Electrocardiogram</label>
+            </value>
+            <value>
+                <fullName>bp</fullName>
+                <default>false</default>
+                <label>Blood Pressure</label>
+            </value>
+            <value>
+                <fullName>wgt</fullName>
+                <default>false</default>
+                <label>Weight</label>
+            </value>
+            <value>
+                <fullName>hr</fullName>
+                <default>false</default>
+                <label>Heart Rate</label>
+            </value>
+            <value>
+                <fullName>glu</fullName>
+                <default>false</default>
+                <label>Glucose</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

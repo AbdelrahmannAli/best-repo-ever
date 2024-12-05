@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Taal</label>
+    <name>Language__c</name>
+    <picklistValues>
+        <masterLabel>Deutsch</masterLabel>
+        <translation>Duits</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>English</masterLabel>
+        <translation>Engels</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Francais</masterLabel>
+        <translation>Frans</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nederlands</masterLabel>
+        <translation>Nederlands</translation>
+    </picklistValues>
+</CustomFieldTranslation>

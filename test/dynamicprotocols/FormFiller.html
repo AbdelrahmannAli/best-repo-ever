@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FormFiller Test</title>
+	</head>
+	<div class="test-component-container"></div>
+
+	<body>
+		<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+		<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+		<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom-server-legacy.browser.production.min.js"></script>
+		<script src="https://unpkg.com/survey-core@1.11.3/survey.core.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/survey-core@1.11.3/defaultV2.min.css"
+		/>
+		<script src="https://unpkg.com/survey-react-ui@1.11.3/survey-react-ui.min.js"></script>
+		<script src="dist/FormFiller.min.js"></script>
+		<script>
+			const ctx = document.querySelector(".test-component-container");
+			const json = JSON.stringify({
+				survey: {
+					pages: [
+						{
+							name: "page1",
+							title: "Page 1",
+							elements: [
+								{
+									type: "text",
+									name: "question1",
+									title: "question 1"
+								},
+								{
+									type: "text",
+									name: "question3",
+									title: "question 3"
+								},
+								{
+									type: "text",
+									name: "question4",
+									title: "question 4"
+								},
+								{
+									type: "text",
+									name: "question5",
+									title: "question 5"
+								},
+								{
+									type: "text",
+									name: "question6",
+									title: "question 6"
+								},
+								{
+									type: "text",
+									name: "question7",
+									title: "question 7"
+								}
+							]
+						},
+						{
+							name: "page2",
+							title: "Page 2",
+							elements: [
+								{
+									type: "text",
+									name: "question2",
+									title: "question 2"
+								},
+								{
+									type: "text",
+									name: "question8",
+									title: "question 8"
+								},
+								{
+									type: "text",
+									name: "question9",
+									title: "question 9"
+								},
+								{
+									type: "text",
+									name: "question10",
+									title: "question 10"
+								},
+								{
+									type: "text",
+									name: "question11",
+									title: "question 11"
+								}
+							]
+						},
+						{
+							name: "actions",
+							title: "Some Actions",
+							elements: [
+								{
+									type: "action",
+									name: "action1",
+									title: "action 1"
+								},
+								{
+									type: "action",
+									name: "action2",
+									title: "action 2"
+								},
+								{
+									type: "flow",
+									name: "Dummy",
+									title: "Dummy flow"
+								}
+							]
+						}
+					],
+					showQuestionNumbers: "off",
+					showProgressBar: "belowheader",
+					progressBarType: "questions"
+				},
+				results: {
+					question1: JSON.stringify("hello"),
+					question2: JSON.stringify("HEYYY"),
+					action1: JSON.stringify("true")
+				}
+			});
+
+			const labels = JSON.stringify({
+				Next: "Next",
+				Previous: "Previous",
+				Finish: "Finish",
+				Done: "Done",
+				Copy: "Copy",
+				Review: "Review",
+				"Copied to Clipboard": "Copied to Clipboard",
+				"Failed to submit form": "Failed to submit form",
+				"Answered {questions} questions": "Answered {questions} questions"
+			});
+			const props = {
+				element: ctx,
+				showNotification: (type, message) => {
+				},
+				onSubmit: async (data) => {
+					return true;
+				},
+				endSurvey: () => {
+					ctx.removeChild(ctx.lastElementChild);
+					ctx.innerHTML = "<div>HELLOO</div>";
+				},
+				view: "start",
+				json: json,
+				labels: labels
+			};
+			new window.FormFiller({
+				...props,
+				goToActions: () => {
+					ctx.removeChild(ctx.lastElementChild);
+					new window.FormFiller({
+						...props,
+						view: "actions"
+					});
+				}
+			});
+		</script>
+	</body>
+</html>

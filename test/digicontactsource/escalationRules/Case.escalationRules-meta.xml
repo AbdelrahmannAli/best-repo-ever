@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EscalationRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <escalationRule>
+        <fullName>Case Queue Time-Out Reassignment</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <businessHoursSource>Case</businessHoursSource>
+            <escalationAction>
+                <assignedTo>Stall</assignedTo>
+                <assignedToType>Queue</assignedToType>
+                <minutesToEscalation>60</minutesToEscalation>
+                <notifyCaseOwner>false</notifyCaseOwner>
+            </escalationAction>
+            <escalationStartTime>CaseCreation</escalationStartTime>
+        </ruleEntry>
+    </escalationRule>
+</EscalationRules>

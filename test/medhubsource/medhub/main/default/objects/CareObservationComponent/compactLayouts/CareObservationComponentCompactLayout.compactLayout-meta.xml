@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CareObservationComponentCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>NumericValue</fields>
+    <fields>Question__c</fields>
+    <fields>CareObservationId</fields>
+    <fields>ObservationStartDateTime</fields>
+    <label>Syntilio Care Observation Component Compact Layout</label>
+</CompactLayout>

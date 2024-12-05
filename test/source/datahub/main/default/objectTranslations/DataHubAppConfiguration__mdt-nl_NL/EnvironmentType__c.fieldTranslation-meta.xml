@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Soort Omgeving</label>
+    <name>EnvironmentType__c</name>
+    <picklistValues>
+        <masterLabel>Production</masterLabel>
+        <translation>Productie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Staging</masterLabel>
+        <translation>Staging</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Test</masterLabel>
+        <translation>Test</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,19 @@
+.container {
+    padding: 0.3rem;
+    margin-top: -16px; 
+    background-color: white; 
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; 
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border: 1px solid #C9C9C9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.full-width-button {
+    display: block;
+    width: 100%;
+    padding: 0;
+}

@@ -1,0 +1,15 @@
+<template>
+  <span class="slds-text-color_error slds-text-heading_small slds-text-align_center">{errorMessage}</span>
+  <template for:each={questionareQuestions} for:item="mapKey">
+    <c-dynamic-question-types
+      key={mapKey.key}
+      name={mapKey.key}
+      label={mapKey.value}
+      options={mapKey.options}
+      type={mapKey.type}
+      onanswerselect={handlAnswerSelect}
+      required={mapKey.required}
+    ></c-dynamic-question-types>
+  </template>
+  <lightning-button variant="brand" label="Submit" title="Submit" onclick={handleSubmit} class="slds-m-left_x-small slds-float_right slds-m-top-small slds-m-bottom_small"></lightning-button>
+</template>

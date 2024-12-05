@@ -1,0 +1,163 @@
+<template>
+    <div if:true={isAccountRecord}>
+        <lightning-card class="slds-p-around--medium">
+            <div class="slds-card__header slds-grid">
+                <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__figure">
+                    <span class="slds-icon_container" title="Auth">
+                        <lightning-icon icon-name="custom:custom77" 
+                            alternative-text="Auth!" class="auth-icon slds-m-around--small" 
+                            size="large"
+                        >
+                        </lightning-icon>
+                    <span class="slds-assistive-text">{labels.general_Contact}</span>
+                    </span>
+                </div>
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                    <a href="#" class="slds-card__header-link slds-truncate" title="Card Header">
+                        <span class="slds-text-heading_large">{labels.general_Registration}</span>
+                    </a>
+                    </h2>
+                </div>
+                </header>
+            </div>
+            <div class="slds-p-around--small">
+                <lightning-progress-indicator current-step={step} type="path" variant="base">
+                    <template for:each={steps} for:item="step">
+                        <lightning-progress-step label={step.label} value={step.value} key={step.label}></lightning-progress-step>
+                    </template>
+                </lightning-progress-indicator>
+            </div>
+            <template if:true={firstPage}>
+                <div class="slds-p-around--medium">
+                    <c-account-external-systems class="externalSystemCMP" value={externalSystem} account-id={recordId} onexternalsystem={selectExternalSystem}></c-account-external-systems>
+                </div>
+            </template>
+            <template if:true={secondPage}>
+                <lightning-input required label={labels.registrationForm_WhichClient} value={clientId} class="slds-m-around--small clientIdcmp" onchange={handleClientIdChange}></lightning-input>
+            </template>
+            <template if:true={thirdPage}>
+                <div if:true={isLoading} class="slds-text-align_center loading" >
+                    <lightning-spinner alternative-text="Loading" size="medium" style="display: flex; justify-content: center; align-items: center;"></lightning-spinner>
+                </div>
+                <div if:false={isLoading} class="slds-grid info-container slds-p-around--medium">
+                    <div class="slds-col">
+                        <template if:true={client.contact.FullName}>
+                            <p class="slds-m-around--small"><strong>{labels.general_FullName}:</strong> {client.contact.FullName}</p>
+                        </template>
+                        <template if:true={client.contact.Email}>
+                            <p class="slds-m-around--small"><strong>{labels.general_Email}:</strong> {client.contact.Email}</p>
+                        </template>
+                        <template if:true={client.contact.MobilePhone}>
+                            <p class="slds-m-around--small"><strong>{labels.general_MobilePhone}:</strong> {client.contact.MobilePhone}</p>
+                        </template>
+                        <template if:true={client.contact.MailingCountry}>
+                            <p class="slds-m-around--small"><strong>{labels.general_MailingCountry}:</strong> {client.contact.MailingCountry}</p>
+                        </template>
+                        <template if:true={client.contact.MailingCity}>
+                            <p class="slds-m-around--small"><strong>{labels.general_MailingCity}:</strong> {client.contact.MailingCity}</p>
+                        </template>
+                        <template if:true={client.contact.MailingPostalCode}>
+                            <p class="slds-m-around--small"><strong>{labels.general_MailingPostalCode}:</strong> {client.contact.MailingPostalCode}</p>
+                        </template>
+                        <template if:true={client.contact.MailingStreet}>
+                            <p class="slds-m-around--small"><strong>{labels.general_MailingStreet}:</strong> {client.contact.MailingStreet}</p>
+                        </template>
+                        <template if:true={client.contact.HomePhone}>
+                            <p class="slds-m-around--small"><strong>{labels.general_HomePhone}:</strong> {client.contact.HomePhone}</p>
+                        </template>
+                        <template if:true={client.contact.GenderIdentity}>
+                            <p class="slds-m-around--small"><strong>{labels.general_Gender}:</strong> {client.contact.GenderIdentity}</p>
+                        </template>
+                    </div>
+                    <div class="slds-col">
+                        <div class="slds-col">
+                            <p class="slds-m-around--small"><strong>{labels.general_Locations}:</strong></p>
+                        </div>
+                        <div class="slds-col">
+                            <template for:each={client.locations} for:item="location">
+                                <div key={location} if:false={location.Syntilio__MainLocation__c}>
+                                    <p class="slds-m-around--small">{location.Name}</p>
+                                </div>
+                            </template>
+                        </div>
+                        <div class="slds-col">
+                            <template for:each={client.locations} for:item="location">
+                                <div key={location} if:true={location.Syntilio__MainLocation__c}>
+                                    <p  class="slds-m-around--small"><strong>{labels.general_MainLocationName}:</strong> {location.Name}</p>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-p-around_medium lgc-bg slds-text-align_center">
+                    <lightning-helptext content={labels.registrationForm_InformationCorrectNext}></lightning-helptext>
+                    {labels.registrationForm_SeeBeforeMovingForward}
+                </div>
+            </template>
+            <template if:true={fourthPage}>
+                <div class="slds-grid slds-wrap slds-p-around--medium">
+                    <div class="slds-col">
+                        <lightning-record-edit-form object-api-name="Contact">
+                            <lightning-messages></lightning-messages>
+                            <div class="slds-grid slds-wrap">
+                                <div class="slds-col">
+                                    <lightning-input-field field-name="Salutation" class="salutationCMP" name="Salutation" onchange={handleChange}></lightning-input-field>
+                                    <lightning-input-field field-name="Syntilio__CommunicationType__c" name="Syntilio__CommunicationType__c" onchange={handleChange}></lightning-input-field>
+                                    <lightning-input-field field-name="Syntilio__Financing__c" name="Syntilio__Financing__c" onchange={handleChange}></lightning-input-field>
+                                    <template if:false={client.contact.MailingCity}>
+                                        <lightning-input label={labels.general_MailingCity} name="MailingCity" field-name="MailingCity" onchange={handleChange}></lightning-input>
+                                    </template>
+                                    <template if:false={client.contact.MailingCountry}>
+                                        <lightning-input label={labels.general_MailingCountry} name="MailingCountry" field-name="MailingCountry" onchange={handleChange}></lightning-input>
+                                    </template>
+                                    <template if:false={client.contact.MailingPostalCode}>
+                                        <lightning-input label={labels.general_MailingPostalCode} name="MailingPostalCode" field-name="MailingPostalCode" onchange={handleChange}></lightning-input>
+                                    </template>
+                                    <template if:false={client.contact.MailingStreet}>
+                                        <lightning-input label={labels.general_MailingStreet} name="MailingStreet" field-name="MailingStreet" onchange={handleChange}></lightning-input>
+                                    </template>
+                                    <template if:false={client.contact.HomePhone}>
+                                        <lightning-input label={labels.general_HomePhone} name="HomePhone" field-name="HomePhone" onchange={handleChange}></lightning-input>
+                                    </template>
+                                </div>
+                                <div class="slds-col">
+                                    <template if:false={client.contact.FullName}>
+                                        <lightning-input-field field-name="FirstName" name="FirstName" onchange={handleChange}></lightning-input-field>
+                                        <lightning-input-field field-name="LastName" name="LastName" onchange={handleChange}></lightning-input-field>
+                                    </template>
+                                    <template if:false={client.contact.MobilePhone}>
+                                        <lightning-input class="mobilePhoneCMP" label={labels.general_MobilePhone} name="MobilePhone" onchange={handleChange}></lightning-input>
+                                    </template>
+                                    <template if:false={client.contact.Email}>
+                                        <lightning-input class="emailCMP" label={labels.general_Email} name="Email" onchange={handleChange}></lightning-input>
+                                    </template>
+                                </div>
+                            </div>
+                        </lightning-record-edit-form>
+                    </div>
+                </div>
+                <div class="slds-text-align_center">
+                    <lightning-button label={labels.general_Submit} onclick={createClient} class="slds-m-around--small" variant="brand"></lightning-button>
+                </div>
+            </template>
+            <!-- <template if:true={fifthPage}>
+                <div id="variants" class="row slds-text-heading_medium slds-text-align_center">
+                    <h2 class="slds-m-around--medium">
+                        <lightning-formatted-text value="Your information has been saved successfully"></lightning-formatted-text>
+                    </h2>
+                    <lightning-icon icon-name="utility:success" alternative-text="Success!" title="default style" variant="success" size="large"></lightning-icon>
+                </div>
+            </template> -->
+            <template if:false={fourthPage}>
+                <template if:false={fifthPage}>
+                    <div class="slds-text-align_center slds-m-around--medium">
+                        <lightning-button label={labels.general_Back} onclick={handleBack} class="slds-m-around--small" disabled={backButtonDisabled}></lightning-button>
+                        <lightning-button label={labels.general_Next} onclick={handleNext} class="slds-m-around--small" disabled={nextButtonDisabled} variant="brand"></lightning-button>
+                    </div>
+                </template>
+            </template>
+        </lightning-card>
+    </div>
+</template>

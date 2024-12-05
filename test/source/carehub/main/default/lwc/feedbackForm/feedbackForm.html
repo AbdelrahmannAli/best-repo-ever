@@ -1,0 +1,42 @@
+
+<template>
+    <lightning-card class="card">
+        <div class="button-group">
+            <lightning-radio-group name="feedbackType" label="Type" options={options} value={selectedFeedbackType} type="button" class="custom-radio-group" onchange={handleInputChange} required>
+            </lightning-radio-group>
+        </div>
+        <lightning-input class="form-input" label={labels.feedbackForm_WhatIsTheProblem}   maxlength="255" name="problem" onchange={handleInputChange} required>
+        </lightning-input>  
+        
+        <lightning-input class="form-input" label={labels.feedbackForm_UrlLink} maxlength="255" name="url" onchange={handleInputChange}>
+        </lightning-input>
+
+        <lightning-textarea class="form-input" label={labels.feedbackForm_StepsToReproduce} maxlength="255" name="steps" onchange={handleInputChange}>
+        </lightning-textarea>
+
+        <lightning-textarea class="form-input" label={labels.feedbackForm_Expected} maxlength="255" name="expected" onchange={handleInputChange}>
+        </lightning-textarea>
+
+        <lightning-textarea class="form-input" label={labels.feedbackForm_Happened} maxlength="255" name="actual" onchange={handleInputChange}>
+        </lightning-textarea>
+
+        <lightning-combobox class="form-input" label={labels.feedbackForm_Problem} name="problemSeverity" options={severityOptions} onchange={handleInputChange}>
+        </lightning-combobox>
+       
+        <div class="file-upload-container">
+            <lightning-file-upload label={labels.feedbackForm_AttachImage} name="fileUploader" accept={acceptedFormats} record-id={fileId} class="file-upload" onuploadfinished={handleUploadFinished} multiple>
+            </lightning-file-upload>
+        </div>
+
+        <lightning-button type="submit" label="Send feedback" class="submit-button" onclick={handleSubmit} disabled={isSubmitDisabled}>
+        </lightning-button>
+
+        <div lwc:if={isConfirmationVisible}>
+            <div class="confirmation-message">
+                <p class="text">Thank you for your feedback!</p>
+            </div>
+        </div>
+
+    </lightning-card>
+
+</template>

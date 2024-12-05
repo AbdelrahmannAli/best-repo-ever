@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meeting</fullName>
+        <default>false</default>
+        <label>Meeting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Send Letter/Quote</fullName>
+        <default>false</default>
+        <label>Send Letter/Quote</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Intake</fullName>
+        <default>false</default>
+        <label>Intake</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Kennismaking</fullName>
+        <default>false</default>
+        <label>Kennismaking</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Begeleiding</fullName>
+        <default>false</default>
+        <label>Begeleiding</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Evaluatie</fullName>
+        <default>false</default>
+        <label>Evaluatie</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Anders</fullName>
+        <default>false</default>
+        <label>Anders</label>
+    </standardValue>
+</StandardValueSet>

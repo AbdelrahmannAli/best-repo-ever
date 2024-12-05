@@ -1,0 +1,9 @@
+.loading {
+	height: 20rem;
+}
+:host {
+	--slds-c-card-header-spacing-block-end: 0px;
+	--slds-c-card-header-spacing-block-start: 0px;
+	--slds-c-card-body-spacing-block-start: 0px;
+	--slds-c-card-body-spacing-block-end: 0px;
+}

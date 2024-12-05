@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Categorie</label>
+    <name>Category__c</name>
+    <picklistValues>
+        <masterLabel>Medical</masterLabel>
+        <translation>Medisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical</masterLabel>
+        <translation>Technisch</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SyntilioEventCompactLayout</fullName>
+    <fields>Account__c</fields>
+    <fields>Case__c</fields>
+    <fields>Category__c</fields>
+    <fields>Asset__c</fields>
+    <fields>ParentAsset__c</fields>
+    <label>Syntilio Event Compact Layout</label>
+</CompactLayout>

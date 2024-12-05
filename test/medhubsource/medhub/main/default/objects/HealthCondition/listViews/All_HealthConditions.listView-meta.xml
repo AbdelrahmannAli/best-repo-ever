@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_HealthConditions</fullName>
+    <columns>Name</columns>
+    <columns>Patient</columns>
+    <columns>MedicalCondition__c</columns>
+    <columns>Severity</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Health Conditions</label>
+</ListView>

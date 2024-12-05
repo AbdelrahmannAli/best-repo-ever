@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Manier van Communicatie</label>
+    <name>CommunicationType__c</name>
+    <picklistValues>
+        <masterLabel>Both</masterLabel>
+        <translation>Beide</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Call</masterLabel>
+        <translation>Telefoongesprek</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I don&apos;t know</masterLabel>
+        <translation>Ik weet het niet</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Video Calling</masterLabel>
+        <translation>Videobellen</translation>
+    </picklistValues>
+</CustomFieldTranslation>

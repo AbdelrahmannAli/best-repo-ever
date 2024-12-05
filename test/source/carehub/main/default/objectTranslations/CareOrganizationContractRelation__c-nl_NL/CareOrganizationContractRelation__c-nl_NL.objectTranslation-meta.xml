@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value></value>
+    </caseValues>
+    <gender></gender>
+    <nameFieldLabel></nameFieldLabel>
+    <validationRules>
+        <errorMessage>Zorg ervoor dat de einddatum niet vóór de startdatum ligt.</errorMessage>
+        <name>EndDateCanNotBeBeforeStartDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Zorg ervoor dat zowel de Begin- als de Einddatum zijn ingevuld voor een contract tussen zorgorganisaties.</errorMessage>
+        <name>StartAndEndDateNotEmpty</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>U kunt geen contract tot stand brengen tussen identieke organisaties; zorg ervoor dat contracten betrekking hebben op twee verschillende zakelijke accounts.</errorMessage>
+        <name>TwoDifferentBusinessAccounts</name>
+    </validationRules>
+</CustomObjectTranslation>

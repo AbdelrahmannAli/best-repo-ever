@@ -1,0 +1,302 @@
+<template>
+  <template if:true={registerPage}>
+    <div class="slds-clearfix">
+      <div class="slds-notify slds-notify_alert" role="alert slds-float_left">
+        <h1 class="slds-float_left">
+          Logged in as {costumerName} ({costumerEmail}).
+        </h1>
+      </div>
+      <div>
+        <lightning-button
+          icon-name="utility:tableau"
+          variant="brand"
+          label="Create New Service Appointment"
+          onclick={handlesubmit}
+          name="submitNewService"
+          class="slds-float_right"
+        ></lightning-button>
+      </div>
+    </div>
+  </template>
+
+  <template if:true={showNoAppointmentsWarning}>
+    <div class="slds-notify slds-notify_alert slds-alert_warning" role="alert">
+      <span
+        class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small"
+      >
+        <lightning-icon icon-name="utility:warning"></lightning-icon>
+      </span>
+      <span
+        >You currently don't have any ongoing appointments, Create One
+        Now!</span
+      >
+    </div>
+  </template>
+  <template for:each={serviceAppointmentList} for:item="serviceAppointment">
+    <article class="slds-card" key={serviceAppointment.Id}>
+      <div class="slds-card__header slds-grid">
+        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+          <div class="slds-media__figure">
+            <span
+              class="slds-icon_container slds-icon-standard-account"
+              title="account"
+            >
+              <lightning-icon
+                icon-name="standard:service_appointment"
+              ></lightning-icon>
+              <span class="slds-assistive-text">serviceAppointment</span>
+            </span>
+          </div>
+          <div class="slds-media__body">
+            <h2 class="slds-card__header-title">
+              <span
+                >Service Appointment
+                {serviceAppointment.AppointmentNumber}</span
+              >
+            </h2>
+
+            <span>Description : {serviceAppointment.Description}</span> <br />
+            <span>Start Date : {serviceAppointment.EarliestStartTime}</span>
+            <br />
+            <span>Due Date : {serviceAppointment.DueDate}</span> <br />
+          </div>
+          <div class="slds-no-flex">
+            <lightning-button
+              icon-name="utility:info"
+              class="slds-m-right_x-small"
+              label="Show Details"
+              variant="brand"
+              onclick={handleModify}
+              name={serviceAppointment.Id}
+            ></lightning-button>
+          </div>
+        </header>
+      </div>
+    </article>
+  </template>
+
+  <template if:true={showCreateNewService}>
+    <!-- Modal/Popup Box LWC starts here -->
+    <section
+      role="dialog"
+      tabindex="-1"
+      aria-labelledby="modal-heading-01"
+      aria-modal="true"
+      aria-describedby="modal-editAccount-id-1"
+      class="slds-modal slds-fade-in-open"
+    >
+      <div class="slds-modal__container">
+        <!-- Modal/Popup Box LWC header here -->
+        <header class="slds-modal__header">
+          <button
+            class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+            title="Close"
+            onclick={closeNewService}
+          >
+            <lightning-icon
+              icon-name="utility:close"
+              alternative-text="close"
+              variant="inverse"
+              size="small"
+            ></lightning-icon>
+            <span class="slds-assistive-text">Close</span>
+          </button>
+          <h2
+            id="modal-addAccountHeading-01"
+            class="slds-text-heading_medium slds-hyphenate"
+          >
+            Create New Appointment
+          </h2>
+        </header>
+        <!-- Modal/Popup Box LWC body starts here -->
+
+        <div
+          class="slds-modal__content slds-p-around_medium"
+          id="addAccountsModal-content-id-1"
+        >
+          <lightning-record-edit-form
+            object-api-name="ServiceAppointment"
+            onsuccess={handleSuccess}
+            onsubmit={handlesubmit}
+            onerror={handleError}
+            name="recordForm"
+          >
+            <lightning-messages></lightning-messages>
+            <lightning-input-field
+              field-name="ParentRecordId"
+              value={workOrderId}
+            ></lightning-input-field>
+            <lightning-input-field
+              field-name="ContactId"
+              value={urlCostumerId}
+            ></lightning-input-field>
+            <lightning-input-field field-name="Description">
+            </lightning-input-field>
+            <lightning-input-field
+              field-name="Street"
+              value={mailingStreet}
+            ></lightning-input-field>
+            <lightning-input-field
+              field-name="City"
+              value={mailingCity}
+            ></lightning-input-field>
+            <lightning-input-field
+              field-name="Country"
+              value={mailingCountry}
+            ></lightning-input-field>
+            <lightning-input-field
+              field-name="PostalCode"
+              value={mailingPostalCode}
+            ></lightning-input-field>
+            <lightning-input-field
+              field-name="State"
+              value={mailingState}
+            ></lightning-input-field>
+            <lightning-input-field field-name="EarliestStartTime">
+            </lightning-input-field>
+            <lightning-input-field field-name="DueDate">
+            </lightning-input-field>
+            <lightning-input-field field-name="ArrivalWindowStartTime">
+            </lightning-input-field>
+            <lightning-input-field field-name="ArrivalWindowEndTime">
+            </lightning-input-field>
+            <lightning-button
+              class="slds-float_right"
+              variant="brand"
+              type="submit"
+              name="submit"
+              label="Create New"
+            >
+            </lightning-button>
+          </lightning-record-edit-form>
+        </div>
+        <!-- Modal/Popup Box LWC footer starts here -->
+        <footer class="slds-modal__footer">
+          <button
+            class="slds-button slds-button_neutral"
+            onclick={closeNewService}
+            title="Cancel"
+          >
+            Cancel
+          </button>
+        </footer>
+      </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+  </template>
+
+  <template if:true={showDetailsModal}>
+    <!-- Modal/Popup Box LWC starts here -->
+    <section
+      role="dialog"
+      tabindex="-1"
+      aria-labelledby="modal-heading-01"
+      aria-modal="true"
+      aria-describedby="modal-editAccount-id-1"
+      class="slds-modal slds-fade-in-open"
+    >
+      <div class="slds-modal__container">
+        <!-- Modal/Popup Box LWC header here -->
+        <header class="slds-modal__header">
+          <button
+            class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+            title="Close"
+            onclick={closewModifyModal}
+          >
+            <lightning-icon
+              icon-name="utility:close"
+              alternative-text="close"
+              variant="inverse"
+              size="small"
+            ></lightning-icon>
+            <span class="slds-assistive-text">Close</span>
+          </button>
+          <h2
+            id="modal-modifyHeading-01"
+            class="slds-text-heading_medium slds-hyphenate"
+          >
+            Service Appointment {modifyAppointmentNumber}
+          </h2>
+        </header>
+        <!-- Modal/Popup Box LWC body starts here -->
+
+        <div
+          class="slds-modal__content slds-p-around_medium"
+          id="modifyModal-content-id-1"
+        >
+          <lightning-record-edit-form
+            object-api-name="ServiceAppointment"
+            record-id={serviceId}
+            onsuccess={handleSuccess}
+            onsubmit={handlesubmit}
+            onerror={handleError}
+            name="recordModifyForm"
+          >
+            <lightning-messages></lightning-messages>
+            <lightning-input-field
+              field-name="ParentRecordId"
+              value={workOrderId}
+            ></lightning-input-field>
+            <lightning-input-field
+              field-name="ContactId"
+              value={urlCostumerId}
+            ></lightning-input-field>
+            <lightning-input-field field-name="Description">
+            </lightning-input-field>
+            <lightning-input-field
+              field-name="Street"
+              value={mailingStreet}
+            ></lightning-input-field>
+            <lightning-input-field
+              field-name="City"
+              value={mailingCity}
+            ></lightning-input-field>
+            <lightning-input-field
+              field-name="Country"
+              value={mailingCountry}
+            ></lightning-input-field>
+            <lightning-input-field
+              field-name="PostalCode"
+              value={mailingPostalCode}
+            ></lightning-input-field>
+            <lightning-input-field
+              field-name="State"
+              value={mailingState}
+            ></lightning-input-field>
+            <lightning-input-field field-name="EarliestStartTime">
+            </lightning-input-field>
+            <lightning-input-field field-name="DueDate">
+            </lightning-input-field>
+            <lightning-input-field field-name="ArrivalWindowStartTime">
+            </lightning-input-field>
+            <lightning-input-field field-name="ArrivalWindowEndTime">
+            </lightning-input-field>
+            <lightning-input-field field-name="SchedStartTime">
+            </lightning-input-field>
+            <lightning-input-field field-name="SchedEndTime">
+            </lightning-input-field>
+            <lightning-button
+              class="slds-float_right"
+              variant="brand"
+              type="submit"
+              name="submit"
+              label="Create New"
+            >
+            </lightning-button>
+          </lightning-record-edit-form>
+        </div>
+        <!-- Modal/Popup Box LWC footer starts here -->
+        <footer class="slds-modal__footer">
+          <button
+            class="slds-button slds-button_neutral"
+            onclick={closewModifyModal}
+            title="Cancel"
+          >
+            Cancel
+          </button>
+        </footer>
+      </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+  </template>
+</template>

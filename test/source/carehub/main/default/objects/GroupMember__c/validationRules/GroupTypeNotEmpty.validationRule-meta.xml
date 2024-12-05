@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GroupTypeNotEmpty</fullName>
+    <active>false</active>
+    <description>AND(
+ISBLANK(Syntilio__EventConfigurationId__c),
+ISBLANK(Syntilio__ContactId__c)
+)</description>
+    <errorConditionFormula>AND(
+ISBLANK(EventConfigurationId__c),
+ISBLANK(ContactId__c),
+NOT(ISBLANK(GroupId__c))
+)</errorConditionFormula>
+    <errorMessage>Please fill either Contact Name or Event Configuration Name, but not both.</errorMessage>
+</ValidationRule>

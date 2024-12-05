@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Flow Error 008</label>
+    <protected>false</protected>
+    <values>
+        <field>Description_de_DE__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Description_en_GB__c</field>
+        <value xsi:type="xsd:string">The Client external ID was found but without an External System record linked to it, please contact your service team to validate these values.</value>
+    </values>
+    <values>
+        <field>Description_fr_FR__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Description_nl_NL__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>StatusCode__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

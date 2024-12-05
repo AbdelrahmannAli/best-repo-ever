@@ -1,0 +1,37 @@
+{
+  "orgName": "Syntilio",
+  "edition": "Developer",
+  "features": [
+    "EnableSetPasswordInApi",
+    "ServiceCloud",
+    "ContactsToMultipleAccounts",
+    "DebugApex"
+  ],
+  "namespace": "Syntilio",
+  "language": "en_US",
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    },
+    "omniChannelSettings": {
+      "enableOmniChannel": true,
+      "enableOmniSkillsRouting": true
+    },
+    "pathAssistantSettings": {
+      "pathAssistantEnabled": true
+    },
+    "enhancedNotesSettings": {
+      "enableEnhancedNotes": true
+    },
+    "orderSettings": {
+      "enableOrders": true,
+      "enableOrderEvents": true
+    },
+    "languageSettings": {
+      "enableTranslationWorkbench": true
+    }
+  }
+}

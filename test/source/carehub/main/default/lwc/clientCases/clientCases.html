@@ -1,0 +1,20 @@
+<template>
+    <div if:true={isContact}>
+        <lightning-card title={labels.general_ContactCases} icon-name="action:new_case">
+            <div class="slds-m-around_medium">
+                <div if:true={isLoading} style="text-align: center;">
+                    <lightning-spinner alternative-text="Loading" size="medium" style="margin: 0 auto;"></lightning-spinner>
+                </div>
+                <div if:false={isLoading} style="text-align: center; max-height: 25rem; overflow: scroll;">
+                    <lightning-datatable
+                        key-field="id"
+                        data={clientCases}
+                        columns={columns}
+                        onrowaction={handleRowAction}
+                        hide-checkbox-column="true">
+                    </lightning-datatable>
+                </div>
+            </div>
+        </lightning-card>
+    </div>
+</template>

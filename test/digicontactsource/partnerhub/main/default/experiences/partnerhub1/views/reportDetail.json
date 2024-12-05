@@ -1,0 +1,48 @@
+{
+  "appPageId" : "bc71e1f3-3c55-41e7-bb9a-bc38a4f521ba",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "3695d585-82d3-478b-90b0-8675ebabd3a0",
+  "label" : "Report Detail",
+  "regions" : [ {
+    "id" : "73157e90-4e93-4b7d-8c16-2332cedf4508",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:reportPage",
+      "id" : "f8282a1f-e3e4-4d65-a07b-ccc64ecfdf7d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "62fd65af-dc52-4b47-b93c-94960cdec7a3",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "caad3d10-b501-45db-980b-7922709ceda2",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "b2d9a7f5-65df-4671-a5f0-99ad18a1866f",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "97163f86-d65e-412f-8a75-a47a9f54b6ad",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-00O"
+}

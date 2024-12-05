@@ -1,0 +1,48 @@
+body {
+  overflow-y: auto;
+}
+
+.appointmentForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: aqua;
+}
+
+.selection-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 2%;
+  overflow: auto;
+}
+
+tbody {
+  overflow: hidden;
+}
+.disabled {
+  text-decoration: none;
+  color: #999;
+}
+
+tr {
+  background-color: white;
+}
+
+.available {
+  background-color: white;
+}
+
+table {
+  overflow: hidden;
+}
+
+table > tr {
+  width: 100%;
+  overflow: hidden;
+}

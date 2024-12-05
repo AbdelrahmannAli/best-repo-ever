@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ObjectNameNotFilledIn</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(ObjectName__c)</errorConditionFormula>
+    <errorDisplayField>ObjectName__c</errorDisplayField>
+    <errorMessage>Object name is a required field, please fill in to be able to save the record.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Synchronisatie Modus</label>
+    <name>SyncMode__c</name>
+    <picklistValues>
+        <masterLabel>Always Override</masterLabel>
+        <translation>Altijd Overschrijven</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Create Task on Conflict</masterLabel>
+        <translation>Maak een Taak bij een Conflict</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Override and Create Task on Conflict</masterLabel>
+        <translation>Overschrijf en maak een Taak bij een Conflict</translation>
+    </picklistValues>
+</CustomFieldTranslation>

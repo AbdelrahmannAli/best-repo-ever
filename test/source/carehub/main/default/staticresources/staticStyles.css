@@ -1,0 +1,22 @@
+.button-style-no-border button {
+  background-color: transparent !important;
+  cursor: pointer;
+  white-space: nowrap !important;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  border: none;
+  display: inline;
+}
+
+.button-style-no-border button:hover {
+  text-decoration: underline;
+}
+
+.requiredInput .slds-form-element__label::after {
+  content: "*";
+  font-size: 12px;
+  color: red;
+  margin-left: 2px;
+}

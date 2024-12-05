@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TwoDifferentBusinessAccounts</fullName>
+    <active>true</active>
+    <errorConditionFormula>MainAccount__c = CounterPartyAccount__c</errorConditionFormula>
+    <errorMessage>You can not create a contract between identical organizations; ensure contracts involve two distinct business accounts.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,24 @@
+<apex:page standardController="Case">
+<apex:includeScript value="/support/console/59.0/integration.js"/>
+    <apex:includeLightning />
+    <div id="lwcContainer"></div>
+    <script type="text/javascript">
+        var recordId = "{!Case.Id}";
+        $Lightning.use("Syntilio:multipleChatSystemsApp", function() {
+            $Lightning.createComponent(
+                "Syntilio:multipleChatSystems", 
+                { recordId: recordId }, 
+                "lwcContainer",
+                function(cmp) {
+                    document.querySelector('syntilio-multiple-chat-systems').addEventListener('buttonPressed', (e) => {
+                    if (sforce.console && sforce.console.isInConsole()) {
+                    sforce.console.getEnclosingTabId(function(result) {
+                    sforce.console.closeTab(result.id);
+                    });
+        	        }   
+                });
+                }
+            );
+        });
+    </script>
+</apex:page>

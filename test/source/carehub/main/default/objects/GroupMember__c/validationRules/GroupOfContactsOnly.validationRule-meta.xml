@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GroupOfContactsOnly</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISBLANK(GroupId__c)),(ISPICKVAL(GroupId__r.ObjectType__c, &apos;Contact&apos;)),NOT(ISBLANK(EventConfigurationId__c)), ISBLANK(ContactId__c))</errorConditionFormula>
+    <errorMessage>Please ensure that you are assigning contacts exclusively to a contact group.</errorMessage>
+</ValidationRule>

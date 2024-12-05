@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <quickActions>
+        <label></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Update_Case_View</name>
+    </quickActions>
+    <recordTypes>
+        <label>Syntilio Standaard</label>
+        <name>SyntilioDefault</name>
+    </recordTypes>
+    <webLinks>
+        <label>Dossier</label>
+        <name>Dossier</name>
+    </webLinks>
+    <webLinks>
+        <label>Videogesprek Starten</label>
+        <name>StartVideoCall</name>
+    </webLinks>
+</CustomObjectTranslation>

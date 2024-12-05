@@ -1,0 +1,8 @@
+<template>
+    <template lwc:if={hasError}>
+        <c-error-u-i error-message={errorMessage} error-id={errorId}></c-error-u-i>
+    </template>
+    <template lwc:else>
+        <slot></slot>
+    </template>
+  </template>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AlwaysCreateNewCase__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>By selecting this checkbox as true, any existing open cases related to same client and event code n the system will be automatically closed, and a new case will be created. This ensures that your request is assigned to a new agent for prompt attention.</inlineHelpText>
+    <label>Always Create New Case</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

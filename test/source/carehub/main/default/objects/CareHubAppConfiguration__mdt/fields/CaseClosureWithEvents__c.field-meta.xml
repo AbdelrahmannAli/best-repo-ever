@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CaseClosureWithEvents__c</fullName>
+    <defaultValue>false</defaultValue>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Indicates whether cases can be closed without an associated event.</inlineHelpText>
+    <label>Case Closure With Events</label>
+    <type>Checkbox</type>
+</CustomField>

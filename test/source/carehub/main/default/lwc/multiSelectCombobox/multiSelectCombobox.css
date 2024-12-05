@@ -1,0 +1,102 @@
+.multi-select-combobox-container {
+	margin-top: 1.2rem;
+}
+
+.slds-pill_container {
+	width: 100%;
+	white-space: normal;
+	display: flex;
+	flex-wrap: wrap;
+	border-style: none;
+}
+
+.slds-pill__label {
+	white-space: normal;
+}
+
+.slds-pill {
+    margin-right: 5px;
+    padding: 5px 8px 5px 5px;
+	width: 100%;
+}
+.placeholder {
+	border: none;
+	color: grey;
+	box-shadow: none;
+}
+
+.slds-dropdown.slds-hide {
+	display: none;
+}
+
+.slds-dropdown.slds-show {
+	display: block;
+}
+
+.slds-combobox__input {
+    outline: none; 
+    padding: 0; 
+	box-shadow: none;
+	color: grey;
+	display: flex;
+	justify-content: space-between;
+}
+
+.slds-combobox__input::placeholder {
+    color: #9aa0a6; 
+	box-shadow: none;
+}
+
+.slds-combobox__input:hover {
+    border-color: #653189;
+}
+
+.slds-combobox__input input {
+	border: none;
+}
+
+.slds-input {
+	border-color: #9aa0a6; 
+    box-shadow: none;
+}
+
+.slds-combobox__input > .slds-button {
+	position: relative;
+	align-self: center;
+	margin-left: 8px;
+	margin-top: 0;
+}
+
+.slds-listbox__option_plain {
+    margin-left: 1.188rem;
+    background-color: transparent !important;
+}
+
+.slds-listbox__option_plain .slds-media__body span:hover {
+    background-color: #E7E1EB;
+}
+
+.slds-media__body span {
+    padding: 0.1rem 0.5rem; 
+}
+
+.custom-grey-text {
+	font-weight: bold;
+    font-size: small;
+    margin-left: 0.9rem;
+}
+
+.no-caller{
+	margin-left: 1.188rem;
+    color: #808080;
+}
+
+.slds-listbox__option span span {
+    padding: var(--lwc-spacingXSmall, 0.5rem) var(--lwc-spacingMedium, 0.75rem);
+    width: 100%;
+}
+
+.slds-listbox__option {
+    margin-left: 0;
+    padding: 0;
+}

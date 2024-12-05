@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="Fetch All Clients">
+        <div class="slds-p-around_medium">
+            <lightning-input 
+                label="From Client Id" 
+                type="number"
+                value={fromClient} 
+                onchange={handleFromClient}>
+            </lightning-input>
+            
+            <lightning-input 
+                label="To Client Id" 
+                type="number" 
+                value={toClient} 
+                onchange={handleToClient}>
+            </lightning-input>
+            
+            <lightning-input 
+                label="Chunk Size" 
+                type="number" 
+                value={chunkSize} 
+                onchange={handleChunkSize}>
+            </lightning-input>
+            
+            <lightning-button 
+                label="Fetch All Clients" 
+                onclick={handleButtonClick}>
+                class="slds-m-top_medium">
+            </lightning-button>
+        </div>
+    </lightning-card>
+</template>
